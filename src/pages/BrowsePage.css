@@ -1,0 +1,44 @@
+.browse-page-div {
+    display: flex;
+    gap: 16px;
+    height: calc(100vh - 60px);
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.browse-page-directory {
+    width: 280px;
+    min-width: 280px;
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow-y: auto;
+    padding: 16px;
+}
+
+.browse-page-contents {
+    flex: 1;
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow-y: auto;
+    padding: 16px;
+}
+
+.folder-button {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    color: var(--text);
+    padding: 6px 8px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+}
+
+.folder-button:hover {
+    background-color: var(--border);
+}
