@@ -7,7 +7,6 @@ export default function Navbar() {
             <span>Halo Dialogue Archive</span>
             <div className="navbar-links">
                 <Link to="/">Home</Link>
-                <Link to="/browse">Browse</Link>
             </div>
         </nav>
     );
