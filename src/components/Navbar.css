@@ -1,0 +1,28 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--surface);
+    padding: 0 24px;
+    height: 60px;
+}
+
+.navbar span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--text);
+}
+
+.navbar-links {
+    display: flex;
+    gap: 24px;
+}
+
+.navbar-links a {
+    color: var(--text);
+    text-decoration: none;
+}
+
+.navbar-links a:hover {
+    color: var(--text-selected);
+}
