@@ -69,3 +69,72 @@
     color: var(--text-muted);
     font-size: 0.9rem;
 }
+
+.btn-icon {
+    background: none;
+    border: none;
+    color: var(--primary);
+    cursor: pointer;
+    font-size: 0.9rem;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.btn-icon:hover {
+    color: var(--primary-hover);
+}
+
+.contents-grid {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: left;
+}
+
+.contents-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+.contents-table th {
+    text-align: left;
+    padding: 8px 12px;
+    color: var(--text);
+    font-weight: bold;
+    border-bottom: 1px solid var(--border);
+    background-color: var(--surface);
+}
+
+.contents-table td {
+    padding: 8px 12px;
+    color: var(--text);
+    border-bottom: 1px solid var(--border);
+}
+
+.contents-table tr:hover td {
+    background-color: var(--surface);
+}
+
+.contents-table tr:hover td {
+    background-color: var(--surface);
+}
+
+.contents-table td button {
+    background: none;
+    border: none;
+    color: var(--primary);
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    padding: 0;
+    text-align: left;
+}
+
+.contents-table td button:hover {
+    color: var(--primary-hover);
+}
