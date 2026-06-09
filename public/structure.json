@@ -2133,6 +2133,79 @@
               ]
             }
           ]
+        },
+        {
+          "name": "multiplayer",
+          "path": "halo2/multiplayer",
+          "children": [
+            {
+              "name": "flavor",
+              "path": "halo2/multiplayer/flavor",
+              "children": []
+            },
+            {
+              "name": "games",
+              "path": "halo2/multiplayer/games",
+              "children": [
+                {
+                  "name": "ctf",
+                  "path": "halo2/multiplayer/games/ctf",
+                  "children": []
+                },
+                {
+                  "name": "invasion",
+                  "path": "halo2/multiplayer/games/invasion",
+                  "children": []
+                },
+                {
+                  "name": "juggernaut",
+                  "path": "halo2/multiplayer/games/juggernaut",
+                  "children": []
+                },
+                {
+                  "name": "king",
+                  "path": "halo2/multiplayer/games/king",
+                  "children": []
+                },
+                {
+                  "name": "names",
+                  "path": "halo2/multiplayer/games/names",
+                  "children": []
+                },
+                {
+                  "name": "oddball",
+                  "path": "halo2/multiplayer/games/oddball",
+                  "children": []
+                },
+                {
+                  "name": "slayer",
+                  "path": "halo2/multiplayer/games/slayer",
+                  "children": []
+                },
+                {
+                  "name": "territories",
+                  "path": "halo2/multiplayer/games/territories",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "general",
+              "path": "halo2/multiplayer/general",
+              "children": [
+                {
+                  "name": "countdown",
+                  "path": "halo2/multiplayer/general/countdown",
+                  "children": []
+                },
+                {
+                  "name": "misc",
+                  "path": "halo2/multiplayer/general/misc",
+                  "children": []
+                }
+              ]
+            }
+          ]
         }
       ]
     }
