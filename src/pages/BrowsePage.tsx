@@ -3,6 +3,8 @@ import Navbar from "../components/Navbar"
 import "./BrowsePage.css";
 import { useEffect, useState } from "react";
 import { supabase } from "../components/Supabase";
+import GameCard from "../components/GameCard";
+import halo2Logo from '../assets/games/halo2.png'
 
 type FolderNode = {
     name: string;
@@ -194,6 +196,10 @@ export default function BrowsePage() {
     return (
         <div>
             <Navbar />
+
+            <div className="browse-page-game-selector">
+                <GameCard name="Halo 2" image={halo2Logo} path="/browse/halo2" />
+            </div>
 
             <div className="browse-page-div">
                 <div className="browse-page-directory">

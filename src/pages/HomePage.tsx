@@ -1,12 +1,11 @@
-import { useNavigate } from "react-router-dom"
 import Navbar from "../components/Navbar"
 import './HomePage.css';
 import halo2Logo from '../assets/games/halo2.png'
 import underConstruction from '../assets/underConstruction.png'
+import GameCard from "../components/GameCard";
 
 
 export default function HomePage() {
-    const navigate = useNavigate();
 
     return (
         <div>
@@ -18,15 +17,8 @@ export default function HomePage() {
             </div>
 
             <div className="games">
-                <button className="game-selector" onClick={()=>navigate('/browse/halo2')}>
-                    <img className="game-image" src={halo2Logo} alt="Halo 2" />
-                    <span>Halo 2</span>
-                </button>
-
-                <div className="coming-soon">
-                    <img className="game-image" src={underConstruction} alt="Coming Soon Icon" />
-                    <span>Coming soon...</span>
-                </div>
+                <GameCard name="Halo 2" image={halo2Logo} path="/browse/halo2" />
+                <GameCard name="Coming soon..." image={underConstruction} path="temp" disabled />
             </div>
         </div>
     )
