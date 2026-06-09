@@ -6,6 +6,7 @@ import { supabase } from "../components/Supabase";
 
 type FolderNode = {
     name: string;
+    path: string;
     children: FolderNode[];
 }
 
@@ -176,7 +177,7 @@ export default function BrowsePage() {
     }, [nodePath])
 
     function findPath(root: FolderNode, target: FolderNode): FolderNode[] | null {
-        if (root.name === target.name) return [root]
+        if (root.path === target.path) return [root]
         for (const child of root.children) {
             const path = findPath(child, target)
             if (path) return [root, ...path]
