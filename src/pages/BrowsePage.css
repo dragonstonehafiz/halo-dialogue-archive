@@ -10,6 +10,7 @@
     display: flex;
     justify-content: center;
     padding: 16px 0;
+    gap: 24px;
 }
 
 .browse-page-directory {

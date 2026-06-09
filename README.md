@@ -47,7 +47,7 @@ Files are served via a public R2 URL. The frontend constructs the full URL by pr
 
 Audio files were extracted from the original game files using the following tools:
 
-- **Reclaimer** — [download link](https://github.com/Gravemind2401/Reclaimer) — used to extract audio from `.map` files for Halo 2, Halo 3, Halo 3: ODST, and Halo: Reach.
-- **Wwise Unpacker** — [download link](https://github.com/Vextil/Wwise-Unpacker) — used to extract audio from `.pck` files for Halo 4, Halo 5, and Halo Infinite.
+- **Reclaimer** — [link](https://github.com/Gravemind2401/Reclaimer) — used to extract audio from `.map` files for Halo 2, Halo 3, Halo 3: ODST, and Halo: Reach.
+- **Wwise Unpacker** — [link](https://github.com/Vextil/Wwise-Unpacker) — used to extract audio from `.pck` files for Halo 4, Halo 5, and Halo Infinite.
 
 All extracted files were converted from WAV to OGG using ffmpeg to reduce file size before being uploaded to Cloudflare R2.

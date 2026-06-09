@@ -2208,6 +2208,2763 @@
           ]
         }
       ]
+    },
+    {
+      "name": "halo3",
+      "path": "halo3",
+      "children": [
+        {
+          "name": "combat",
+          "path": "halo3/combat",
+          "children": [
+            {
+              "name": "arbiter",
+              "path": "halo3/combat/arbiter",
+              "children": [
+                {
+                  "name": "01_alert",
+                  "path": "halo3/combat/arbiter/01_alert",
+                  "children": []
+                },
+                {
+                  "name": "02_danger",
+                  "path": "halo3/combat/arbiter/02_danger",
+                  "children": []
+                },
+                {
+                  "name": "03_strike",
+                  "path": "halo3/combat/arbiter/03_strike",
+                  "children": []
+                },
+                {
+                  "name": "05_postcombat",
+                  "path": "halo3/combat/arbiter/05_postcombat",
+                  "children": []
+                },
+                {
+                  "name": "06_outburst",
+                  "path": "halo3/combat/arbiter/06_outburst",
+                  "children": []
+                },
+                {
+                  "name": "07_exclaim",
+                  "path": "halo3/combat/arbiter/07_exclaim",
+                  "children": []
+                },
+                {
+                  "name": "08_judge",
+                  "path": "halo3/combat/arbiter/08_judge",
+                  "children": []
+                },
+                {
+                  "name": "09_order",
+                  "path": "halo3/combat/arbiter/09_order",
+                  "children": []
+                },
+                {
+                  "name": "12_respond",
+                  "path": "halo3/combat/arbiter/12_respond",
+                  "children": []
+                },
+                {
+                  "name": "13_player",
+                  "path": "halo3/combat/arbiter/13_player",
+                  "children": []
+                },
+                {
+                  "name": "14_vehicle",
+                  "path": "halo3/combat/arbiter/14_vehicle",
+                  "children": []
+                },
+                {
+                  "name": "20_cry",
+                  "path": "halo3/combat/arbiter/20_cry",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "brute1",
+              "path": "halo3/combat/brute1",
+              "children": [
+                {
+                  "name": "01_alert",
+                  "path": "halo3/combat/brute1/01_alert",
+                  "children": []
+                },
+                {
+                  "name": "02_danger",
+                  "path": "halo3/combat/brute1/02_danger",
+                  "children": []
+                },
+                {
+                  "name": "03_strike",
+                  "path": "halo3/combat/brute1/03_strike",
+                  "children": []
+                },
+                {
+                  "name": "04_search",
+                  "path": "halo3/combat/brute1/04_search",
+                  "children": []
+                },
+                {
+                  "name": "05_postcombat",
+                  "path": "halo3/combat/brute1/05_postcombat",
+                  "children": []
+                },
+                {
+                  "name": "06_outburst",
+                  "path": "halo3/combat/brute1/06_outburst",
+                  "children": []
+                },
+                {
+                  "name": "07_exclaim",
+                  "path": "halo3/combat/brute1/07_exclaim",
+                  "children": []
+                },
+                {
+                  "name": "09_order",
+                  "path": "halo3/combat/brute1/09_order",
+                  "children": []
+                },
+                {
+                  "name": "11_group",
+                  "path": "halo3/combat/brute1/11_group",
+                  "children": []
+                },
+                {
+                  "name": "15_curse",
+                  "path": "halo3/combat/brute1/15_curse",
+                  "children": []
+                },
+                {
+                  "name": "16_taunt",
+                  "path": "halo3/combat/brute1/16_taunt",
+                  "children": []
+                },
+                {
+                  "name": "17_threaten",
+                  "path": "halo3/combat/brute1/17_threaten",
+                  "children": []
+                },
+                {
+                  "name": "18_plead",
+                  "path": "halo3/combat/brute1/18_plead",
+                  "children": []
+                },
+                {
+                  "name": "20_cry",
+                  "path": "halo3/combat/brute1/20_cry",
+                  "children": []
+                },
+                {
+                  "name": "23_idle",
+                  "path": "halo3/combat/brute1/23_idle",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "brute2",
+              "path": "halo3/combat/brute2",
+              "children": [
+                {
+                  "name": "01_alert",
+                  "path": "halo3/combat/brute2/01_alert",
+                  "children": []
+                },
+                {
+                  "name": "02_danger",
+                  "path": "halo3/combat/brute2/02_danger",
+                  "children": []
+                },
+                {
+                  "name": "03_strike",
+                  "path": "halo3/combat/brute2/03_strike",
+                  "children": []
+                },
+                {
+                  "name": "04_search",
+                  "path": "halo3/combat/brute2/04_search",
+                  "children": []
+                },
+                {
+                  "name": "05_postcombat",
+                  "path": "halo3/combat/brute2/05_postcombat",
+                  "children": []
+                },
+                {
+                  "name": "06_outburst",
+                  "path": "halo3/combat/brute2/06_outburst",
+                  "children": []
+                },
+                {
+                  "name": "07_exclaim",
+                  "path": "halo3/combat/brute2/07_exclaim",
+                  "children": []
+                },
+                {
+                  "name": "09_order",
+                  "path": "halo3/combat/brute2/09_order",
+                  "children": []
+                },
+                {
+                  "name": "11_group",
+                  "path": "halo3/combat/brute2/11_group",
+                  "children": []
+                },
+                {
+                  "name": "15_curse",
+                  "path": "halo3/combat/brute2/15_curse",
+                  "children": []
+                },
+                {
+                  "name": "16_taunt",
+                  "path": "halo3/combat/brute2/16_taunt",
+                  "children": []
+                },
+                {
+                  "name": "17_threaten",
+                  "path": "halo3/combat/brute2/17_threaten",
+                  "children": []
+                },
+                {
+                  "name": "18_plead",
+                  "path": "halo3/combat/brute2/18_plead",
+                  "children": []
+                },
+                {
+                  "name": "20_cry",
+                  "path": "halo3/combat/brute2/20_cry",
+                  "children": []
+                },
+                {
+                  "name": "23_idle",
+                  "path": "halo3/combat/brute2/23_idle",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "brute3",
+              "path": "halo3/combat/brute3",
+              "children": [
+                {
+                  "name": "01_alert",
+                  "path": "halo3/combat/brute3/01_alert",
+                  "children": []
+                },
+                {
+                  "name": "02_danger",
+                  "path": "halo3/combat/brute3/02_danger",
+                  "children": []
+                },
+                {
+                  "name": "03_strike",
+                  "path": "halo3/combat/brute3/03_strike",
+                  "children": []
+                },
+                {
+                  "name": "04_search",
+                  "path": "halo3/combat/brute3/04_search",
+                  "children": []
+                },
+                {
+                  "name": "05_postcombat",
+                  "path": "halo3/combat/brute3/05_postcombat",
+                  "children": []
+                },
+                {
+                  "name": "06_outburst",
+                  "path": "halo3/combat/brute3/06_outburst",
+                  "children": []
+                },
+                {
+                  "name": "07_exclaim",
+                  "path": "halo3/combat/brute3/07_exclaim",
+                  "children": []
+                },
+                {
+                  "name": "09_order",
+                  "path": "halo3/combat/brute3/09_order",
+                  "children": []
+                },
+                {
+                  "name": "11_group",
+                  "path": "halo3/combat/brute3/11_group",
+                  "children": []
+                },
+                {
+                  "name": "15_curse",
+                  "path": "halo3/combat/brute3/15_curse",
+                  "children": []
+                },
+                {
+                  "name": "16_taunt",
+                  "path": "halo3/combat/brute3/16_taunt",
+                  "children": []
+                },
+                {
+                  "name": "17_threaten",
+                  "path": "halo3/combat/brute3/17_threaten",
+                  "children": []
+                },
+                {
+                  "name": "18_plead",
+                  "path": "halo3/combat/brute3/18_plead",
+                  "children": []
+                },
+                {
+                  "name": "20_cry",
+                  "path": "halo3/combat/brute3/20_cry",
+                  "children": []
+                },
+                {
+                  "name": "23_idle",
+                  "path": "halo3/combat/brute3/23_idle",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "brute_chief",
+              "path": "halo3/combat/brute_chief",
+              "children": [
+                {
+                  "name": "01_alert",
+                  "path": "halo3/combat/brute_chief/01_alert",
+                  "children": []
+                },
+                {
+                  "name": "02_danger",
+                  "path": "halo3/combat/brute_chief/02_danger",
+                  "children": []
+                },
+                {
+                  "name": "03_strike",
+                  "path": "halo3/combat/brute_chief/03_strike",
+                  "children": []
+                },
+                {
+                  "name": "04_search",
+                  "path": "halo3/combat/brute_chief/04_search",
+                  "children": []
+                },
+                {
+                  "name": "05_postcombat",
+                  "path": "halo3/combat/brute_chief/05_postcombat",
+                  "children": []
+                },
+                {
+                  "name": "06_outburst",
+                  "path": "halo3/combat/brute_chief/06_outburst",
+                  "children": []
+                },
+                {
+                  "name": "07_exclaim",
+                  "path": "halo3/combat/brute_chief/07_exclaim",
+                  "children": []
+                },
+                {
+                  "name": "09_order",
+                  "path": "halo3/combat/brute_chief/09_order",
+                  "children": []
+                },
+                {
+                  "name": "15_curse",
+                  "path": "halo3/combat/brute_chief/15_curse",
+                  "children": []
+                },
+                {
+                  "name": "16_taunt",
+                  "path": "halo3/combat/brute_chief/16_taunt",
+                  "children": []
+                },
+                {
+                  "name": "17_threaten",
+                  "path": "halo3/combat/brute_chief/17_threaten",
+                  "children": []
+                },
+                {
+                  "name": "18_plead",
+                  "path": "halo3/combat/brute_chief/18_plead",
+                  "children": []
+                },
+                {
+                  "name": "20_cry",
+                  "path": "halo3/combat/brute_chief/20_cry",
+                  "children": []
+                },
+                {
+                  "name": "23_idle",
+                  "path": "halo3/combat/brute_chief/23_idle",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "bugger",
+              "path": "halo3/combat/bugger",
+              "children": []
+            },
+            {
+              "name": "elite1",
+              "path": "halo3/combat/elite1",
+              "children": [
+                {
+                  "name": "01_alert",
+                  "path": "halo3/combat/elite1/01_alert",
+                  "children": []
+                },
+                {
+                  "name": "02_danger",
+                  "path": "halo3/combat/elite1/02_danger",
+                  "children": []
+                },
+                {
+                  "name": "03_strike",
+                  "path": "halo3/combat/elite1/03_strike",
+                  "children": []
+                },
+                {
+                  "name": "04_search",
+                  "path": "halo3/combat/elite1/04_search",
+                  "children": []
+                },
+                {
+                  "name": "05_postcombat",
+                  "path": "halo3/combat/elite1/05_postcombat",
+                  "children": []
+                },
+                {
+                  "name": "06_outburst",
+                  "path": "halo3/combat/elite1/06_outburst",
+                  "children": []
+                },
+                {
+                  "name": "07_exclaim",
+                  "path": "halo3/combat/elite1/07_exclaim",
+                  "children": []
+                },
+                {
+                  "name": "08_judge",
+                  "path": "halo3/combat/elite1/08_judge",
+                  "children": []
+                },
+                {
+                  "name": "09_order",
+                  "path": "halo3/combat/elite1/09_order",
+                  "children": []
+                },
+                {
+                  "name": "11_group",
+                  "path": "halo3/combat/elite1/11_group",
+                  "children": []
+                },
+                {
+                  "name": "12_respond",
+                  "path": "halo3/combat/elite1/12_respond",
+                  "children": []
+                },
+                {
+                  "name": "13_player",
+                  "path": "halo3/combat/elite1/13_player",
+                  "children": []
+                },
+                {
+                  "name": "14_vehicle",
+                  "path": "halo3/combat/elite1/14_vehicle",
+                  "children": []
+                },
+                {
+                  "name": "15_curse",
+                  "path": "halo3/combat/elite1/15_curse",
+                  "children": []
+                },
+                {
+                  "name": "16_taunt",
+                  "path": "halo3/combat/elite1/16_taunt",
+                  "children": []
+                },
+                {
+                  "name": "17_threaten",
+                  "path": "halo3/combat/elite1/17_threaten",
+                  "children": []
+                },
+                {
+                  "name": "18_plead",
+                  "path": "halo3/combat/elite1/18_plead",
+                  "children": []
+                },
+                {
+                  "name": "20_cry",
+                  "path": "halo3/combat/elite1/20_cry",
+                  "children": []
+                },
+                {
+                  "name": "23_idle",
+                  "path": "halo3/combat/elite1/23_idle",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "elite2",
+              "path": "halo3/combat/elite2",
+              "children": [
+                {
+                  "name": "01_alert",
+                  "path": "halo3/combat/elite2/01_alert",
+                  "children": []
+                },
+                {
+                  "name": "02_danger",
+                  "path": "halo3/combat/elite2/02_danger",
+                  "children": []
+                },
+                {
+                  "name": "03_strike",
+                  "path": "halo3/combat/elite2/03_strike",
+                  "children": []
+                },
+                {
+                  "name": "04_search",
+                  "path": "halo3/combat/elite2/04_search",
+                  "children": []
+                },
+                {
+                  "name": "05_postcombat",
+                  "path": "halo3/combat/elite2/05_postcombat",
+                  "children": []
+                },
+                {
+                  "name": "06_outburst",
+                  "path": "halo3/combat/elite2/06_outburst",
+                  "children": []
+                },
+                {
+                  "name": "07_exclaim",
+                  "path": "halo3/combat/elite2/07_exclaim",
+                  "children": []
+                },
+                {
+                  "name": "08_judge",
+                  "path": "halo3/combat/elite2/08_judge",
+                  "children": []
+                },
+                {
+                  "name": "09_order",
+                  "path": "halo3/combat/elite2/09_order",
+                  "children": []
+                },
+                {
+                  "name": "11_group",
+                  "path": "halo3/combat/elite2/11_group",
+                  "children": []
+                },
+                {
+                  "name": "12_respond",
+                  "path": "halo3/combat/elite2/12_respond",
+                  "children": []
+                },
+                {
+                  "name": "13_player",
+                  "path": "halo3/combat/elite2/13_player",
+                  "children": []
+                },
+                {
+                  "name": "14_vehicle",
+                  "path": "halo3/combat/elite2/14_vehicle",
+                  "children": []
+                },
+                {
+                  "name": "15_curse",
+                  "path": "halo3/combat/elite2/15_curse",
+                  "children": []
+                },
+                {
+                  "name": "16_taunt",
+                  "path": "halo3/combat/elite2/16_taunt",
+                  "children": []
+                },
+                {
+                  "name": "17_threaten",
+                  "path": "halo3/combat/elite2/17_threaten",
+                  "children": []
+                },
+                {
+                  "name": "18_plead",
+                  "path": "halo3/combat/elite2/18_plead",
+                  "children": []
+                },
+                {
+                  "name": "20_cry",
+                  "path": "halo3/combat/elite2/20_cry",
+                  "children": []
+                },
+                {
+                  "name": "23_idle",
+                  "path": "halo3/combat/elite2/23_idle",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "elite_mp",
+              "path": "halo3/combat/elite_mp",
+              "children": []
+            },
+            {
+              "name": "fem_marine1",
+              "path": "halo3/combat/fem_marine1",
+              "children": [
+                {
+                  "name": "01_alert",
+                  "path": "halo3/combat/fem_marine1/01_alert",
+                  "children": []
+                },
+                {
+                  "name": "02_danger",
+                  "path": "halo3/combat/fem_marine1/02_danger",
+                  "children": []
+                },
+                {
+                  "name": "03_strike",
+                  "path": "halo3/combat/fem_marine1/03_strike",
+                  "children": []
+                },
+                {
+                  "name": "04_search",
+                  "path": "halo3/combat/fem_marine1/04_search",
+                  "children": []
+                },
+                {
+                  "name": "05_postcombat",
+                  "path": "halo3/combat/fem_marine1/05_postcombat",
+                  "children": []
+                },
+                {
+                  "name": "06_outburst",
+                  "path": "halo3/combat/fem_marine1/06_outburst",
+                  "children": []
+                },
+                {
+                  "name": "07_exclaim",
+                  "path": "halo3/combat/fem_marine1/07_exclaim",
+                  "children": []
+                },
+                {
+                  "name": "08_judge",
+                  "path": "halo3/combat/fem_marine1/08_judge",
+                  "children": []
+                },
+                {
+                  "name": "09_order",
+                  "path": "halo3/combat/fem_marine1/09_order",
+                  "children": []
+                },
+                {
+                  "name": "11_group",
+                  "path": "halo3/combat/fem_marine1/11_group",
+                  "children": []
+                },
+                {
+                  "name": "12_respond",
+                  "path": "halo3/combat/fem_marine1/12_respond",
+                  "children": []
+                },
+                {
+                  "name": "13_player",
+                  "path": "halo3/combat/fem_marine1/13_player",
+                  "children": []
+                },
+                {
+                  "name": "14_vehicle",
+                  "path": "halo3/combat/fem_marine1/14_vehicle",
+                  "children": []
+                },
+                {
+                  "name": "15_curse",
+                  "path": "halo3/combat/fem_marine1/15_curse",
+                  "children": []
+                },
+                {
+                  "name": "16_taunt",
+                  "path": "halo3/combat/fem_marine1/16_taunt",
+                  "children": []
+                },
+                {
+                  "name": "17_threaten",
+                  "path": "halo3/combat/fem_marine1/17_threaten",
+                  "children": []
+                },
+                {
+                  "name": "18_plead",
+                  "path": "halo3/combat/fem_marine1/18_plead",
+                  "children": []
+                },
+                {
+                  "name": "20_cry",
+                  "path": "halo3/combat/fem_marine1/20_cry",
+                  "children": []
+                },
+                {
+                  "name": "23_idle",
+                  "path": "halo3/combat/fem_marine1/23_idle",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "fem_marine2",
+              "path": "halo3/combat/fem_marine2",
+              "children": [
+                {
+                  "name": "01_alert",
+                  "path": "halo3/combat/fem_marine2/01_alert",
+                  "children": []
+                },
+                {
+                  "name": "02_danger",
+                  "path": "halo3/combat/fem_marine2/02_danger",
+                  "children": []
+                },
+                {
+                  "name": "03_strike",
+                  "path": "halo3/combat/fem_marine2/03_strike",
+                  "children": []
+                },
+                {
+                  "name": "04_search",
+                  "path": "halo3/combat/fem_marine2/04_search",
+                  "children": []
+                },
+                {
+                  "name": "05_postcombat",
+                  "path": "halo3/combat/fem_marine2/05_postcombat",
+                  "children": []
+                },
+                {
+                  "name": "06_outburst",
+                  "path": "halo3/combat/fem_marine2/06_outburst",
+                  "children": []
+                },
+                {
+                  "name": "07_exclaim",
+                  "path": "halo3/combat/fem_marine2/07_exclaim",
+                  "children": []
+                },
+                {
+                  "name": "08_judge",
+                  "path": "halo3/combat/fem_marine2/08_judge",
+                  "children": []
+                },
+                {
+                  "name": "09_order",
+                  "path": "halo3/combat/fem_marine2/09_order",
+                  "children": []
+                },
+                {
+                  "name": "11_group",
+                  "path": "halo3/combat/fem_marine2/11_group",
+                  "children": []
+                },
+                {
+                  "name": "12_respond",
+                  "path": "halo3/combat/fem_marine2/12_respond",
+                  "children": []
+                },
+                {
+                  "name": "13_player",
+                  "path": "halo3/combat/fem_marine2/13_player",
+                  "children": []
+                },
+                {
+                  "name": "14_vehicle",
+                  "path": "halo3/combat/fem_marine2/14_vehicle",
+                  "children": []
+                },
+                {
+                  "name": "15_curse",
+                  "path": "halo3/combat/fem_marine2/15_curse",
+                  "children": []
+                },
+                {
+                  "name": "16_taunt",
+                  "path": "halo3/combat/fem_marine2/16_taunt",
+                  "children": []
+                },
+                {
+                  "name": "17_threaten",
+                  "path": "halo3/combat/fem_marine2/17_threaten",
+                  "children": []
+                },
+                {
+                  "name": "18_plead",
+                  "path": "halo3/combat/fem_marine2/18_plead",
+                  "children": []
+                },
+                {
+                  "name": "20_cry",
+                  "path": "halo3/combat/fem_marine2/20_cry",
+                  "children": []
+                },
+                {
+                  "name": "23_idle",
+                  "path": "halo3/combat/fem_marine2/23_idle",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "fem_marine3",
+              "path": "halo3/combat/fem_marine3",
+              "children": [
+                {
+                  "name": "01_alert",
+                  "path": "halo3/combat/fem_marine3/01_alert",
+                  "children": []
+                },
+                {
+                  "name": "02_danger",
+                  "path": "halo3/combat/fem_marine3/02_danger",
+                  "children": []
+                },
+                {
+                  "name": "03_strike",
+                  "path": "halo3/combat/fem_marine3/03_strike",
+                  "children": []
+                },
+                {
+                  "name": "04_search",
+                  "path": "halo3/combat/fem_marine3/04_search",
+                  "children": []
+                },
+                {
+                  "name": "05_postcombat",
+                  "path": "halo3/combat/fem_marine3/05_postcombat",
+                  "children": []
+                },
+                {
+                  "name": "06_outburst",
+                  "path": "halo3/combat/fem_marine3/06_outburst",
+                  "children": []
+                },
+                {
+                  "name": "07_exclaim",
+                  "path": "halo3/combat/fem_marine3/07_exclaim",
+                  "children": []
+                },
+                {
+                  "name": "08_judge",
+                  "path": "halo3/combat/fem_marine3/08_judge",
+                  "children": []
+                },
+                {
+                  "name": "09_order",
+                  "path": "halo3/combat/fem_marine3/09_order",
+                  "children": []
+                },
+                {
+                  "name": "11_group",
+                  "path": "halo3/combat/fem_marine3/11_group",
+                  "children": []
+                },
+                {
+                  "name": "12_respond",
+                  "path": "halo3/combat/fem_marine3/12_respond",
+                  "children": []
+                },
+                {
+                  "name": "13_player",
+                  "path": "halo3/combat/fem_marine3/13_player",
+                  "children": []
+                },
+                {
+                  "name": "14_vehicle",
+                  "path": "halo3/combat/fem_marine3/14_vehicle",
+                  "children": []
+                },
+                {
+                  "name": "15_curse",
+                  "path": "halo3/combat/fem_marine3/15_curse",
+                  "children": []
+                },
+                {
+                  "name": "16_taunt",
+                  "path": "halo3/combat/fem_marine3/16_taunt",
+                  "children": []
+                },
+                {
+                  "name": "17_threaten",
+                  "path": "halo3/combat/fem_marine3/17_threaten",
+                  "children": []
+                },
+                {
+                  "name": "18_plead",
+                  "path": "halo3/combat/fem_marine3/18_plead",
+                  "children": []
+                },
+                {
+                  "name": "20_cry",
+                  "path": "halo3/combat/fem_marine3/20_cry",
+                  "children": []
+                },
+                {
+                  "name": "23_idle",
+                  "path": "halo3/combat/fem_marine3/23_idle",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "flood_gm1",
+              "path": "halo3/combat/flood_gm1",
+              "children": [
+                {
+                  "name": "01_alert",
+                  "path": "halo3/combat/flood_gm1/01_alert",
+                  "children": []
+                },
+                {
+                  "name": "03_strike",
+                  "path": "halo3/combat/flood_gm1/03_strike",
+                  "children": []
+                },
+                {
+                  "name": "04_search",
+                  "path": "halo3/combat/flood_gm1/04_search",
+                  "children": []
+                },
+                {
+                  "name": "07_exclaim",
+                  "path": "halo3/combat/flood_gm1/07_exclaim",
+                  "children": []
+                },
+                {
+                  "name": "09_order",
+                  "path": "halo3/combat/flood_gm1/09_order",
+                  "children": []
+                },
+                {
+                  "name": "15_curse",
+                  "path": "halo3/combat/flood_gm1/15_curse",
+                  "children": []
+                },
+                {
+                  "name": "16_taunt",
+                  "path": "halo3/combat/flood_gm1/16_taunt",
+                  "children": []
+                },
+                {
+                  "name": "17_threaten",
+                  "path": "halo3/combat/flood_gm1/17_threaten",
+                  "children": []
+                },
+                {
+                  "name": "floodcombat_brute",
+                  "path": "halo3/combat/flood_gm1/floodcombat_brute",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "flood_gm2",
+              "path": "halo3/combat/flood_gm2",
+              "children": [
+                {
+                  "name": "01_alert",
+                  "path": "halo3/combat/flood_gm2/01_alert",
+                  "children": []
+                },
+                {
+                  "name": "03_strike",
+                  "path": "halo3/combat/flood_gm2/03_strike",
+                  "children": []
+                },
+                {
+                  "name": "04_search",
+                  "path": "halo3/combat/flood_gm2/04_search",
+                  "children": []
+                },
+                {
+                  "name": "07_exclaim",
+                  "path": "halo3/combat/flood_gm2/07_exclaim",
+                  "children": []
+                },
+                {
+                  "name": "09_order",
+                  "path": "halo3/combat/flood_gm2/09_order",
+                  "children": []
+                },
+                {
+                  "name": "15_curse",
+                  "path": "halo3/combat/flood_gm2/15_curse",
+                  "children": []
+                },
+                {
+                  "name": "16_taunt",
+                  "path": "halo3/combat/flood_gm2/16_taunt",
+                  "children": []
+                },
+                {
+                  "name": "17_threaten",
+                  "path": "halo3/combat/flood_gm2/17_threaten",
+                  "children": []
+                },
+                {
+                  "name": "floodcombat",
+                  "path": "halo3/combat/flood_gm2/floodcombat",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "flood_gm3",
+              "path": "halo3/combat/flood_gm3",
+              "children": [
+                {
+                  "name": "01_alert",
+                  "path": "halo3/combat/flood_gm3/01_alert",
+                  "children": []
+                },
+                {
+                  "name": "03_strike",
+                  "path": "halo3/combat/flood_gm3/03_strike",
+                  "children": []
+                },
+                {
+                  "name": "04_search",
+                  "path": "halo3/combat/flood_gm3/04_search",
+                  "children": []
+                },
+                {
+                  "name": "07_exclaim",
+                  "path": "halo3/combat/flood_gm3/07_exclaim",
+                  "children": []
+                },
+                {
+                  "name": "09_order",
+                  "path": "halo3/combat/flood_gm3/09_order",
+                  "children": []
+                },
+                {
+                  "name": "15_curse",
+                  "path": "halo3/combat/flood_gm3/15_curse",
+                  "children": []
+                },
+                {
+                  "name": "16_taunt",
+                  "path": "halo3/combat/flood_gm3/16_taunt",
+                  "children": []
+                },
+                {
+                  "name": "17_threaten",
+                  "path": "halo3/combat/flood_gm3/17_threaten",
+                  "children": []
+                },
+                {
+                  "name": "floodcombat",
+                  "path": "halo3/combat/flood_gm3/floodcombat",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "flood_stalker",
+              "path": "halo3/combat/flood_stalker",
+              "children": []
+            },
+            {
+              "name": "flood_tank",
+              "path": "halo3/combat/flood_tank",
+              "children": []
+            },
+            {
+              "name": "grunt1",
+              "path": "halo3/combat/grunt1",
+              "children": [
+                {
+                  "name": "01_alert",
+                  "path": "halo3/combat/grunt1/01_alert",
+                  "children": []
+                },
+                {
+                  "name": "02_danger",
+                  "path": "halo3/combat/grunt1/02_danger",
+                  "children": []
+                },
+                {
+                  "name": "03_strike",
+                  "path": "halo3/combat/grunt1/03_strike",
+                  "children": []
+                },
+                {
+                  "name": "04_search",
+                  "path": "halo3/combat/grunt1/04_search",
+                  "children": []
+                },
+                {
+                  "name": "05_postcombat",
+                  "path": "halo3/combat/grunt1/05_postcombat",
+                  "children": []
+                },
+                {
+                  "name": "06_outburst",
+                  "path": "halo3/combat/grunt1/06_outburst",
+                  "children": []
+                },
+                {
+                  "name": "07_exclaim",
+                  "path": "halo3/combat/grunt1/07_exclaim",
+                  "children": []
+                },
+                {
+                  "name": "09_order",
+                  "path": "halo3/combat/grunt1/09_order",
+                  "children": []
+                },
+                {
+                  "name": "11_group",
+                  "path": "halo3/combat/grunt1/11_group",
+                  "children": []
+                },
+                {
+                  "name": "12_respond",
+                  "path": "halo3/combat/grunt1/12_respond",
+                  "children": []
+                },
+                {
+                  "name": "14_vehicle",
+                  "path": "halo3/combat/grunt1/14_vehicle",
+                  "children": []
+                },
+                {
+                  "name": "15_curse",
+                  "path": "halo3/combat/grunt1/15_curse",
+                  "children": []
+                },
+                {
+                  "name": "16_taunt",
+                  "path": "halo3/combat/grunt1/16_taunt",
+                  "children": []
+                },
+                {
+                  "name": "17_threaten",
+                  "path": "halo3/combat/grunt1/17_threaten",
+                  "children": []
+                },
+                {
+                  "name": "18_plead",
+                  "path": "halo3/combat/grunt1/18_plead",
+                  "children": []
+                },
+                {
+                  "name": "20_cry",
+                  "path": "halo3/combat/grunt1/20_cry",
+                  "children": []
+                },
+                {
+                  "name": "23_idle",
+                  "path": "halo3/combat/grunt1/23_idle",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "grunt2",
+              "path": "halo3/combat/grunt2",
+              "children": [
+                {
+                  "name": "01_alert",
+                  "path": "halo3/combat/grunt2/01_alert",
+                  "children": []
+                },
+                {
+                  "name": "02_danger",
+                  "path": "halo3/combat/grunt2/02_danger",
+                  "children": []
+                },
+                {
+                  "name": "03_strike",
+                  "path": "halo3/combat/grunt2/03_strike",
+                  "children": []
+                },
+                {
+                  "name": "04_search",
+                  "path": "halo3/combat/grunt2/04_search",
+                  "children": []
+                },
+                {
+                  "name": "05_postcombat",
+                  "path": "halo3/combat/grunt2/05_postcombat",
+                  "children": []
+                },
+                {
+                  "name": "06_outburst",
+                  "path": "halo3/combat/grunt2/06_outburst",
+                  "children": []
+                },
+                {
+                  "name": "07_exclaim",
+                  "path": "halo3/combat/grunt2/07_exclaim",
+                  "children": []
+                },
+                {
+                  "name": "09_order",
+                  "path": "halo3/combat/grunt2/09_order",
+                  "children": []
+                },
+                {
+                  "name": "11_group",
+                  "path": "halo3/combat/grunt2/11_group",
+                  "children": []
+                },
+                {
+                  "name": "12_respond",
+                  "path": "halo3/combat/grunt2/12_respond",
+                  "children": []
+                },
+                {
+                  "name": "15_curse",
+                  "path": "halo3/combat/grunt2/15_curse",
+                  "children": []
+                },
+                {
+                  "name": "16_taunt",
+                  "path": "halo3/combat/grunt2/16_taunt",
+                  "children": []
+                },
+                {
+                  "name": "17_threaten",
+                  "path": "halo3/combat/grunt2/17_threaten",
+                  "children": []
+                },
+                {
+                  "name": "18_plead",
+                  "path": "halo3/combat/grunt2/18_plead",
+                  "children": []
+                },
+                {
+                  "name": "20_cry",
+                  "path": "halo3/combat/grunt2/20_cry",
+                  "children": []
+                },
+                {
+                  "name": "23_idle",
+                  "path": "halo3/combat/grunt2/23_idle",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "grunt3",
+              "path": "halo3/combat/grunt3",
+              "children": [
+                {
+                  "name": "01_alert",
+                  "path": "halo3/combat/grunt3/01_alert",
+                  "children": []
+                },
+                {
+                  "name": "02_danger",
+                  "path": "halo3/combat/grunt3/02_danger",
+                  "children": []
+                },
+                {
+                  "name": "03_strike",
+                  "path": "halo3/combat/grunt3/03_strike",
+                  "children": []
+                },
+                {
+                  "name": "04_search",
+                  "path": "halo3/combat/grunt3/04_search",
+                  "children": []
+                },
+                {
+                  "name": "05_postcombat",
+                  "path": "halo3/combat/grunt3/05_postcombat",
+                  "children": []
+                },
+                {
+                  "name": "06_outburst",
+                  "path": "halo3/combat/grunt3/06_outburst",
+                  "children": []
+                },
+                {
+                  "name": "07_exclaim",
+                  "path": "halo3/combat/grunt3/07_exclaim",
+                  "children": []
+                },
+                {
+                  "name": "09_order",
+                  "path": "halo3/combat/grunt3/09_order",
+                  "children": []
+                },
+                {
+                  "name": "11_group",
+                  "path": "halo3/combat/grunt3/11_group",
+                  "children": []
+                },
+                {
+                  "name": "12_respond",
+                  "path": "halo3/combat/grunt3/12_respond",
+                  "children": []
+                },
+                {
+                  "name": "15_curse",
+                  "path": "halo3/combat/grunt3/15_curse",
+                  "children": []
+                },
+                {
+                  "name": "16_taunt",
+                  "path": "halo3/combat/grunt3/16_taunt",
+                  "children": []
+                },
+                {
+                  "name": "17_threaten",
+                  "path": "halo3/combat/grunt3/17_threaten",
+                  "children": []
+                },
+                {
+                  "name": "18_plead",
+                  "path": "halo3/combat/grunt3/18_plead",
+                  "children": []
+                },
+                {
+                  "name": "20_cry",
+                  "path": "halo3/combat/grunt3/20_cry",
+                  "children": []
+                },
+                {
+                  "name": "23_idle",
+                  "path": "halo3/combat/grunt3/23_idle",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "grunt4",
+              "path": "halo3/combat/grunt4",
+              "children": [
+                {
+                  "name": "01_alert",
+                  "path": "halo3/combat/grunt4/01_alert",
+                  "children": []
+                },
+                {
+                  "name": "02_danger",
+                  "path": "halo3/combat/grunt4/02_danger",
+                  "children": []
+                },
+                {
+                  "name": "03_strike",
+                  "path": "halo3/combat/grunt4/03_strike",
+                  "children": []
+                },
+                {
+                  "name": "04_search",
+                  "path": "halo3/combat/grunt4/04_search",
+                  "children": []
+                },
+                {
+                  "name": "05_postcombat",
+                  "path": "halo3/combat/grunt4/05_postcombat",
+                  "children": []
+                },
+                {
+                  "name": "06_outburst",
+                  "path": "halo3/combat/grunt4/06_outburst",
+                  "children": []
+                },
+                {
+                  "name": "07_exclaim",
+                  "path": "halo3/combat/grunt4/07_exclaim",
+                  "children": []
+                },
+                {
+                  "name": "09_order",
+                  "path": "halo3/combat/grunt4/09_order",
+                  "children": []
+                },
+                {
+                  "name": "11_group",
+                  "path": "halo3/combat/grunt4/11_group",
+                  "children": []
+                },
+                {
+                  "name": "12_respond",
+                  "path": "halo3/combat/grunt4/12_respond",
+                  "children": []
+                },
+                {
+                  "name": "15_curse",
+                  "path": "halo3/combat/grunt4/15_curse",
+                  "children": []
+                },
+                {
+                  "name": "16_taunt",
+                  "path": "halo3/combat/grunt4/16_taunt",
+                  "children": []
+                },
+                {
+                  "name": "17_threaten",
+                  "path": "halo3/combat/grunt4/17_threaten",
+                  "children": []
+                },
+                {
+                  "name": "18_plead",
+                  "path": "halo3/combat/grunt4/18_plead",
+                  "children": []
+                },
+                {
+                  "name": "20_cry",
+                  "path": "halo3/combat/grunt4/20_cry",
+                  "children": []
+                },
+                {
+                  "name": "23_idle",
+                  "path": "halo3/combat/grunt4/23_idle",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "guilty_spark",
+              "path": "halo3/combat/guilty_spark",
+              "children": [
+                {
+                  "name": "02_danger",
+                  "path": "halo3/combat/guilty_spark/02_danger",
+                  "children": []
+                },
+                {
+                  "name": "05_postcombat",
+                  "path": "halo3/combat/guilty_spark/05_postcombat",
+                  "children": []
+                },
+                {
+                  "name": "06_outburst",
+                  "path": "halo3/combat/guilty_spark/06_outburst",
+                  "children": []
+                },
+                {
+                  "name": "07_exclaim",
+                  "path": "halo3/combat/guilty_spark/07_exclaim",
+                  "children": []
+                },
+                {
+                  "name": "08_judge",
+                  "path": "halo3/combat/guilty_spark/08_judge",
+                  "children": []
+                },
+                {
+                  "name": "09_order",
+                  "path": "halo3/combat/guilty_spark/09_order",
+                  "children": []
+                },
+                {
+                  "name": "13_player",
+                  "path": "halo3/combat/guilty_spark/13_player",
+                  "children": []
+                },
+                {
+                  "name": "23_idle",
+                  "path": "halo3/combat/guilty_spark/23_idle",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "hunter",
+              "path": "halo3/combat/hunter",
+              "children": []
+            },
+            {
+              "name": "jackal",
+              "path": "halo3/combat/jackal",
+              "children": []
+            },
+            {
+              "name": "marine1",
+              "path": "halo3/combat/marine1",
+              "children": [
+                {
+                  "name": "01_alert",
+                  "path": "halo3/combat/marine1/01_alert",
+                  "children": []
+                },
+                {
+                  "name": "02_danger",
+                  "path": "halo3/combat/marine1/02_danger",
+                  "children": []
+                },
+                {
+                  "name": "03_strike",
+                  "path": "halo3/combat/marine1/03_strike",
+                  "children": []
+                },
+                {
+                  "name": "04_search",
+                  "path": "halo3/combat/marine1/04_search",
+                  "children": []
+                },
+                {
+                  "name": "05_postcombat",
+                  "path": "halo3/combat/marine1/05_postcombat",
+                  "children": []
+                },
+                {
+                  "name": "06_outburst",
+                  "path": "halo3/combat/marine1/06_outburst",
+                  "children": []
+                },
+                {
+                  "name": "07_exclaim",
+                  "path": "halo3/combat/marine1/07_exclaim",
+                  "children": []
+                },
+                {
+                  "name": "08_judge",
+                  "path": "halo3/combat/marine1/08_judge",
+                  "children": []
+                },
+                {
+                  "name": "09_order",
+                  "path": "halo3/combat/marine1/09_order",
+                  "children": []
+                },
+                {
+                  "name": "11_group",
+                  "path": "halo3/combat/marine1/11_group",
+                  "children": []
+                },
+                {
+                  "name": "12_respond",
+                  "path": "halo3/combat/marine1/12_respond",
+                  "children": []
+                },
+                {
+                  "name": "13_player",
+                  "path": "halo3/combat/marine1/13_player",
+                  "children": []
+                },
+                {
+                  "name": "14_vehicle",
+                  "path": "halo3/combat/marine1/14_vehicle",
+                  "children": []
+                },
+                {
+                  "name": "15_curse",
+                  "path": "halo3/combat/marine1/15_curse",
+                  "children": []
+                },
+                {
+                  "name": "16_taunt",
+                  "path": "halo3/combat/marine1/16_taunt",
+                  "children": []
+                },
+                {
+                  "name": "17_threaten",
+                  "path": "halo3/combat/marine1/17_threaten",
+                  "children": []
+                },
+                {
+                  "name": "18_plead",
+                  "path": "halo3/combat/marine1/18_plead",
+                  "children": []
+                },
+                {
+                  "name": "20_cry",
+                  "path": "halo3/combat/marine1/20_cry",
+                  "children": []
+                },
+                {
+                  "name": "23_idle",
+                  "path": "halo3/combat/marine1/23_idle",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "marine2",
+              "path": "halo3/combat/marine2",
+              "children": [
+                {
+                  "name": "01_alert",
+                  "path": "halo3/combat/marine2/01_alert",
+                  "children": []
+                },
+                {
+                  "name": "02_danger",
+                  "path": "halo3/combat/marine2/02_danger",
+                  "children": []
+                },
+                {
+                  "name": "03_strike",
+                  "path": "halo3/combat/marine2/03_strike",
+                  "children": []
+                },
+                {
+                  "name": "04_search",
+                  "path": "halo3/combat/marine2/04_search",
+                  "children": []
+                },
+                {
+                  "name": "05_postcombat",
+                  "path": "halo3/combat/marine2/05_postcombat",
+                  "children": []
+                },
+                {
+                  "name": "06_outburst",
+                  "path": "halo3/combat/marine2/06_outburst",
+                  "children": []
+                },
+                {
+                  "name": "07_exclaim",
+                  "path": "halo3/combat/marine2/07_exclaim",
+                  "children": []
+                },
+                {
+                  "name": "08_judge",
+                  "path": "halo3/combat/marine2/08_judge",
+                  "children": []
+                },
+                {
+                  "name": "09_order",
+                  "path": "halo3/combat/marine2/09_order",
+                  "children": []
+                },
+                {
+                  "name": "11_group",
+                  "path": "halo3/combat/marine2/11_group",
+                  "children": []
+                },
+                {
+                  "name": "12_respond",
+                  "path": "halo3/combat/marine2/12_respond",
+                  "children": []
+                },
+                {
+                  "name": "13_player",
+                  "path": "halo3/combat/marine2/13_player",
+                  "children": []
+                },
+                {
+                  "name": "14_vehicle",
+                  "path": "halo3/combat/marine2/14_vehicle",
+                  "children": []
+                },
+                {
+                  "name": "15_curse",
+                  "path": "halo3/combat/marine2/15_curse",
+                  "children": []
+                },
+                {
+                  "name": "16_taunt",
+                  "path": "halo3/combat/marine2/16_taunt",
+                  "children": []
+                },
+                {
+                  "name": "17_threaten",
+                  "path": "halo3/combat/marine2/17_threaten",
+                  "children": []
+                },
+                {
+                  "name": "18_plead",
+                  "path": "halo3/combat/marine2/18_plead",
+                  "children": []
+                },
+                {
+                  "name": "20_cry",
+                  "path": "halo3/combat/marine2/20_cry",
+                  "children": []
+                },
+                {
+                  "name": "23_idle",
+                  "path": "halo3/combat/marine2/23_idle",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "marine3",
+              "path": "halo3/combat/marine3",
+              "children": [
+                {
+                  "name": "01_alert",
+                  "path": "halo3/combat/marine3/01_alert",
+                  "children": []
+                },
+                {
+                  "name": "02_danger",
+                  "path": "halo3/combat/marine3/02_danger",
+                  "children": []
+                },
+                {
+                  "name": "03_strike",
+                  "path": "halo3/combat/marine3/03_strike",
+                  "children": []
+                },
+                {
+                  "name": "04_search",
+                  "path": "halo3/combat/marine3/04_search",
+                  "children": []
+                },
+                {
+                  "name": "05_postcombat",
+                  "path": "halo3/combat/marine3/05_postcombat",
+                  "children": []
+                },
+                {
+                  "name": "06_outburst",
+                  "path": "halo3/combat/marine3/06_outburst",
+                  "children": []
+                },
+                {
+                  "name": "07_exclaim",
+                  "path": "halo3/combat/marine3/07_exclaim",
+                  "children": []
+                },
+                {
+                  "name": "08_judge",
+                  "path": "halo3/combat/marine3/08_judge",
+                  "children": []
+                },
+                {
+                  "name": "09_order",
+                  "path": "halo3/combat/marine3/09_order",
+                  "children": []
+                },
+                {
+                  "name": "11_group",
+                  "path": "halo3/combat/marine3/11_group",
+                  "children": []
+                },
+                {
+                  "name": "12_respond",
+                  "path": "halo3/combat/marine3/12_respond",
+                  "children": []
+                },
+                {
+                  "name": "13_player",
+                  "path": "halo3/combat/marine3/13_player",
+                  "children": []
+                },
+                {
+                  "name": "14_vehicle",
+                  "path": "halo3/combat/marine3/14_vehicle",
+                  "children": []
+                },
+                {
+                  "name": "15_curse",
+                  "path": "halo3/combat/marine3/15_curse",
+                  "children": []
+                },
+                {
+                  "name": "16_taunt",
+                  "path": "halo3/combat/marine3/16_taunt",
+                  "children": []
+                },
+                {
+                  "name": "17_threaten",
+                  "path": "halo3/combat/marine3/17_threaten",
+                  "children": []
+                },
+                {
+                  "name": "18_plead",
+                  "path": "halo3/combat/marine3/18_plead",
+                  "children": []
+                },
+                {
+                  "name": "20_cry",
+                  "path": "halo3/combat/marine3/20_cry",
+                  "children": []
+                },
+                {
+                  "name": "23_idle",
+                  "path": "halo3/combat/marine3/23_idle",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "marine4",
+              "path": "halo3/combat/marine4",
+              "children": [
+                {
+                  "name": "01_alert",
+                  "path": "halo3/combat/marine4/01_alert",
+                  "children": []
+                },
+                {
+                  "name": "02_danger",
+                  "path": "halo3/combat/marine4/02_danger",
+                  "children": []
+                },
+                {
+                  "name": "03_strike",
+                  "path": "halo3/combat/marine4/03_strike",
+                  "children": []
+                },
+                {
+                  "name": "04_search",
+                  "path": "halo3/combat/marine4/04_search",
+                  "children": []
+                },
+                {
+                  "name": "05_postcombat",
+                  "path": "halo3/combat/marine4/05_postcombat",
+                  "children": []
+                },
+                {
+                  "name": "06_outburst",
+                  "path": "halo3/combat/marine4/06_outburst",
+                  "children": []
+                },
+                {
+                  "name": "07_exclaim",
+                  "path": "halo3/combat/marine4/07_exclaim",
+                  "children": []
+                },
+                {
+                  "name": "08_judge",
+                  "path": "halo3/combat/marine4/08_judge",
+                  "children": []
+                },
+                {
+                  "name": "09_order",
+                  "path": "halo3/combat/marine4/09_order",
+                  "children": []
+                },
+                {
+                  "name": "11_group",
+                  "path": "halo3/combat/marine4/11_group",
+                  "children": []
+                },
+                {
+                  "name": "12_respond",
+                  "path": "halo3/combat/marine4/12_respond",
+                  "children": []
+                },
+                {
+                  "name": "13_player",
+                  "path": "halo3/combat/marine4/13_player",
+                  "children": []
+                },
+                {
+                  "name": "14_vehicle",
+                  "path": "halo3/combat/marine4/14_vehicle",
+                  "children": []
+                },
+                {
+                  "name": "15_curse",
+                  "path": "halo3/combat/marine4/15_curse",
+                  "children": []
+                },
+                {
+                  "name": "16_taunt",
+                  "path": "halo3/combat/marine4/16_taunt",
+                  "children": []
+                },
+                {
+                  "name": "17_threaten",
+                  "path": "halo3/combat/marine4/17_threaten",
+                  "children": []
+                },
+                {
+                  "name": "18_plead",
+                  "path": "halo3/combat/marine4/18_plead",
+                  "children": []
+                },
+                {
+                  "name": "20_cry",
+                  "path": "halo3/combat/marine4/20_cry",
+                  "children": []
+                },
+                {
+                  "name": "23_idle",
+                  "path": "halo3/combat/marine4/23_idle",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "marine5",
+              "path": "halo3/combat/marine5",
+              "children": [
+                {
+                  "name": "01_alert",
+                  "path": "halo3/combat/marine5/01_alert",
+                  "children": []
+                },
+                {
+                  "name": "02_danger",
+                  "path": "halo3/combat/marine5/02_danger",
+                  "children": []
+                },
+                {
+                  "name": "03_strike",
+                  "path": "halo3/combat/marine5/03_strike",
+                  "children": []
+                },
+                {
+                  "name": "04_search",
+                  "path": "halo3/combat/marine5/04_search",
+                  "children": []
+                },
+                {
+                  "name": "05_postcombat",
+                  "path": "halo3/combat/marine5/05_postcombat",
+                  "children": []
+                },
+                {
+                  "name": "06_outburst",
+                  "path": "halo3/combat/marine5/06_outburst",
+                  "children": []
+                },
+                {
+                  "name": "07_exclaim",
+                  "path": "halo3/combat/marine5/07_exclaim",
+                  "children": []
+                },
+                {
+                  "name": "08_judge",
+                  "path": "halo3/combat/marine5/08_judge",
+                  "children": []
+                },
+                {
+                  "name": "09_order",
+                  "path": "halo3/combat/marine5/09_order",
+                  "children": []
+                },
+                {
+                  "name": "11_group",
+                  "path": "halo3/combat/marine5/11_group",
+                  "children": []
+                },
+                {
+                  "name": "12_respond",
+                  "path": "halo3/combat/marine5/12_respond",
+                  "children": []
+                },
+                {
+                  "name": "13_player",
+                  "path": "halo3/combat/marine5/13_player",
+                  "children": []
+                },
+                {
+                  "name": "14_vehicle",
+                  "path": "halo3/combat/marine5/14_vehicle",
+                  "children": []
+                },
+                {
+                  "name": "15_curse",
+                  "path": "halo3/combat/marine5/15_curse",
+                  "children": []
+                },
+                {
+                  "name": "16_taunt",
+                  "path": "halo3/combat/marine5/16_taunt",
+                  "children": []
+                },
+                {
+                  "name": "17_threaten",
+                  "path": "halo3/combat/marine5/17_threaten",
+                  "children": []
+                },
+                {
+                  "name": "18_plead",
+                  "path": "halo3/combat/marine5/18_plead",
+                  "children": []
+                },
+                {
+                  "name": "20_cry",
+                  "path": "halo3/combat/marine5/20_cry",
+                  "children": []
+                },
+                {
+                  "name": "23_idle",
+                  "path": "halo3/combat/marine5/23_idle",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "marine6",
+              "path": "halo3/combat/marine6",
+              "children": [
+                {
+                  "name": "01_alert",
+                  "path": "halo3/combat/marine6/01_alert",
+                  "children": []
+                },
+                {
+                  "name": "02_danger",
+                  "path": "halo3/combat/marine6/02_danger",
+                  "children": []
+                },
+                {
+                  "name": "03_strike",
+                  "path": "halo3/combat/marine6/03_strike",
+                  "children": []
+                },
+                {
+                  "name": "04_search",
+                  "path": "halo3/combat/marine6/04_search",
+                  "children": []
+                },
+                {
+                  "name": "05_postcombat",
+                  "path": "halo3/combat/marine6/05_postcombat",
+                  "children": []
+                },
+                {
+                  "name": "06_outburst",
+                  "path": "halo3/combat/marine6/06_outburst",
+                  "children": []
+                },
+                {
+                  "name": "07_exclaim",
+                  "path": "halo3/combat/marine6/07_exclaim",
+                  "children": []
+                },
+                {
+                  "name": "08_judge",
+                  "path": "halo3/combat/marine6/08_judge",
+                  "children": []
+                },
+                {
+                  "name": "09_order",
+                  "path": "halo3/combat/marine6/09_order",
+                  "children": []
+                },
+                {
+                  "name": "11_group",
+                  "path": "halo3/combat/marine6/11_group",
+                  "children": []
+                },
+                {
+                  "name": "12_respond",
+                  "path": "halo3/combat/marine6/12_respond",
+                  "children": []
+                },
+                {
+                  "name": "13_player",
+                  "path": "halo3/combat/marine6/13_player",
+                  "children": []
+                },
+                {
+                  "name": "14_vehicle",
+                  "path": "halo3/combat/marine6/14_vehicle",
+                  "children": []
+                },
+                {
+                  "name": "15_curse",
+                  "path": "halo3/combat/marine6/15_curse",
+                  "children": []
+                },
+                {
+                  "name": "16_taunt",
+                  "path": "halo3/combat/marine6/16_taunt",
+                  "children": []
+                },
+                {
+                  "name": "17_threaten",
+                  "path": "halo3/combat/marine6/17_threaten",
+                  "children": []
+                },
+                {
+                  "name": "18_plead",
+                  "path": "halo3/combat/marine6/18_plead",
+                  "children": []
+                },
+                {
+                  "name": "20_cry",
+                  "path": "halo3/combat/marine6/20_cry",
+                  "children": []
+                },
+                {
+                  "name": "23_idle",
+                  "path": "halo3/combat/marine6/23_idle",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "masterchief",
+              "path": "halo3/combat/masterchief",
+              "children": []
+            },
+            {
+              "name": "sarge1",
+              "path": "halo3/combat/sarge1",
+              "children": [
+                {
+                  "name": "01_alert",
+                  "path": "halo3/combat/sarge1/01_alert",
+                  "children": []
+                },
+                {
+                  "name": "02_danger",
+                  "path": "halo3/combat/sarge1/02_danger",
+                  "children": []
+                },
+                {
+                  "name": "03_strike",
+                  "path": "halo3/combat/sarge1/03_strike",
+                  "children": []
+                },
+                {
+                  "name": "04_search",
+                  "path": "halo3/combat/sarge1/04_search",
+                  "children": []
+                },
+                {
+                  "name": "05_postcombat",
+                  "path": "halo3/combat/sarge1/05_postcombat",
+                  "children": []
+                },
+                {
+                  "name": "06_outburst",
+                  "path": "halo3/combat/sarge1/06_outburst",
+                  "children": []
+                },
+                {
+                  "name": "07_exclaim",
+                  "path": "halo3/combat/sarge1/07_exclaim",
+                  "children": []
+                },
+                {
+                  "name": "08_judge",
+                  "path": "halo3/combat/sarge1/08_judge",
+                  "children": []
+                },
+                {
+                  "name": "09_order",
+                  "path": "halo3/combat/sarge1/09_order",
+                  "children": []
+                },
+                {
+                  "name": "12_respond",
+                  "path": "halo3/combat/sarge1/12_respond",
+                  "children": []
+                },
+                {
+                  "name": "13_player",
+                  "path": "halo3/combat/sarge1/13_player",
+                  "children": []
+                },
+                {
+                  "name": "14_vehicle",
+                  "path": "halo3/combat/sarge1/14_vehicle",
+                  "children": []
+                },
+                {
+                  "name": "15_curse",
+                  "path": "halo3/combat/sarge1/15_curse",
+                  "children": []
+                },
+                {
+                  "name": "16_taunt",
+                  "path": "halo3/combat/sarge1/16_taunt",
+                  "children": []
+                },
+                {
+                  "name": "17_threaten",
+                  "path": "halo3/combat/sarge1/17_threaten",
+                  "children": []
+                },
+                {
+                  "name": "18_plead",
+                  "path": "halo3/combat/sarge1/18_plead",
+                  "children": []
+                },
+                {
+                  "name": "20_cry",
+                  "path": "halo3/combat/sarge1/20_cry",
+                  "children": []
+                },
+                {
+                  "name": "23_idle",
+                  "path": "halo3/combat/sarge1/23_idle",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "sarge2",
+              "path": "halo3/combat/sarge2",
+              "children": [
+                {
+                  "name": "01_alert",
+                  "path": "halo3/combat/sarge2/01_alert",
+                  "children": []
+                },
+                {
+                  "name": "02_danger",
+                  "path": "halo3/combat/sarge2/02_danger",
+                  "children": []
+                },
+                {
+                  "name": "03_strike",
+                  "path": "halo3/combat/sarge2/03_strike",
+                  "children": []
+                },
+                {
+                  "name": "04_search",
+                  "path": "halo3/combat/sarge2/04_search",
+                  "children": []
+                },
+                {
+                  "name": "05_postcombat",
+                  "path": "halo3/combat/sarge2/05_postcombat",
+                  "children": []
+                },
+                {
+                  "name": "06_outburst",
+                  "path": "halo3/combat/sarge2/06_outburst",
+                  "children": []
+                },
+                {
+                  "name": "07_exclaim",
+                  "path": "halo3/combat/sarge2/07_exclaim",
+                  "children": []
+                },
+                {
+                  "name": "08_judge",
+                  "path": "halo3/combat/sarge2/08_judge",
+                  "children": []
+                },
+                {
+                  "name": "09_order",
+                  "path": "halo3/combat/sarge2/09_order",
+                  "children": []
+                },
+                {
+                  "name": "12_respond",
+                  "path": "halo3/combat/sarge2/12_respond",
+                  "children": []
+                },
+                {
+                  "name": "13_player",
+                  "path": "halo3/combat/sarge2/13_player",
+                  "children": []
+                },
+                {
+                  "name": "14_vehicle",
+                  "path": "halo3/combat/sarge2/14_vehicle",
+                  "children": []
+                },
+                {
+                  "name": "15_curse",
+                  "path": "halo3/combat/sarge2/15_curse",
+                  "children": []
+                },
+                {
+                  "name": "16_taunt",
+                  "path": "halo3/combat/sarge2/16_taunt",
+                  "children": []
+                },
+                {
+                  "name": "17_threaten",
+                  "path": "halo3/combat/sarge2/17_threaten",
+                  "children": []
+                },
+                {
+                  "name": "18_plead",
+                  "path": "halo3/combat/sarge2/18_plead",
+                  "children": []
+                },
+                {
+                  "name": "20_cry",
+                  "path": "halo3/combat/sarge2/20_cry",
+                  "children": []
+                },
+                {
+                  "name": "23_idle",
+                  "path": "halo3/combat/sarge2/23_idle",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "sgt_johnson",
+              "path": "halo3/combat/sgt_johnson",
+              "children": [
+                {
+                  "name": "01_alert",
+                  "path": "halo3/combat/sgt_johnson/01_alert",
+                  "children": []
+                },
+                {
+                  "name": "02_danger",
+                  "path": "halo3/combat/sgt_johnson/02_danger",
+                  "children": []
+                },
+                {
+                  "name": "03_strike",
+                  "path": "halo3/combat/sgt_johnson/03_strike",
+                  "children": []
+                },
+                {
+                  "name": "04_search",
+                  "path": "halo3/combat/sgt_johnson/04_search",
+                  "children": []
+                },
+                {
+                  "name": "05_postcombat",
+                  "path": "halo3/combat/sgt_johnson/05_postcombat",
+                  "children": []
+                },
+                {
+                  "name": "06_outburst",
+                  "path": "halo3/combat/sgt_johnson/06_outburst",
+                  "children": []
+                },
+                {
+                  "name": "07_exclaim",
+                  "path": "halo3/combat/sgt_johnson/07_exclaim",
+                  "children": []
+                },
+                {
+                  "name": "08_judge",
+                  "path": "halo3/combat/sgt_johnson/08_judge",
+                  "children": []
+                },
+                {
+                  "name": "09_order",
+                  "path": "halo3/combat/sgt_johnson/09_order",
+                  "children": []
+                },
+                {
+                  "name": "12_respond",
+                  "path": "halo3/combat/sgt_johnson/12_respond",
+                  "children": []
+                },
+                {
+                  "name": "13_player",
+                  "path": "halo3/combat/sgt_johnson/13_player",
+                  "children": []
+                },
+                {
+                  "name": "15_curse",
+                  "path": "halo3/combat/sgt_johnson/15_curse",
+                  "children": []
+                },
+                {
+                  "name": "16_taunt",
+                  "path": "halo3/combat/sgt_johnson/16_taunt",
+                  "children": []
+                },
+                {
+                  "name": "17_threaten",
+                  "path": "halo3/combat/sgt_johnson/17_threaten",
+                  "children": []
+                },
+                {
+                  "name": "18_plead",
+                  "path": "halo3/combat/sgt_johnson/18_plead",
+                  "children": []
+                },
+                {
+                  "name": "20_cry",
+                  "path": "halo3/combat/sgt_johnson/20_cry",
+                  "children": []
+                },
+                {
+                  "name": "23_idle",
+                  "path": "halo3/combat/sgt_johnson/23_idle",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "levels",
+          "path": "halo3/levels",
+          "children": [
+            {
+              "name": "005_intro",
+              "path": "halo3/levels/005_intro",
+              "children": [
+                {
+                  "name": "training",
+                  "path": "halo3/levels/005_intro/training",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "010_jungle",
+              "path": "halo3/levels/010_jungle",
+              "children": [
+                {
+                  "name": "cortana",
+                  "path": "halo3/levels/010_jungle/cortana",
+                  "children": []
+                },
+                {
+                  "name": "letterbox",
+                  "path": "halo3/levels/010_jungle/letterbox",
+                  "children": []
+                },
+                {
+                  "name": "mission",
+                  "path": "halo3/levels/010_jungle/mission",
+                  "children": []
+                },
+                {
+                  "name": "perspective",
+                  "path": "halo3/levels/010_jungle/perspective",
+                  "children": []
+                },
+                {
+                  "name": "vignette",
+                  "path": "halo3/levels/010_jungle/vignette",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "020_base",
+              "path": "halo3/levels/020_base",
+              "children": [
+                {
+                  "name": "briefing",
+                  "path": "halo3/levels/020_base/briefing",
+                  "children": []
+                },
+                {
+                  "name": "cortana",
+                  "path": "halo3/levels/020_base/cortana",
+                  "children": []
+                },
+                {
+                  "name": "letterbox",
+                  "path": "halo3/levels/020_base/letterbox",
+                  "children": []
+                },
+                {
+                  "name": "mission",
+                  "path": "halo3/levels/020_base/mission",
+                  "children": []
+                },
+                {
+                  "name": "vignette",
+                  "path": "halo3/levels/020_base/vignette",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "030_outskirts",
+              "path": "halo3/levels/030_outskirts",
+              "children": [
+                {
+                  "name": "briefing",
+                  "path": "halo3/levels/030_outskirts/briefing",
+                  "children": []
+                },
+                {
+                  "name": "letterbox",
+                  "path": "halo3/levels/030_outskirts/letterbox",
+                  "children": []
+                },
+                {
+                  "name": "mission",
+                  "path": "halo3/levels/030_outskirts/mission",
+                  "children": []
+                },
+                {
+                  "name": "vignette",
+                  "path": "halo3/levels/030_outskirts/vignette",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "040_voi",
+              "path": "halo3/levels/040_voi",
+              "children": [
+                {
+                  "name": "briefing",
+                  "path": "halo3/levels/040_voi/briefing",
+                  "children": []
+                },
+                {
+                  "name": "cortana",
+                  "path": "halo3/levels/040_voi/cortana",
+                  "children": []
+                },
+                {
+                  "name": "letterbox",
+                  "path": "halo3/levels/040_voi/letterbox",
+                  "children": []
+                },
+                {
+                  "name": "mission",
+                  "path": "halo3/levels/040_voi/mission",
+                  "children": []
+                },
+                {
+                  "name": "perspective",
+                  "path": "halo3/levels/040_voi/perspective",
+                  "children": []
+                },
+                {
+                  "name": "vignette",
+                  "path": "halo3/levels/040_voi/vignette",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "050_floodvoi",
+              "path": "halo3/levels/050_floodvoi",
+              "children": [
+                {
+                  "name": "briefing",
+                  "path": "halo3/levels/050_floodvoi/briefing",
+                  "children": []
+                },
+                {
+                  "name": "cortana",
+                  "path": "halo3/levels/050_floodvoi/cortana",
+                  "children": []
+                },
+                {
+                  "name": "gravemind",
+                  "path": "halo3/levels/050_floodvoi/gravemind",
+                  "children": []
+                },
+                {
+                  "name": "letterbox",
+                  "path": "halo3/levels/050_floodvoi/letterbox",
+                  "children": []
+                },
+                {
+                  "name": "mission",
+                  "path": "halo3/levels/050_floodvoi/mission",
+                  "children": []
+                },
+                {
+                  "name": "perspective",
+                  "path": "halo3/levels/050_floodvoi/perspective",
+                  "children": []
+                },
+                {
+                  "name": "vignette",
+                  "path": "halo3/levels/050_floodvoi/vignette",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "070_waste",
+              "path": "halo3/levels/070_waste",
+              "children": [
+                {
+                  "name": "briefing",
+                  "path": "halo3/levels/070_waste/briefing",
+                  "children": []
+                },
+                {
+                  "name": "letterbox",
+                  "path": "halo3/levels/070_waste/letterbox",
+                  "children": []
+                },
+                {
+                  "name": "mission",
+                  "path": "halo3/levels/070_waste/mission",
+                  "children": []
+                },
+                {
+                  "name": "perspective",
+                  "path": "halo3/levels/070_waste/perspective",
+                  "children": []
+                },
+                {
+                  "name": "vignette",
+                  "path": "halo3/levels/070_waste/vignette",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "100_citadel",
+              "path": "halo3/levels/100_citadel",
+              "children": [
+                {
+                  "name": "briefing",
+                  "path": "halo3/levels/100_citadel/briefing",
+                  "children": []
+                },
+                {
+                  "name": "cortana",
+                  "path": "halo3/levels/100_citadel/cortana",
+                  "children": []
+                },
+                {
+                  "name": "letterbox",
+                  "path": "halo3/levels/100_citadel/letterbox",
+                  "children": []
+                },
+                {
+                  "name": "mission",
+                  "path": "halo3/levels/100_citadel/mission",
+                  "children": []
+                },
+                {
+                  "name": "perspective",
+                  "path": "halo3/levels/100_citadel/perspective",
+                  "children": []
+                },
+                {
+                  "name": "vignette",
+                  "path": "halo3/levels/100_citadel/vignette",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "110_hc",
+              "path": "halo3/levels/110_hc",
+              "children": [
+                {
+                  "name": "cortana",
+                  "path": "halo3/levels/110_hc/cortana",
+                  "children": []
+                },
+                {
+                  "name": "gravemind",
+                  "path": "halo3/levels/110_hc/gravemind",
+                  "children": []
+                },
+                {
+                  "name": "letterbox",
+                  "path": "halo3/levels/110_hc/letterbox",
+                  "children": []
+                },
+                {
+                  "name": "mission",
+                  "path": "halo3/levels/110_hc/mission",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "120_halo",
+              "path": "halo3/levels/120_halo",
+              "children": [
+                {
+                  "name": "gravemind",
+                  "path": "halo3/levels/120_halo/gravemind",
+                  "children": []
+                },
+                {
+                  "name": "letterbox",
+                  "path": "halo3/levels/120_halo/letterbox",
+                  "children": []
+                },
+                {
+                  "name": "mission",
+                  "path": "halo3/levels/120_halo/mission",
+                  "children": []
+                },
+                {
+                  "name": "perspective",
+                  "path": "halo3/levels/120_halo/perspective",
+                  "children": []
+                },
+                {
+                  "name": "vignette",
+                  "path": "halo3/levels/120_halo/vignette",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "130_epilogue",
+              "path": "halo3/levels/130_epilogue",
+              "children": [
+                {
+                  "name": "letterbox",
+                  "path": "halo3/levels/130_epilogue/letterbox",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "multiplayer_en",
+          "path": "halo3/multiplayer_en",
+          "children": [
+            {
+              "name": "assault",
+              "path": "halo3/multiplayer_en/assault",
+              "children": []
+            },
+            {
+              "name": "capture_the_flag",
+              "path": "halo3/multiplayer_en/capture_the_flag",
+              "children": []
+            },
+            {
+              "name": "flavor",
+              "path": "halo3/multiplayer_en/flavor",
+              "children": []
+            },
+            {
+              "name": "general",
+              "path": "halo3/multiplayer_en/general",
+              "children": []
+            },
+            {
+              "name": "infection",
+              "path": "halo3/multiplayer_en/infection",
+              "children": []
+            },
+            {
+              "name": "juggernaut",
+              "path": "halo3/multiplayer_en/juggernaut",
+              "children": []
+            },
+            {
+              "name": "king_of_the_hill",
+              "path": "halo3/multiplayer_en/king_of_the_hill",
+              "children": []
+            },
+            {
+              "name": "misc",
+              "path": "halo3/multiplayer_en/misc",
+              "children": []
+            },
+            {
+              "name": "oddball",
+              "path": "halo3/multiplayer_en/oddball",
+              "children": []
+            },
+            {
+              "name": "slayer",
+              "path": "halo3/multiplayer_en/slayer",
+              "children": []
+            },
+            {
+              "name": "territories",
+              "path": "halo3/multiplayer_en/territories",
+              "children": []
+            },
+            {
+              "name": "vip",
+              "path": "halo3/multiplayer_en/vip",
+              "children": []
+            }
+          ]
+        }
+      ]
     }
   ]
 }

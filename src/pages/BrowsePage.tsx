@@ -4,7 +4,9 @@ import "./BrowsePage.css";
 import { useEffect, useState } from "react";
 import { supabase } from "../components/Supabase";
 import GameCard from "../components/GameCard";
+
 import halo2Logo from '../assets/games/halo2.png'
+import halo3Logo from '../assets/games/halo3.png'
 
 type FolderNode = {
     name: string;
@@ -156,7 +158,7 @@ export default function BrowsePage() {
             setNodePath([gameNode]);
         }
         loadTree();
-    }, [])
+    }, [game])
 
     const [files, setFiles] = useState<AudioFile[]>([]);
     useEffect(() => {
@@ -199,6 +201,7 @@ export default function BrowsePage() {
 
             <div className="browse-page-game-selector">
                 <GameCard name="Halo 2" image={halo2Logo} path="/browse/halo2" />
+                <GameCard name="Halo 3" image={halo3Logo} path="/browse/halo3" />
             </div>
 
             <div className="browse-page-div">
