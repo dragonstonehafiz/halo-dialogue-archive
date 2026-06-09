@@ -1,73 +1,53 @@
-# React + TypeScript + Vite
+# Halo Dialogue Archive Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the source code for the frontend of the Halo Dialogue Archive, a fan-made site allowing for easy access to datamined audio files from the various Halo games. The site has no dedicated backend — it uses Supabase for file metadata and Cloudflare R2 for audio file storage.
 
-Currently, two official plugins are available:
+## Frontend
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The site is built with React + TypeScript using Vite. There are two main pages:
 
-## React Compiler
+**Home** — Displays a list of available games as selectable cards. Clicking a card navigates to the browse page for that game.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Browse** — A file browser for navigating the audio archive for each game.
 
-## Expanding the ESLint configuration
+## Metadata (Supabase)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+File metadata is stored in a Supabase Postgres database. The `audio_files` table has the following columns:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- `id` — auto-incrementing primary key
+- `game` — the game the file belongs to (e.g. `halo2`)
+- `character` — the character speaking the line (nullable)
+- `tags` — an array of tags for filtering (e.g. `{marine, sangheili}`)
+- `path` — the relative path to the audio file, used as a unique key
+- `transcript` — the transcribed text of the audio line (nullable)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Transcripts are generated using OpenAI Whisper (turbo model).
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Audio Storage (Cloudflare R2)
+
+Audio files are stored in a Cloudflare R2 bucket (`halo-dialogue`). Files are organized by game and then by the original folder structure produced by the extraction tools, with one exception — Halo 3 has all its mission-specific dialogue consolidated into `halo3/levels/` rather than being spread across multiple directories.
+
+```
+halo2/
+  combat/
+    character_name/
+      category/
+        filename.ogg
+  levels/
+    level_name/
+      cinematic|mission/
+        filename.ogg
+  multiplayer/
+    filename.ogg
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Files are served via a public R2 URL. The frontend constructs the full URL by prepending the R2 base URL to the relative path stored in Supabase.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Audio Extraction
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Audio files were extracted from the original game files using the following tools:
+
+- **Reclaimer** — [download link](https://github.com/Gravemind2401/Reclaimer) — used to extract audio from `.map` files for Halo 2, Halo 3, Halo 3: ODST, and Halo: Reach.
+- **Wwise Unpacker** — [download link](https://github.com/Vextil/Wwise-Unpacker) — used to extract audio from `.pck` files for Halo 4, Halo 5, and Halo Infinite.
+
+All extracted files were converted from WAV to OGG using ffmpeg to reduce file size before being uploaded to Cloudflare R2.
