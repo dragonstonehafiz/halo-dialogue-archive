@@ -11,6 +11,8 @@ import halo3Logo from '../assets/games/halo3.png'
 type FolderNode = {
     name: string;
     path: string;
+    file_count: number,
+    always_show: boolean,
     children: FolderNode[];
 }
 
@@ -42,7 +44,7 @@ function FolderTree({ node, depth = 0, onFolderClick }: {
 
             <div>
                 {node.children
-                    .filter(child => child.children.length > 0)
+                    .filter(child => child.always_show || child.children.length > 0)
                     .map(child => (
                     <FolderTree 
                         key={child.name}
