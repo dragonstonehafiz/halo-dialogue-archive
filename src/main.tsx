@@ -19,7 +19,8 @@ const router = createBrowserRouter([
   },
   {
     path: '/browse/:game',
-    element: <BrowsePage /> 
+    element: <BrowsePage />, 
+    errorElement: <NotFoundPage />
   },
 ]);
 
