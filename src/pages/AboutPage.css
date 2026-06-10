@@ -1,0 +1,28 @@
+.about-section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 24px;
+    color: var(--text);
+}
+
+.about-section h2 {
+    color: var(--text);
+    margin-top: 32px;
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+}
+
+.about-section p {
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+.about-section a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.about-section a:hover {
+    color: var(--primary-hover);
+}
