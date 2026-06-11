@@ -10,6 +10,8 @@ The site is built with React + TypeScript using Vite. There are two main pages:
 
 **Browse** — A file browser for navigating the audio archive for each game.
 
+**Search** — Search for specific voice lines by transcript or filename, with optional filters for game, character, and tags.
+
 ## Metadata (Supabase)
 
 File metadata is stored in a Supabase Postgres database. The `audio_files` table has the following columns:
@@ -19,6 +21,7 @@ File metadata is stored in a Supabase Postgres database. The `audio_files` table
 - `character` — the character speaking the line (nullable)
 - `tags` — an array of tags for filtering (e.g. `{marine, sangheili}`)
 - `path` — the relative path to the audio file, used as a unique key
+- `filename` — the filename without the path, used for search
 - `transcript` — the transcribed text of the audio line (nullable)
 
 Transcripts are generated using OpenAI Whisper (turbo model).
