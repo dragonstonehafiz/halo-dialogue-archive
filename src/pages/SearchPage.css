@@ -1,0 +1,71 @@
+.filters-section {
+    margin: 16px;
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.filters-row {
+    display: flex;
+    gap: 16px;
+    align-items: flex-end;
+}
+
+.filter-item {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1;
+}
+
+.filter-item label {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.filter-item input, .filter-item select {
+    background-color: var(--background);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--text);
+    padding: 8px 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.filter-search-button {
+    margin-top: 12px;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--primary);
+    color: var(--button-text);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    font-weight: bold;
+}
+
+.filter-search-button:hover {
+    background-color: var(--primary-hover);
+}
+
+.filter-search-button:disabled {
+    background-color: var(--primary-disabled);
+    color: var(--text-muted);
+    cursor: not-allowed;
+}
+
+.files-available-section {
+    margin: 0 16px 16px 16px;
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px;
+    min-height: 200px;
+}

@@ -1,0 +1,51 @@
+{
+  "games": [
+    "halo2",
+    "halo3"
+  ],
+  "tags": [
+    "brute",
+    "drone",
+    "elite",
+    "flood",
+    "forerunner",
+    "grunt",
+    "hunter",
+    "jackal",
+    "jiralhanae",
+    "kig-yar",
+    "lekgolo",
+    "marine",
+    "monitor",
+    "multiplayer",
+    "prophet",
+    "san'shyuum",
+    "sangheili",
+    "spartan",
+    "unggoy",
+    "yanme'e"
+  ],
+  "characters": [
+    "2401_penitent_tangent",
+    "343_guilty_spark",
+    "announcer",
+    "arbiter",
+    "chips_dubbo",
+    "cortana",
+    "dutch",
+    "edward_buck",
+    "gravemind",
+    "heretic_leader",
+    "johnson",
+    "lord_hood",
+    "master_chief",
+    "mickey",
+    "miranda_keyes",
+    "prophet_of_mercy",
+    "prophet_of_regret",
+    "prophet_of_truth",
+    "rtas_vadum",
+    "stacker",
+    "tartarus"
+  ]
+}

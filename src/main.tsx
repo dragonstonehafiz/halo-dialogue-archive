@@ -7,6 +7,7 @@ import HomePage from './pages/HomePage';
 import BrowsePage from './pages/BrowsePage';
 import NotFoundPage from './pages/NotFoundPage';
 import AboutPage from './pages/AboutPage';
+import SearchPage from './pages/SearchPage';
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,11 @@ const router = createBrowserRouter([
     element: <BrowsePage />, 
     errorElement: <NotFoundPage />
   },
+  {
+    path: "/search",
+    element: <SearchPage />,
+    errorElement: <NotFoundPage />
+  }
 ]);
 
 createRoot(document.getElementById('root')!).render(

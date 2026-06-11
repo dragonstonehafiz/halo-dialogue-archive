@@ -8,141 +8,12 @@ import GameCard from "../components/GameCard";
 import halo2Logo from '../assets/games/halo2.png'
 import halo3Logo from '../assets/games/halo3.png'
 
-type FolderNode = {
-    name: string;
-    path: string;
-    file_count: number,
-    always_show: boolean,
-    children: FolderNode[];
-}
+import type { FolderNode } from "../types/FolderNode.ts"; 
+import type { AudioFile } from "../types/AudioFile.ts";
 
-type AudioFile = {
-    id: number;
-    game: string;
-    character: string | null;
-    tags: string[] | null;
-    path: string;
-    transcript: string | null;
-}
-
-function FolderTree({ node, depth = 0, onFolderClick }: { 
-    node: FolderNode, 
-    depth: number,
-    onFolderClick: (node: FolderNode) => void 
-}) {
-    return (
-        <div>
-            { depth !== 1 && (
-                <button 
-                    className="folder-button" 
-                    style={{paddingLeft:`${depth * 16 - 16}px`}}
-                    onClick={() => onFolderClick(node)}
-                >
-                    {node.name}
-                </button>
-            )}
-
-            <div>
-                {node.children
-                    .filter(child => child.always_show || child.children.length > 0)
-                    .map(child => (
-                    <FolderTree 
-                        key={child.name}
-                        node={child}
-                        depth={depth+1} 
-                        onFolderClick={onFolderClick}
-                    />
-                ))}
-            </div>
-        </div>
-    )
-}
-
-function Breadcrumb({ nodePath, onFolderClick: onSegmentClick } : {
-    nodePath: FolderNode[],
-    onFolderClick: (node: FolderNode) => void
-}) {
-    return (
-        <div className="breadcrumb">
-            {nodePath.map((node, index) => (
-                <span key={node.name}>
-                    <button
-                        className="breadcrumb-segment"
-                        onClick={() => onSegmentClick(node)}
-                    >
-                        {node.name}
-                    </button>
-
-                    {index < nodePath.length - 1 && <span className="breadcrumb-separator"> &gt; </span>}
-                </span>
-            ))}
-        </div>
-    )
-}
-
-function Contents({ nodePath, files, onFolderClick } : { 
-    nodePath: FolderNode[] | null, 
-    files: AudioFile[] | null,
-    onFolderClick: (node: FolderNode) => void }) {
-    if (!nodePath || nodePath.length === 0) return null;
-    const currentNode = nodePath[nodePath.length - 1];
-    const R2_BASE_URL = import.meta.env.VITE_R2_BASE_URL
-
-    return (
-        <div className="contents-grid">
-            <table className="contents-table">
-                <colgroup>
-                    <col style={{width: '60px'}} />
-                    <col style={{width: '250px'}} />
-                    <col />
-                    <col style={{width: '120px'}} />
-                    <col style={{width: '180px'}} />
-                    <col style={{width: '60px'}} />
-                    <col style={{width: '60px'}} />
-                </colgroup>
-                <thead>
-                    <tr>
-                        <th>Type</th>
-                        <th>Name</th>
-                        <th>Transcript</th>
-                        <th>Tags</th>
-                        <th>Character</th>
-                        <th>Play</th>
-                        <th>Download</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {currentNode.children.map(child => (
-                        <tr key={child.name}>
-                            <td>📁</td>
-                            <td><button onClick={() => onFolderClick(child)}>{child.name}</button></td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>-</td>
-                        </tr>
-                    ))}
-                    {files?.map(file => (
-                        <tr key={file.path}>
-                            <td>🔊</td>
-                            <td>{file.path.split('/').pop()}</td>
-                            <td>{file.transcript ?? '-'}</td>
-                            <td>{file.tags?.join(', ') ?? '-'}</td>
-                            <td>{file.character ?? '-'}</td>
-                            <td>
-                                <button className="btn-icon" onClick={() => new Audio(`${R2_BASE_URL}/${file.path}`).play()}>▶</button>
-                            </td>
-                            <td>
-                                <button className="btn-icon" onClick={() => window.open(`${R2_BASE_URL}/${file.path}`, '_blank')}>⬇</button>
-                            </td>
-                        </tr>
-                    ))}
-                </tbody>
-            </table>
-        </div>
-    )
-}
+import { FolderTree } from "../components/FolderTree.tsx";
+import { FolderContents } from "../components/FolderContents.tsx";
+import { Breadcrumb } from "../components/Breadcrumb.tsx";
 
 export default function BrowsePage() {
     const { game } = useParams();
@@ -215,7 +86,7 @@ export default function BrowsePage() {
                 <div className="browse-page-contents">
                     <h2>Contents</h2>
                     <Breadcrumb nodePath={nodePath} onFolderClick={onFolderClick}></Breadcrumb>
-                    <Contents nodePath={nodePath} files={files} onFolderClick={onFolderClick}></Contents>
+                    <FolderContents nodePath={nodePath} files={files} onFolderClick={onFolderClick}></FolderContents>
                 </div>
             </div>
         </div>

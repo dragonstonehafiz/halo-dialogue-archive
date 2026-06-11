@@ -1,0 +1,17 @@
+.folder-button {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    color: var(--text);
+    padding: 6px 8px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+}
+
+.folder-button:hover {
+    background-color: var(--border);
+}
