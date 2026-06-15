@@ -2,6 +2,7 @@ import Navbar from "../components/Navbar"
 import './HomePage.css';
 import halo2Logo from '../assets/games/halo2.png'
 import halo3Logo from '../assets/games/halo3.png'
+import halo3odstLogo from '../assets/games/halo3odst.png'
 import underConstruction from '../assets/underConstruction.png'
 import GameCard from "../components/GameCard";
 
@@ -20,6 +21,7 @@ export default function HomePage() {
             <div className="games">
                 <GameCard name="Halo 2" image={halo2Logo} path="/browse/halo2" />
                 <GameCard name="Halo 3" image={halo3Logo} path="/browse/halo3" />
+                <GameCard name="Halo 3 ODST" image={halo3odstLogo} path="/browse/halo3odst" />
                 <GameCard name="Coming soon..." image={underConstruction} path="temp" disabled />
             </div>
         </div>

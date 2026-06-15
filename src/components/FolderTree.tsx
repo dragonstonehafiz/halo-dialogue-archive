@@ -20,7 +20,7 @@ export function FolderTree({ node, depth = 0, onFolderClick }: {
 
             <div>
                 {node.children
-                    .filter(child => child.always_show || child.children.length > 0)
+                    .filter(child => child.show_in_browser)
                     .map(child => (
                     <FolderTree 
                         key={child.name}

@@ -1,9 +1,11 @@
 {
   "games": [
     "halo2",
-    "halo3"
+    "halo3",
+    "halo3odst"
   ],
   "tags": [
+    "ai",
     "brute",
     "drone",
     "elite",
@@ -12,18 +14,13 @@
     "grunt",
     "hunter",
     "jackal",
-    "jiralhanae",
-    "kig-yar",
-    "lekgolo",
     "marine",
     "monitor",
     "multiplayer",
+    "odst",
+    "oni",
     "prophet",
-    "san'shyuum",
-    "sangheili",
-    "spartan",
-    "unggoy",
-    "yanme'e"
+    "spartan"
   ],
   "characters": [
     "2401_penitent_tangent",
@@ -44,8 +41,12 @@
     "prophet_of_mercy",
     "prophet_of_regret",
     "prophet_of_truth",
+    "romeo",
+    "rookie",
     "rtas_vadum",
     "stacker",
-    "tartarus"
+    "superintendent",
+    "tartarus",
+    "veronica_dare"
   ]
 }

@@ -2,6 +2,6 @@ export type FolderNode = {
     name: string;
     path: string;
     file_count: number,
-    always_show: boolean,
+    show_in_browser: boolean,
     children: FolderNode[];
 }
