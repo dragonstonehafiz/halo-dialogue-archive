@@ -3636,6 +3636,204 @@
               "children": []
             },
             {
+              "name": "civilian1",
+              "path": "halo3/combat/civilian1",
+              "file_count": 0,
+              "show_in_browser": true,
+              "children": [
+                {
+                  "name": "01_alert",
+                  "path": "halo3/combat/civilian1/01_alert",
+                  "file_count": 34,
+                  "show_in_browser": false,
+                  "children": []
+                },
+                {
+                  "name": "02_danger",
+                  "path": "halo3/combat/civilian1/02_danger",
+                  "file_count": 54,
+                  "show_in_browser": false,
+                  "children": []
+                },
+                {
+                  "name": "03_strike",
+                  "path": "halo3/combat/civilian1/03_strike",
+                  "file_count": 6,
+                  "show_in_browser": false,
+                  "children": []
+                },
+                {
+                  "name": "04_search",
+                  "path": "halo3/combat/civilian1/04_search",
+                  "file_count": 20,
+                  "show_in_browser": false,
+                  "children": []
+                },
+                {
+                  "name": "05_postcombat",
+                  "path": "halo3/combat/civilian1/05_postcombat",
+                  "file_count": 16,
+                  "show_in_browser": false,
+                  "children": []
+                },
+                {
+                  "name": "06_outburst",
+                  "path": "halo3/combat/civilian1/06_outburst",
+                  "file_count": 100,
+                  "show_in_browser": false,
+                  "children": []
+                },
+                {
+                  "name": "07_exclaim",
+                  "path": "halo3/combat/civilian1/07_exclaim",
+                  "file_count": 47,
+                  "show_in_browser": false,
+                  "children": []
+                },
+                {
+                  "name": "08_judge",
+                  "path": "halo3/combat/civilian1/08_judge",
+                  "file_count": 55,
+                  "show_in_browser": false,
+                  "children": []
+                },
+                {
+                  "name": "13_player",
+                  "path": "halo3/combat/civilian1/13_player",
+                  "file_count": 75,
+                  "show_in_browser": false,
+                  "children": []
+                },
+                {
+                  "name": "15_curse",
+                  "path": "halo3/combat/civilian1/15_curse",
+                  "file_count": 14,
+                  "show_in_browser": false,
+                  "children": []
+                },
+                {
+                  "name": "18_plead",
+                  "path": "halo3/combat/civilian1/18_plead",
+                  "file_count": 8,
+                  "show_in_browser": false,
+                  "children": []
+                },
+                {
+                  "name": "20_cry",
+                  "path": "halo3/combat/civilian1/20_cry",
+                  "file_count": 70,
+                  "show_in_browser": false,
+                  "children": []
+                },
+                {
+                  "name": "23_idle",
+                  "path": "halo3/combat/civilian1/23_idle",
+                  "file_count": 43,
+                  "show_in_browser": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "civilian2",
+              "path": "halo3/combat/civilian2",
+              "file_count": 0,
+              "show_in_browser": true,
+              "children": [
+                {
+                  "name": "01_alert",
+                  "path": "halo3/combat/civilian2/01_alert",
+                  "file_count": 30,
+                  "show_in_browser": false,
+                  "children": []
+                },
+                {
+                  "name": "02_danger",
+                  "path": "halo3/combat/civilian2/02_danger",
+                  "file_count": 67,
+                  "show_in_browser": false,
+                  "children": []
+                },
+                {
+                  "name": "03_strike",
+                  "path": "halo3/combat/civilian2/03_strike",
+                  "file_count": 6,
+                  "show_in_browser": false,
+                  "children": []
+                },
+                {
+                  "name": "04_search",
+                  "path": "halo3/combat/civilian2/04_search",
+                  "file_count": 8,
+                  "show_in_browser": false,
+                  "children": []
+                },
+                {
+                  "name": "05_postcombat",
+                  "path": "halo3/combat/civilian2/05_postcombat",
+                  "file_count": 20,
+                  "show_in_browser": false,
+                  "children": []
+                },
+                {
+                  "name": "06_outburst",
+                  "path": "halo3/combat/civilian2/06_outburst",
+                  "file_count": 119,
+                  "show_in_browser": false,
+                  "children": []
+                },
+                {
+                  "name": "07_exclaim",
+                  "path": "halo3/combat/civilian2/07_exclaim",
+                  "file_count": 53,
+                  "show_in_browser": false,
+                  "children": []
+                },
+                {
+                  "name": "08_judge",
+                  "path": "halo3/combat/civilian2/08_judge",
+                  "file_count": 55,
+                  "show_in_browser": false,
+                  "children": []
+                },
+                {
+                  "name": "13_player",
+                  "path": "halo3/combat/civilian2/13_player",
+                  "file_count": 87,
+                  "show_in_browser": false,
+                  "children": []
+                },
+                {
+                  "name": "15_curse",
+                  "path": "halo3/combat/civilian2/15_curse",
+                  "file_count": 10,
+                  "show_in_browser": false,
+                  "children": []
+                },
+                {
+                  "name": "18_plead",
+                  "path": "halo3/combat/civilian2/18_plead",
+                  "file_count": 7,
+                  "show_in_browser": false,
+                  "children": []
+                },
+                {
+                  "name": "20_cry",
+                  "path": "halo3/combat/civilian2/20_cry",
+                  "file_count": 63,
+                  "show_in_browser": false,
+                  "children": []
+                },
+                {
+                  "name": "23_idle",
+                  "path": "halo3/combat/civilian2/23_idle",
+                  "file_count": 36,
+                  "show_in_browser": false,
+                  "children": []
+                }
+              ]
+            },
+            {
               "name": "elite1",
               "path": "halo3/combat/elite1",
               "file_count": 0,
@@ -6932,7 +7130,7 @@
           "name": "arg",
           "path": "halo3odst/arg",
           "file_count": 30,
-          "show_in_browser": false,
+          "show_in_browser": true,
           "children": []
         },
         {
@@ -9799,6 +9997,4199 @@
               "children": []
             }
           ]
+        }
+      ]
+    },
+    {
+      "name": "reach",
+      "path": "reach",
+      "file_count": 0,
+      "show_in_browser": true,
+      "children": [
+        {
+          "name": "combat",
+          "path": "reach/combat",
+          "file_count": 0,
+          "show_in_browser": true,
+          "children": [
+            {
+              "name": "auntie_dot",
+              "path": "reach/combat/auntie_dot",
+              "file_count": 0,
+              "show_in_browser": true,
+              "children": [
+                {
+                  "name": "default",
+                  "path": "reach/combat/auntie_dot/default",
+                  "file_count": 0,
+                  "show_in_browser": false,
+                  "children": [
+                    {
+                      "name": "01_contact",
+                      "path": "reach/combat/auntie_dot/default/01_contact",
+                      "file_count": 12,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "02_combat",
+                      "path": "reach/combat/auntie_dot/default/02_combat",
+                      "file_count": 149,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "03_postcombat",
+                      "path": "reach/combat/auntie_dot/default/03_postcombat",
+                      "file_count": 22,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "04_vehicle",
+                      "path": "reach/combat/auntie_dot/default/04_vehicle",
+                      "file_count": 26,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "10_exclaim",
+                      "path": "reach/combat/auntie_dot/default/10_exclaim",
+                      "file_count": 15,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "11_involuntary",
+                      "path": "reach/combat/auntie_dot/default/11_involuntary",
+                      "file_count": 119,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "14_1st_person",
+                      "path": "reach/combat/auntie_dot/default/14_1st_person",
+                      "file_count": 53,
+                      "show_in_browser": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "brute1",
+              "path": "reach/combat/brute1",
+              "file_count": 0,
+              "show_in_browser": true,
+              "children": [
+                {
+                  "name": "default",
+                  "path": "reach/combat/brute1/default",
+                  "file_count": 0,
+                  "show_in_browser": false,
+                  "children": [
+                    {
+                      "name": "01_contact",
+                      "path": "reach/combat/brute1/default/01_contact",
+                      "file_count": 29,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "02_combat",
+                      "path": "reach/combat/brute1/default/02_combat",
+                      "file_count": 141,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "03_postcombat",
+                      "path": "reach/combat/brute1/default/03_postcombat",
+                      "file_count": 24,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "04_vehicle",
+                      "path": "reach/combat/brute1/default/04_vehicle",
+                      "file_count": 4,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "05_search",
+                      "path": "reach/combat/brute1/default/05_search",
+                      "file_count": 49,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "06_fireteam",
+                      "path": "reach/combat/brute1/default/06_fireteam",
+                      "file_count": 22,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "07_respond",
+                      "path": "reach/combat/brute1/default/07_respond",
+                      "file_count": 19,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "08_idle",
+                      "path": "reach/combat/brute1/default/08_idle",
+                      "file_count": 32,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "09_order",
+                      "path": "reach/combat/brute1/default/09_order",
+                      "file_count": 34,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "10_exclaim",
+                      "path": "reach/combat/brute1/default/10_exclaim",
+                      "file_count": 86,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "11_involuntary",
+                      "path": "reach/combat/brute1/default/11_involuntary",
+                      "file_count": 159,
+                      "show_in_browser": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "brute2",
+              "path": "reach/combat/brute2",
+              "file_count": 0,
+              "show_in_browser": true,
+              "children": [
+                {
+                  "name": "default",
+                  "path": "reach/combat/brute2/default",
+                  "file_count": 0,
+                  "show_in_browser": false,
+                  "children": [
+                    {
+                      "name": "01_contact",
+                      "path": "reach/combat/brute2/default/01_contact",
+                      "file_count": 29,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "02_combat",
+                      "path": "reach/combat/brute2/default/02_combat",
+                      "file_count": 129,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "03_postcombat",
+                      "path": "reach/combat/brute2/default/03_postcombat",
+                      "file_count": 14,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "04_vehicle",
+                      "path": "reach/combat/brute2/default/04_vehicle",
+                      "file_count": 4,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "05_search",
+                      "path": "reach/combat/brute2/default/05_search",
+                      "file_count": 43,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "06_fireteam",
+                      "path": "reach/combat/brute2/default/06_fireteam",
+                      "file_count": 20,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "07_respond",
+                      "path": "reach/combat/brute2/default/07_respond",
+                      "file_count": 16,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "08_idle",
+                      "path": "reach/combat/brute2/default/08_idle",
+                      "file_count": 27,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "09_order",
+                      "path": "reach/combat/brute2/default/09_order",
+                      "file_count": 28,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "10_exclaim",
+                      "path": "reach/combat/brute2/default/10_exclaim",
+                      "file_count": 72,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "11_involuntary",
+                      "path": "reach/combat/brute2/default/11_involuntary",
+                      "file_count": 114,
+                      "show_in_browser": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "civilian_1",
+              "path": "reach/combat/civilian_1",
+              "file_count": 0,
+              "show_in_browser": true,
+              "children": [
+                {
+                  "name": "default",
+                  "path": "reach/combat/civilian_1/default",
+                  "file_count": 0,
+                  "show_in_browser": false,
+                  "children": [
+                    {
+                      "name": "01_contact",
+                      "path": "reach/combat/civilian_1/default/01_contact",
+                      "file_count": 24,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "02_combat",
+                      "path": "reach/combat/civilian_1/default/02_combat",
+                      "file_count": 160,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "03_postcombat",
+                      "path": "reach/combat/civilian_1/default/03_postcombat",
+                      "file_count": 20,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "04_vehicle",
+                      "path": "reach/combat/civilian_1/default/04_vehicle",
+                      "file_count": 24,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "05_search",
+                      "path": "reach/combat/civilian_1/default/05_search",
+                      "file_count": 30,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "06_fireteam",
+                      "path": "reach/combat/civilian_1/default/06_fireteam",
+                      "file_count": 13,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "07_respond",
+                      "path": "reach/combat/civilian_1/default/07_respond",
+                      "file_count": 30,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "08_idle",
+                      "path": "reach/combat/civilian_1/default/08_idle",
+                      "file_count": 62,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "09_order",
+                      "path": "reach/combat/civilian_1/default/09_order",
+                      "file_count": 67,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "10_exclaim",
+                      "path": "reach/combat/civilian_1/default/10_exclaim",
+                      "file_count": 62,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "11_involuntary",
+                      "path": "reach/combat/civilian_1/default/11_involuntary",
+                      "file_count": 144,
+                      "show_in_browser": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "civilian_2",
+              "path": "reach/combat/civilian_2",
+              "file_count": 0,
+              "show_in_browser": true,
+              "children": [
+                {
+                  "name": "default",
+                  "path": "reach/combat/civilian_2/default",
+                  "file_count": 0,
+                  "show_in_browser": false,
+                  "children": [
+                    {
+                      "name": "01_contact",
+                      "path": "reach/combat/civilian_2/default/01_contact",
+                      "file_count": 24,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "02_combat",
+                      "path": "reach/combat/civilian_2/default/02_combat",
+                      "file_count": 192,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "03_postcombat",
+                      "path": "reach/combat/civilian_2/default/03_postcombat",
+                      "file_count": 24,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "04_vehicle",
+                      "path": "reach/combat/civilian_2/default/04_vehicle",
+                      "file_count": 21,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "05_search",
+                      "path": "reach/combat/civilian_2/default/05_search",
+                      "file_count": 27,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "06_fireteam",
+                      "path": "reach/combat/civilian_2/default/06_fireteam",
+                      "file_count": 16,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "07_respond",
+                      "path": "reach/combat/civilian_2/default/07_respond",
+                      "file_count": 30,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "08_idle",
+                      "path": "reach/combat/civilian_2/default/08_idle",
+                      "file_count": 78,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "09_order",
+                      "path": "reach/combat/civilian_2/default/09_order",
+                      "file_count": 61,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "10_exclaim",
+                      "path": "reach/combat/civilian_2/default/10_exclaim",
+                      "file_count": 55,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "11_involuntary",
+                      "path": "reach/combat/civilian_2/default/11_involuntary",
+                      "file_count": 135,
+                      "show_in_browser": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "civilian_fem",
+              "path": "reach/combat/civilian_fem",
+              "file_count": 0,
+              "show_in_browser": true,
+              "children": [
+                {
+                  "name": "default",
+                  "path": "reach/combat/civilian_fem/default",
+                  "file_count": 0,
+                  "show_in_browser": false,
+                  "children": [
+                    {
+                      "name": "01_contact",
+                      "path": "reach/combat/civilian_fem/default/01_contact",
+                      "file_count": 22,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "02_combat",
+                      "path": "reach/combat/civilian_fem/default/02_combat",
+                      "file_count": 157,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "03_postcombat",
+                      "path": "reach/combat/civilian_fem/default/03_postcombat",
+                      "file_count": 30,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "04_vehicle",
+                      "path": "reach/combat/civilian_fem/default/04_vehicle",
+                      "file_count": 25,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "05_search",
+                      "path": "reach/combat/civilian_fem/default/05_search",
+                      "file_count": 31,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "06_fireteam",
+                      "path": "reach/combat/civilian_fem/default/06_fireteam",
+                      "file_count": 15,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "07_respond",
+                      "path": "reach/combat/civilian_fem/default/07_respond",
+                      "file_count": 32,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "08_idle",
+                      "path": "reach/combat/civilian_fem/default/08_idle",
+                      "file_count": 76,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "09_order",
+                      "path": "reach/combat/civilian_fem/default/09_order",
+                      "file_count": 65,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "10_exclaim",
+                      "path": "reach/combat/civilian_fem/default/10_exclaim",
+                      "file_count": 62,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "11_involuntary",
+                      "path": "reach/combat/civilian_fem/default/11_involuntary",
+                      "file_count": 174,
+                      "show_in_browser": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "civilian_h1",
+              "path": "reach/combat/civilian_h1",
+              "file_count": 0,
+              "show_in_browser": true,
+              "children": [
+                {
+                  "name": "default",
+                  "path": "reach/combat/civilian_h1/default",
+                  "file_count": 0,
+                  "show_in_browser": false,
+                  "children": [
+                    {
+                      "name": "11_involuntary",
+                      "path": "reach/combat/civilian_h1/default/11_involuntary",
+                      "file_count": 144,
+                      "show_in_browser": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "civilian_h2",
+              "path": "reach/combat/civilian_h2",
+              "file_count": 0,
+              "show_in_browser": true,
+              "children": [
+                {
+                  "name": "default",
+                  "path": "reach/combat/civilian_h2/default",
+                  "file_count": 0,
+                  "show_in_browser": false,
+                  "children": [
+                    {
+                      "name": "11_involuntary",
+                      "path": "reach/combat/civilian_h2/default/11_involuntary",
+                      "file_count": 135,
+                      "show_in_browser": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "civilian_hfem",
+              "path": "reach/combat/civilian_hfem",
+              "file_count": 0,
+              "show_in_browser": true,
+              "children": [
+                {
+                  "name": "default",
+                  "path": "reach/combat/civilian_hfem/default",
+                  "file_count": 0,
+                  "show_in_browser": false,
+                  "children": [
+                    {
+                      "name": "11_involuntary",
+                      "path": "reach/combat/civilian_hfem/default/11_involuntary",
+                      "file_count": 174,
+                      "show_in_browser": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "cortana",
+              "path": "reach/combat/cortana",
+              "file_count": 0,
+              "show_in_browser": true,
+              "children": [
+                {
+                  "name": "default",
+                  "path": "reach/combat/cortana/default",
+                  "file_count": 0,
+                  "show_in_browser": false,
+                  "children": [
+                    {
+                      "name": "01_contact",
+                      "path": "reach/combat/cortana/default/01_contact",
+                      "file_count": 13,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "02_combat",
+                      "path": "reach/combat/cortana/default/02_combat",
+                      "file_count": 167,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "03_postcombat",
+                      "path": "reach/combat/cortana/default/03_postcombat",
+                      "file_count": 27,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "04_vehicle",
+                      "path": "reach/combat/cortana/default/04_vehicle",
+                      "file_count": 27,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "10_exclaim",
+                      "path": "reach/combat/cortana/default/10_exclaim",
+                      "file_count": 17,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "11_involuntary",
+                      "path": "reach/combat/cortana/default/11_involuntary",
+                      "file_count": 176,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "14_1st_person",
+                      "path": "reach/combat/cortana/default/14_1st_person",
+                      "file_count": 77,
+                      "show_in_browser": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "elite1",
+              "path": "reach/combat/elite1",
+              "file_count": 0,
+              "show_in_browser": true,
+              "children": [
+                {
+                  "name": "default",
+                  "path": "reach/combat/elite1/default",
+                  "file_count": 0,
+                  "show_in_browser": false,
+                  "children": [
+                    {
+                      "name": "01_contact",
+                      "path": "reach/combat/elite1/default/01_contact",
+                      "file_count": 30,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "02_combat",
+                      "path": "reach/combat/elite1/default/02_combat",
+                      "file_count": 116,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "03_postcombat",
+                      "path": "reach/combat/elite1/default/03_postcombat",
+                      "file_count": 20,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "04_vehicle",
+                      "path": "reach/combat/elite1/default/04_vehicle",
+                      "file_count": 4,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "05_search",
+                      "path": "reach/combat/elite1/default/05_search",
+                      "file_count": 48,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "06_fireteam",
+                      "path": "reach/combat/elite1/default/06_fireteam",
+                      "file_count": 17,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "07_respond",
+                      "path": "reach/combat/elite1/default/07_respond",
+                      "file_count": 13,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "08_idle",
+                      "path": "reach/combat/elite1/default/08_idle",
+                      "file_count": 26,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "09_order",
+                      "path": "reach/combat/elite1/default/09_order",
+                      "file_count": 27,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "10_exclaim",
+                      "path": "reach/combat/elite1/default/10_exclaim",
+                      "file_count": 86,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "11_involuntary",
+                      "path": "reach/combat/elite1/default/11_involuntary",
+                      "file_count": 169,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "14_1st_person",
+                      "path": "reach/combat/elite1/default/14_1st_person",
+                      "file_count": 57,
+                      "show_in_browser": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "elite2",
+              "path": "reach/combat/elite2",
+              "file_count": 0,
+              "show_in_browser": true,
+              "children": [
+                {
+                  "name": "default",
+                  "path": "reach/combat/elite2/default",
+                  "file_count": 0,
+                  "show_in_browser": false,
+                  "children": [
+                    {
+                      "name": "01_contact",
+                      "path": "reach/combat/elite2/default/01_contact",
+                      "file_count": 31,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "02_combat",
+                      "path": "reach/combat/elite2/default/02_combat",
+                      "file_count": 127,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "03_postcombat",
+                      "path": "reach/combat/elite2/default/03_postcombat",
+                      "file_count": 20,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "04_vehicle",
+                      "path": "reach/combat/elite2/default/04_vehicle",
+                      "file_count": 5,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "05_search",
+                      "path": "reach/combat/elite2/default/05_search",
+                      "file_count": 54,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "06_fireteam",
+                      "path": "reach/combat/elite2/default/06_fireteam",
+                      "file_count": 17,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "07_respond",
+                      "path": "reach/combat/elite2/default/07_respond",
+                      "file_count": 14,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "08_idle",
+                      "path": "reach/combat/elite2/default/08_idle",
+                      "file_count": 24,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "09_order",
+                      "path": "reach/combat/elite2/default/09_order",
+                      "file_count": 33,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "10_exclaim",
+                      "path": "reach/combat/elite2/default/10_exclaim",
+                      "file_count": 88,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "11_involuntary",
+                      "path": "reach/combat/elite2/default/11_involuntary",
+                      "file_count": 137,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "14_1st_person",
+                      "path": "reach/combat/elite2/default/14_1st_person",
+                      "file_count": 88,
+                      "show_in_browser": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "elite_mp",
+              "path": "reach/combat/elite_mp",
+              "file_count": 0,
+              "show_in_browser": true,
+              "children": [
+                {
+                  "name": "default",
+                  "path": "reach/combat/elite_mp/default",
+                  "file_count": 0,
+                  "show_in_browser": false,
+                  "children": [
+                    {
+                      "name": "none",
+                      "path": "reach/combat/elite_mp/default/none",
+                      "file_count": 175,
+                      "show_in_browser": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "engineer",
+              "path": "reach/combat/engineer",
+              "file_count": 0,
+              "show_in_browser": true,
+              "children": [
+                {
+                  "name": "default",
+                  "path": "reach/combat/engineer/default",
+                  "file_count": 0,
+                  "show_in_browser": false,
+                  "children": [
+                    {
+                      "name": "none",
+                      "path": "reach/combat/engineer/default/none",
+                      "file_count": 154,
+                      "show_in_browser": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "grunt1",
+              "path": "reach/combat/grunt1",
+              "file_count": 0,
+              "show_in_browser": true,
+              "children": [
+                {
+                  "name": "default",
+                  "path": "reach/combat/grunt1/default",
+                  "file_count": 0,
+                  "show_in_browser": false,
+                  "children": [
+                    {
+                      "name": "01_contact",
+                      "path": "reach/combat/grunt1/default/01_contact",
+                      "file_count": 46,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "02_combat",
+                      "path": "reach/combat/grunt1/default/02_combat",
+                      "file_count": 282,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "03_postcombat",
+                      "path": "reach/combat/grunt1/default/03_postcombat",
+                      "file_count": 28,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "04_vehicle",
+                      "path": "reach/combat/grunt1/default/04_vehicle",
+                      "file_count": 6,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "05_search",
+                      "path": "reach/combat/grunt1/default/05_search",
+                      "file_count": 64,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "06_fireteam",
+                      "path": "reach/combat/grunt1/default/06_fireteam",
+                      "file_count": 17,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "07_respond",
+                      "path": "reach/combat/grunt1/default/07_respond",
+                      "file_count": 12,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "08_idle",
+                      "path": "reach/combat/grunt1/default/08_idle",
+                      "file_count": 45,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "09_order",
+                      "path": "reach/combat/grunt1/default/09_order",
+                      "file_count": 31,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "10_exclaim",
+                      "path": "reach/combat/grunt1/default/10_exclaim",
+                      "file_count": 100,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "11_involuntary",
+                      "path": "reach/combat/grunt1/default/11_involuntary",
+                      "file_count": 200,
+                      "show_in_browser": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "grunt2",
+              "path": "reach/combat/grunt2",
+              "file_count": 0,
+              "show_in_browser": true,
+              "children": [
+                {
+                  "name": "default",
+                  "path": "reach/combat/grunt2/default",
+                  "file_count": 0,
+                  "show_in_browser": false,
+                  "children": [
+                    {
+                      "name": "01_contact",
+                      "path": "reach/combat/grunt2/default/01_contact",
+                      "file_count": 32,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "02_combat",
+                      "path": "reach/combat/grunt2/default/02_combat",
+                      "file_count": 227,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "03_postcombat",
+                      "path": "reach/combat/grunt2/default/03_postcombat",
+                      "file_count": 25,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "04_vehicle",
+                      "path": "reach/combat/grunt2/default/04_vehicle",
+                      "file_count": 4,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "05_search",
+                      "path": "reach/combat/grunt2/default/05_search",
+                      "file_count": 58,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "06_fireteam",
+                      "path": "reach/combat/grunt2/default/06_fireteam",
+                      "file_count": 15,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "07_respond",
+                      "path": "reach/combat/grunt2/default/07_respond",
+                      "file_count": 12,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "08_idle",
+                      "path": "reach/combat/grunt2/default/08_idle",
+                      "file_count": 42,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "09_order",
+                      "path": "reach/combat/grunt2/default/09_order",
+                      "file_count": 26,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "10_exclaim",
+                      "path": "reach/combat/grunt2/default/10_exclaim",
+                      "file_count": 90,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "11_involuntary",
+                      "path": "reach/combat/grunt2/default/11_involuntary",
+                      "file_count": 135,
+                      "show_in_browser": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "hunter",
+              "path": "reach/combat/hunter",
+              "file_count": 0,
+              "show_in_browser": true,
+              "children": [
+                {
+                  "name": "default",
+                  "path": "reach/combat/hunter/default",
+                  "file_count": 0,
+                  "show_in_browser": false,
+                  "children": [
+                    {
+                      "name": "none",
+                      "path": "reach/combat/hunter/default/none",
+                      "file_count": 381,
+                      "show_in_browser": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "jackal",
+              "path": "reach/combat/jackal",
+              "file_count": 0,
+              "show_in_browser": true,
+              "children": [
+                {
+                  "name": "default",
+                  "path": "reach/combat/jackal/default",
+                  "file_count": 0,
+                  "show_in_browser": false,
+                  "children": [
+                    {
+                      "name": "none",
+                      "path": "reach/combat/jackal/default/none",
+                      "file_count": 578,
+                      "show_in_browser": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "masterchief",
+              "path": "reach/combat/masterchief",
+              "file_count": 0,
+              "show_in_browser": true,
+              "children": [
+                {
+                  "name": "default",
+                  "path": "reach/combat/masterchief/default",
+                  "file_count": 0,
+                  "show_in_browser": false,
+                  "children": [
+                    {
+                      "name": "01_contact",
+                      "path": "reach/combat/masterchief/default/01_contact",
+                      "file_count": 13,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "02_combat",
+                      "path": "reach/combat/masterchief/default/02_combat",
+                      "file_count": 135,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "03_postcombat",
+                      "path": "reach/combat/masterchief/default/03_postcombat",
+                      "file_count": 29,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "04_vehicle",
+                      "path": "reach/combat/masterchief/default/04_vehicle",
+                      "file_count": 31,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "10_exclaim",
+                      "path": "reach/combat/masterchief/default/10_exclaim",
+                      "file_count": 12,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "11_involuntary",
+                      "path": "reach/combat/masterchief/default/11_involuntary",
+                      "file_count": 145,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "14_1st_person",
+                      "path": "reach/combat/masterchief/default/14_1st_person",
+                      "file_count": 77,
+                      "show_in_browser": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "moa",
+              "path": "reach/combat/moa",
+              "file_count": 0,
+              "show_in_browser": true,
+              "children": [
+                {
+                  "name": "default",
+                  "path": "reach/combat/moa/default",
+                  "file_count": 0,
+                  "show_in_browser": false,
+                  "children": [
+                    {
+                      "name": "none",
+                      "path": "reach/combat/moa/default/none",
+                      "file_count": 27,
+                      "show_in_browser": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "odst1",
+              "path": "reach/combat/odst1",
+              "file_count": 0,
+              "show_in_browser": true,
+              "children": [
+                {
+                  "name": "default",
+                  "path": "reach/combat/odst1/default",
+                  "file_count": 0,
+                  "show_in_browser": false,
+                  "children": [
+                    {
+                      "name": "01_contact",
+                      "path": "reach/combat/odst1/default/01_contact",
+                      "file_count": 28,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "02_combat",
+                      "path": "reach/combat/odst1/default/02_combat",
+                      "file_count": 242,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "03_postcombat",
+                      "path": "reach/combat/odst1/default/03_postcombat",
+                      "file_count": 44,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "04_vehicle",
+                      "path": "reach/combat/odst1/default/04_vehicle",
+                      "file_count": 31,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "05_search",
+                      "path": "reach/combat/odst1/default/05_search",
+                      "file_count": 33,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "06_fireteam",
+                      "path": "reach/combat/odst1/default/06_fireteam",
+                      "file_count": 18,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "07_respond",
+                      "path": "reach/combat/odst1/default/07_respond",
+                      "file_count": 41,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "08_idle",
+                      "path": "reach/combat/odst1/default/08_idle",
+                      "file_count": 13,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "09_order",
+                      "path": "reach/combat/odst1/default/09_order",
+                      "file_count": 86,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "10_exclaim",
+                      "path": "reach/combat/odst1/default/10_exclaim",
+                      "file_count": 90,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "11_involuntary",
+                      "path": "reach/combat/odst1/default/11_involuntary",
+                      "file_count": 216,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "12_space",
+                      "path": "reach/combat/odst1/default/12_space",
+                      "file_count": 78,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "13_script",
+                      "path": "reach/combat/odst1/default/13_script",
+                      "file_count": 12,
+                      "show_in_browser": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "stealthy",
+                  "path": "reach/combat/odst1/stealthy",
+                  "file_count": 0,
+                  "show_in_browser": false,
+                  "children": [
+                    {
+                      "name": "01_contact",
+                      "path": "reach/combat/odst1/stealthy/01_contact",
+                      "file_count": 13,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "03_postcombat",
+                      "path": "reach/combat/odst1/stealthy/03_postcombat",
+                      "file_count": 28,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "06_fireteam",
+                      "path": "reach/combat/odst1/stealthy/06_fireteam",
+                      "file_count": 9,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "07_respond",
+                      "path": "reach/combat/odst1/stealthy/07_respond",
+                      "file_count": 27,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "09_order",
+                      "path": "reach/combat/odst1/stealthy/09_order",
+                      "file_count": 42,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "10_exclaim",
+                      "path": "reach/combat/odst1/stealthy/10_exclaim",
+                      "file_count": 33,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "11_involuntary",
+                      "path": "reach/combat/odst1/stealthy/11_involuntary",
+                      "file_count": 21,
+                      "show_in_browser": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "odst2",
+              "path": "reach/combat/odst2",
+              "file_count": 0,
+              "show_in_browser": true,
+              "children": [
+                {
+                  "name": "default",
+                  "path": "reach/combat/odst2/default",
+                  "file_count": 0,
+                  "show_in_browser": false,
+                  "children": [
+                    {
+                      "name": "01_contact",
+                      "path": "reach/combat/odst2/default/01_contact",
+                      "file_count": 38,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "02_combat",
+                      "path": "reach/combat/odst2/default/02_combat",
+                      "file_count": 263,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "03_postcombat",
+                      "path": "reach/combat/odst2/default/03_postcombat",
+                      "file_count": 59,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "04_vehicle",
+                      "path": "reach/combat/odst2/default/04_vehicle",
+                      "file_count": 37,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "05_search",
+                      "path": "reach/combat/odst2/default/05_search",
+                      "file_count": 45,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "06_fireteam",
+                      "path": "reach/combat/odst2/default/06_fireteam",
+                      "file_count": 20,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "07_respond",
+                      "path": "reach/combat/odst2/default/07_respond",
+                      "file_count": 51,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "08_idle",
+                      "path": "reach/combat/odst2/default/08_idle",
+                      "file_count": 29,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "09_order",
+                      "path": "reach/combat/odst2/default/09_order",
+                      "file_count": 81,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "10_exclaim",
+                      "path": "reach/combat/odst2/default/10_exclaim",
+                      "file_count": 108,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "11_involuntary",
+                      "path": "reach/combat/odst2/default/11_involuntary",
+                      "file_count": 126,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "12_space",
+                      "path": "reach/combat/odst2/default/12_space",
+                      "file_count": 88,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "13_script",
+                      "path": "reach/combat/odst2/default/13_script",
+                      "file_count": 18,
+                      "show_in_browser": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "stealthy",
+                  "path": "reach/combat/odst2/stealthy",
+                  "file_count": 0,
+                  "show_in_browser": false,
+                  "children": [
+                    {
+                      "name": "01_contact",
+                      "path": "reach/combat/odst2/stealthy/01_contact",
+                      "file_count": 14,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "03_postcombat",
+                      "path": "reach/combat/odst2/stealthy/03_postcombat",
+                      "file_count": 28,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "06_fireteam",
+                      "path": "reach/combat/odst2/stealthy/06_fireteam",
+                      "file_count": 15,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "07_respond",
+                      "path": "reach/combat/odst2/stealthy/07_respond",
+                      "file_count": 35,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "09_order",
+                      "path": "reach/combat/odst2/stealthy/09_order",
+                      "file_count": 46,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "10_exclaim",
+                      "path": "reach/combat/odst2/stealthy/10_exclaim",
+                      "file_count": 46,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "11_involuntary",
+                      "path": "reach/combat/odst2/stealthy/11_involuntary",
+                      "file_count": 12,
+                      "show_in_browser": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "odst3",
+              "path": "reach/combat/odst3",
+              "file_count": 0,
+              "show_in_browser": true,
+              "children": [
+                {
+                  "name": "default",
+                  "path": "reach/combat/odst3/default",
+                  "file_count": 0,
+                  "show_in_browser": false,
+                  "children": [
+                    {
+                      "name": "01_contact",
+                      "path": "reach/combat/odst3/default/01_contact",
+                      "file_count": 26,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "02_combat",
+                      "path": "reach/combat/odst3/default/02_combat",
+                      "file_count": 221,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "03_postcombat",
+                      "path": "reach/combat/odst3/default/03_postcombat",
+                      "file_count": 38,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "04_vehicle",
+                      "path": "reach/combat/odst3/default/04_vehicle",
+                      "file_count": 27,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "05_search",
+                      "path": "reach/combat/odst3/default/05_search",
+                      "file_count": 36,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "06_fireteam",
+                      "path": "reach/combat/odst3/default/06_fireteam",
+                      "file_count": 18,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "07_respond",
+                      "path": "reach/combat/odst3/default/07_respond",
+                      "file_count": 34,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "08_idle",
+                      "path": "reach/combat/odst3/default/08_idle",
+                      "file_count": 11,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "09_order",
+                      "path": "reach/combat/odst3/default/09_order",
+                      "file_count": 69,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "10_exclaim",
+                      "path": "reach/combat/odst3/default/10_exclaim",
+                      "file_count": 69,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "11_involuntary",
+                      "path": "reach/combat/odst3/default/11_involuntary",
+                      "file_count": 109,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "12_space",
+                      "path": "reach/combat/odst3/default/12_space",
+                      "file_count": 77,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "13_script",
+                      "path": "reach/combat/odst3/default/13_script",
+                      "file_count": 13,
+                      "show_in_browser": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "stealthy",
+                  "path": "reach/combat/odst3/stealthy",
+                  "file_count": 0,
+                  "show_in_browser": false,
+                  "children": [
+                    {
+                      "name": "01_contact",
+                      "path": "reach/combat/odst3/stealthy/01_contact",
+                      "file_count": 13,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "03_postcombat",
+                      "path": "reach/combat/odst3/stealthy/03_postcombat",
+                      "file_count": 35,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "06_fireteam",
+                      "path": "reach/combat/odst3/stealthy/06_fireteam",
+                      "file_count": 9,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "07_respond",
+                      "path": "reach/combat/odst3/stealthy/07_respond",
+                      "file_count": 21,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "09_order",
+                      "path": "reach/combat/odst3/stealthy/09_order",
+                      "file_count": 38,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "10_exclaim",
+                      "path": "reach/combat/odst3/stealthy/10_exclaim",
+                      "file_count": 25,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "11_involuntary",
+                      "path": "reach/combat/odst3/stealthy/11_involuntary",
+                      "file_count": 10,
+                      "show_in_browser": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "odst_buck",
+              "path": "reach/combat/odst_buck",
+              "file_count": 0,
+              "show_in_browser": true,
+              "children": [
+                {
+                  "name": "default",
+                  "path": "reach/combat/odst_buck/default",
+                  "file_count": 0,
+                  "show_in_browser": false,
+                  "children": [
+                    {
+                      "name": "01_contact",
+                      "path": "reach/combat/odst_buck/default/01_contact",
+                      "file_count": 20,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "02_combat",
+                      "path": "reach/combat/odst_buck/default/02_combat",
+                      "file_count": 226,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "03_postcombat",
+                      "path": "reach/combat/odst_buck/default/03_postcombat",
+                      "file_count": 29,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "04_vehicle",
+                      "path": "reach/combat/odst_buck/default/04_vehicle",
+                      "file_count": 54,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "10_exclaim",
+                      "path": "reach/combat/odst_buck/default/10_exclaim",
+                      "file_count": 25,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "11_involuntary",
+                      "path": "reach/combat/odst_buck/default/11_involuntary",
+                      "file_count": 168,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "14_1st_person",
+                      "path": "reach/combat/odst_buck/default/14_1st_person",
+                      "file_count": 90,
+                      "show_in_browser": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "sgt_johnson",
+              "path": "reach/combat/sgt_johnson",
+              "file_count": 0,
+              "show_in_browser": true,
+              "children": [
+                {
+                  "name": "default",
+                  "path": "reach/combat/sgt_johnson/default",
+                  "file_count": 0,
+                  "show_in_browser": false,
+                  "children": [
+                    {
+                      "name": "01_contact",
+                      "path": "reach/combat/sgt_johnson/default/01_contact",
+                      "file_count": 14,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "02_combat",
+                      "path": "reach/combat/sgt_johnson/default/02_combat",
+                      "file_count": 180,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "03_postcombat",
+                      "path": "reach/combat/sgt_johnson/default/03_postcombat",
+                      "file_count": 25,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "04_vehicle",
+                      "path": "reach/combat/sgt_johnson/default/04_vehicle",
+                      "file_count": 27,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "10_exclaim",
+                      "path": "reach/combat/sgt_johnson/default/10_exclaim",
+                      "file_count": 14,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "11_involuntary",
+                      "path": "reach/combat/sgt_johnson/default/11_involuntary",
+                      "file_count": 151,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "14_1st_person",
+                      "path": "reach/combat/sgt_johnson/default/14_1st_person",
+                      "file_count": 82,
+                      "show_in_browser": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "spartan1_carter",
+              "path": "reach/combat/spartan1_carter",
+              "file_count": 0,
+              "show_in_browser": true,
+              "children": [
+                {
+                  "name": "default",
+                  "path": "reach/combat/spartan1_carter/default",
+                  "file_count": 0,
+                  "show_in_browser": false,
+                  "children": [
+                    {
+                      "name": "01_contact",
+                      "path": "reach/combat/spartan1_carter/default/01_contact",
+                      "file_count": 28,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "02_combat",
+                      "path": "reach/combat/spartan1_carter/default/02_combat",
+                      "file_count": 234,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "03_postcombat",
+                      "path": "reach/combat/spartan1_carter/default/03_postcombat",
+                      "file_count": 34,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "04_vehicle",
+                      "path": "reach/combat/spartan1_carter/default/04_vehicle",
+                      "file_count": 32,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "05_search",
+                      "path": "reach/combat/spartan1_carter/default/05_search",
+                      "file_count": 42,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "07_respond",
+                      "path": "reach/combat/spartan1_carter/default/07_respond",
+                      "file_count": 14,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "09_order",
+                      "path": "reach/combat/spartan1_carter/default/09_order",
+                      "file_count": 80,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "10_exclaim",
+                      "path": "reach/combat/spartan1_carter/default/10_exclaim",
+                      "file_count": 84,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "11_involuntary",
+                      "path": "reach/combat/spartan1_carter/default/11_involuntary",
+                      "file_count": 168,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "13_script",
+                      "path": "reach/combat/spartan1_carter/default/13_script",
+                      "file_count": 15,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "14_1st_person",
+                      "path": "reach/combat/spartan1_carter/default/14_1st_person",
+                      "file_count": 76,
+                      "show_in_browser": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "stealthy",
+                  "path": "reach/combat/spartan1_carter/stealthy",
+                  "file_count": 0,
+                  "show_in_browser": false,
+                  "children": [
+                    {
+                      "name": "03_postcombat",
+                      "path": "reach/combat/spartan1_carter/stealthy/03_postcombat",
+                      "file_count": 18,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "07_respond",
+                      "path": "reach/combat/spartan1_carter/stealthy/07_respond",
+                      "file_count": 5,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "10_exclaim",
+                      "path": "reach/combat/spartan1_carter/stealthy/10_exclaim",
+                      "file_count": 41,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "11_involuntary",
+                      "path": "reach/combat/spartan1_carter/stealthy/11_involuntary",
+                      "file_count": 31,
+                      "show_in_browser": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "spartan2_kat",
+              "path": "reach/combat/spartan2_kat",
+              "file_count": 0,
+              "show_in_browser": true,
+              "children": [
+                {
+                  "name": "default",
+                  "path": "reach/combat/spartan2_kat/default",
+                  "file_count": 0,
+                  "show_in_browser": false,
+                  "children": [
+                    {
+                      "name": "01_contact",
+                      "path": "reach/combat/spartan2_kat/default/01_contact",
+                      "file_count": 26,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "02_combat",
+                      "path": "reach/combat/spartan2_kat/default/02_combat",
+                      "file_count": 210,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "03_postcombat",
+                      "path": "reach/combat/spartan2_kat/default/03_postcombat",
+                      "file_count": 37,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "04_vehicle",
+                      "path": "reach/combat/spartan2_kat/default/04_vehicle",
+                      "file_count": 31,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "05_search",
+                      "path": "reach/combat/spartan2_kat/default/05_search",
+                      "file_count": 40,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "07_respond",
+                      "path": "reach/combat/spartan2_kat/default/07_respond",
+                      "file_count": 12,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "09_order",
+                      "path": "reach/combat/spartan2_kat/default/09_order",
+                      "file_count": 83,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "10_exclaim",
+                      "path": "reach/combat/spartan2_kat/default/10_exclaim",
+                      "file_count": 82,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "11_involuntary",
+                      "path": "reach/combat/spartan2_kat/default/11_involuntary",
+                      "file_count": 134,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "13_script",
+                      "path": "reach/combat/spartan2_kat/default/13_script",
+                      "file_count": 14,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "14_1st_person",
+                      "path": "reach/combat/spartan2_kat/default/14_1st_person",
+                      "file_count": 75,
+                      "show_in_browser": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "stealthy",
+                  "path": "reach/combat/spartan2_kat/stealthy",
+                  "file_count": 0,
+                  "show_in_browser": false,
+                  "children": [
+                    {
+                      "name": "03_postcombat",
+                      "path": "reach/combat/spartan2_kat/stealthy/03_postcombat",
+                      "file_count": 18,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "07_respond",
+                      "path": "reach/combat/spartan2_kat/stealthy/07_respond",
+                      "file_count": 4,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "10_exclaim",
+                      "path": "reach/combat/spartan2_kat/stealthy/10_exclaim",
+                      "file_count": 26,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "11_involuntary",
+                      "path": "reach/combat/spartan2_kat/stealthy/11_involuntary",
+                      "file_count": 25,
+                      "show_in_browser": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "spartan3_jun",
+              "path": "reach/combat/spartan3_jun",
+              "file_count": 0,
+              "show_in_browser": true,
+              "children": [
+                {
+                  "name": "default",
+                  "path": "reach/combat/spartan3_jun/default",
+                  "file_count": 0,
+                  "show_in_browser": false,
+                  "children": [
+                    {
+                      "name": "01_contact",
+                      "path": "reach/combat/spartan3_jun/default/01_contact",
+                      "file_count": 36,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "02_combat",
+                      "path": "reach/combat/spartan3_jun/default/02_combat",
+                      "file_count": 236,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "03_postcombat",
+                      "path": "reach/combat/spartan3_jun/default/03_postcombat",
+                      "file_count": 34,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "04_vehicle",
+                      "path": "reach/combat/spartan3_jun/default/04_vehicle",
+                      "file_count": 33,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "05_search",
+                      "path": "reach/combat/spartan3_jun/default/05_search",
+                      "file_count": 42,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "07_respond",
+                      "path": "reach/combat/spartan3_jun/default/07_respond",
+                      "file_count": 13,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "09_order",
+                      "path": "reach/combat/spartan3_jun/default/09_order",
+                      "file_count": 82,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "10_exclaim",
+                      "path": "reach/combat/spartan3_jun/default/10_exclaim",
+                      "file_count": 98,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "11_involuntary",
+                      "path": "reach/combat/spartan3_jun/default/11_involuntary",
+                      "file_count": 174,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "13_script",
+                      "path": "reach/combat/spartan3_jun/default/13_script",
+                      "file_count": 14,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "14_1st_person",
+                      "path": "reach/combat/spartan3_jun/default/14_1st_person",
+                      "file_count": 79,
+                      "show_in_browser": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "stealthy",
+                  "path": "reach/combat/spartan3_jun/stealthy",
+                  "file_count": 0,
+                  "show_in_browser": false,
+                  "children": [
+                    {
+                      "name": "03_postcombat",
+                      "path": "reach/combat/spartan3_jun/stealthy/03_postcombat",
+                      "file_count": 22,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "07_respond",
+                      "path": "reach/combat/spartan3_jun/stealthy/07_respond",
+                      "file_count": 9,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "10_exclaim",
+                      "path": "reach/combat/spartan3_jun/stealthy/10_exclaim",
+                      "file_count": 35,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "11_involuntary",
+                      "path": "reach/combat/spartan3_jun/stealthy/11_involuntary",
+                      "file_count": 24,
+                      "show_in_browser": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "spartan4_emile",
+              "path": "reach/combat/spartan4_emile",
+              "file_count": 0,
+              "show_in_browser": true,
+              "children": [
+                {
+                  "name": "default",
+                  "path": "reach/combat/spartan4_emile/default",
+                  "file_count": 0,
+                  "show_in_browser": false,
+                  "children": [
+                    {
+                      "name": "01_contact",
+                      "path": "reach/combat/spartan4_emile/default/01_contact",
+                      "file_count": 32,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "02_combat",
+                      "path": "reach/combat/spartan4_emile/default/02_combat",
+                      "file_count": 230,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "03_postcombat",
+                      "path": "reach/combat/spartan4_emile/default/03_postcombat",
+                      "file_count": 32,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "04_vehicle",
+                      "path": "reach/combat/spartan4_emile/default/04_vehicle",
+                      "file_count": 27,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "05_search",
+                      "path": "reach/combat/spartan4_emile/default/05_search",
+                      "file_count": 41,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "07_respond",
+                      "path": "reach/combat/spartan4_emile/default/07_respond",
+                      "file_count": 13,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "09_order",
+                      "path": "reach/combat/spartan4_emile/default/09_order",
+                      "file_count": 78,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "10_exclaim",
+                      "path": "reach/combat/spartan4_emile/default/10_exclaim",
+                      "file_count": 85,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "11_involuntary",
+                      "path": "reach/combat/spartan4_emile/default/11_involuntary",
+                      "file_count": 139,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "13_script",
+                      "path": "reach/combat/spartan4_emile/default/13_script",
+                      "file_count": 14,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "14_1st_person",
+                      "path": "reach/combat/spartan4_emile/default/14_1st_person",
+                      "file_count": 77,
+                      "show_in_browser": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "stealthy",
+                  "path": "reach/combat/spartan4_emile/stealthy",
+                  "file_count": 0,
+                  "show_in_browser": false,
+                  "children": [
+                    {
+                      "name": "03_postcombat",
+                      "path": "reach/combat/spartan4_emile/stealthy/03_postcombat",
+                      "file_count": 14,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "07_respond",
+                      "path": "reach/combat/spartan4_emile/stealthy/07_respond",
+                      "file_count": 4,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "10_exclaim",
+                      "path": "reach/combat/spartan4_emile/stealthy/10_exclaim",
+                      "file_count": 27,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "11_involuntary",
+                      "path": "reach/combat/spartan4_emile/stealthy/11_involuntary",
+                      "file_count": 11,
+                      "show_in_browser": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "spartan5_jorge",
+              "path": "reach/combat/spartan5_jorge",
+              "file_count": 0,
+              "show_in_browser": true,
+              "children": [
+                {
+                  "name": "default",
+                  "path": "reach/combat/spartan5_jorge/default",
+                  "file_count": 0,
+                  "show_in_browser": false,
+                  "children": [
+                    {
+                      "name": "01_contact",
+                      "path": "reach/combat/spartan5_jorge/default/01_contact",
+                      "file_count": 29,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "02_combat",
+                      "path": "reach/combat/spartan5_jorge/default/02_combat",
+                      "file_count": 215,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "03_postcombat",
+                      "path": "reach/combat/spartan5_jorge/default/03_postcombat",
+                      "file_count": 34,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "04_vehicle",
+                      "path": "reach/combat/spartan5_jorge/default/04_vehicle",
+                      "file_count": 24,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "05_search",
+                      "path": "reach/combat/spartan5_jorge/default/05_search",
+                      "file_count": 33,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "07_respond",
+                      "path": "reach/combat/spartan5_jorge/default/07_respond",
+                      "file_count": 12,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "09_order",
+                      "path": "reach/combat/spartan5_jorge/default/09_order",
+                      "file_count": 74,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "10_exclaim",
+                      "path": "reach/combat/spartan5_jorge/default/10_exclaim",
+                      "file_count": 80,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "11_involuntary",
+                      "path": "reach/combat/spartan5_jorge/default/11_involuntary",
+                      "file_count": 160,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "13_script",
+                      "path": "reach/combat/spartan5_jorge/default/13_script",
+                      "file_count": 14,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "14_1st_person",
+                      "path": "reach/combat/spartan5_jorge/default/14_1st_person",
+                      "file_count": 81,
+                      "show_in_browser": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "stealthy",
+                  "path": "reach/combat/spartan5_jorge/stealthy",
+                  "file_count": 0,
+                  "show_in_browser": false,
+                  "children": [
+                    {
+                      "name": "03_postcombat",
+                      "path": "reach/combat/spartan5_jorge/stealthy/03_postcombat",
+                      "file_count": 18,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "07_respond",
+                      "path": "reach/combat/spartan5_jorge/stealthy/07_respond",
+                      "file_count": 5,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "10_exclaim",
+                      "path": "reach/combat/spartan5_jorge/stealthy/10_exclaim",
+                      "file_count": 25,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "11_involuntary",
+                      "path": "reach/combat/spartan5_jorge/stealthy/11_involuntary",
+                      "file_count": 17,
+                      "show_in_browser": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "spartan6_fem",
+              "path": "reach/combat/spartan6_fem",
+              "file_count": 0,
+              "show_in_browser": true,
+              "children": [
+                {
+                  "name": "default",
+                  "path": "reach/combat/spartan6_fem/default",
+                  "file_count": 0,
+                  "show_in_browser": false,
+                  "children": [
+                    {
+                      "name": "02_combat",
+                      "path": "reach/combat/spartan6_fem/default/02_combat",
+                      "file_count": 24,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "04_vehicle",
+                      "path": "reach/combat/spartan6_fem/default/04_vehicle",
+                      "file_count": 6,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "10_exclaim",
+                      "path": "reach/combat/spartan6_fem/default/10_exclaim",
+                      "file_count": 7,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "11_involuntary",
+                      "path": "reach/combat/spartan6_fem/default/11_involuntary",
+                      "file_count": 150,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "14_1st_person",
+                      "path": "reach/combat/spartan6_fem/default/14_1st_person",
+                      "file_count": 53,
+                      "show_in_browser": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "spartan6_male",
+              "path": "reach/combat/spartan6_male",
+              "file_count": 0,
+              "show_in_browser": true,
+              "children": [
+                {
+                  "name": "default",
+                  "path": "reach/combat/spartan6_male/default",
+                  "file_count": 0,
+                  "show_in_browser": false,
+                  "children": [
+                    {
+                      "name": "02_combat",
+                      "path": "reach/combat/spartan6_male/default/02_combat",
+                      "file_count": 28,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "04_vehicle",
+                      "path": "reach/combat/spartan6_male/default/04_vehicle",
+                      "file_count": 4,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "10_exclaim",
+                      "path": "reach/combat/spartan6_male/default/10_exclaim",
+                      "file_count": 11,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "11_involuntary",
+                      "path": "reach/combat/spartan6_male/default/11_involuntary",
+                      "file_count": 162,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "14_1st_person",
+                      "path": "reach/combat/spartan6_male/default/14_1st_person",
+                      "file_count": 37,
+                      "show_in_browser": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "trooper1",
+              "path": "reach/combat/trooper1",
+              "file_count": 0,
+              "show_in_browser": true,
+              "children": [
+                {
+                  "name": "default",
+                  "path": "reach/combat/trooper1/default",
+                  "file_count": 0,
+                  "show_in_browser": false,
+                  "children": [
+                    {
+                      "name": "01_contact",
+                      "path": "reach/combat/trooper1/default/01_contact",
+                      "file_count": 26,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "02_combat",
+                      "path": "reach/combat/trooper1/default/02_combat",
+                      "file_count": 221,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "03_postcombat",
+                      "path": "reach/combat/trooper1/default/03_postcombat",
+                      "file_count": 34,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "04_vehicle",
+                      "path": "reach/combat/trooper1/default/04_vehicle",
+                      "file_count": 27,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "05_search",
+                      "path": "reach/combat/trooper1/default/05_search",
+                      "file_count": 36,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "06_fireteam",
+                      "path": "reach/combat/trooper1/default/06_fireteam",
+                      "file_count": 18,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "07_respond",
+                      "path": "reach/combat/trooper1/default/07_respond",
+                      "file_count": 40,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "08_idle",
+                      "path": "reach/combat/trooper1/default/08_idle",
+                      "file_count": 11,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "09_order",
+                      "path": "reach/combat/trooper1/default/09_order",
+                      "file_count": 74,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "10_exclaim",
+                      "path": "reach/combat/trooper1/default/10_exclaim",
+                      "file_count": 73,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "11_involuntary",
+                      "path": "reach/combat/trooper1/default/11_involuntary",
+                      "file_count": 109,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "12_space",
+                      "path": "reach/combat/trooper1/default/12_space",
+                      "file_count": 77,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "13_script",
+                      "path": "reach/combat/trooper1/default/13_script",
+                      "file_count": 13,
+                      "show_in_browser": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "stealthy",
+                  "path": "reach/combat/trooper1/stealthy",
+                  "file_count": 0,
+                  "show_in_browser": false,
+                  "children": [
+                    {
+                      "name": "03_postcombat",
+                      "path": "reach/combat/trooper1/stealthy/03_postcombat",
+                      "file_count": 24,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "07_respond",
+                      "path": "reach/combat/trooper1/stealthy/07_respond",
+                      "file_count": 21,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "10_exclaim",
+                      "path": "reach/combat/trooper1/stealthy/10_exclaim",
+                      "file_count": 26,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "11_involuntary",
+                      "path": "reach/combat/trooper1/stealthy/11_involuntary",
+                      "file_count": 10,
+                      "show_in_browser": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "trooper2",
+              "path": "reach/combat/trooper2",
+              "file_count": 0,
+              "show_in_browser": true,
+              "children": [
+                {
+                  "name": "default",
+                  "path": "reach/combat/trooper2/default",
+                  "file_count": 0,
+                  "show_in_browser": false,
+                  "children": [
+                    {
+                      "name": "01_contact",
+                      "path": "reach/combat/trooper2/default/01_contact",
+                      "file_count": 30,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "02_combat",
+                      "path": "reach/combat/trooper2/default/02_combat",
+                      "file_count": 265,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "03_postcombat",
+                      "path": "reach/combat/trooper2/default/03_postcombat",
+                      "file_count": 42,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "04_vehicle",
+                      "path": "reach/combat/trooper2/default/04_vehicle",
+                      "file_count": 30,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "05_search",
+                      "path": "reach/combat/trooper2/default/05_search",
+                      "file_count": 32,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "06_fireteam",
+                      "path": "reach/combat/trooper2/default/06_fireteam",
+                      "file_count": 21,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "07_respond",
+                      "path": "reach/combat/trooper2/default/07_respond",
+                      "file_count": 41,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "08_idle",
+                      "path": "reach/combat/trooper2/default/08_idle",
+                      "file_count": 31,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "09_order",
+                      "path": "reach/combat/trooper2/default/09_order",
+                      "file_count": 85,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "10_exclaim",
+                      "path": "reach/combat/trooper2/default/10_exclaim",
+                      "file_count": 88,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "11_involuntary",
+                      "path": "reach/combat/trooper2/default/11_involuntary",
+                      "file_count": 185,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "12_space",
+                      "path": "reach/combat/trooper2/default/12_space",
+                      "file_count": 83,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "13_script",
+                      "path": "reach/combat/trooper2/default/13_script",
+                      "file_count": 15,
+                      "show_in_browser": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "stealthy",
+                  "path": "reach/combat/trooper2/stealthy",
+                  "file_count": 0,
+                  "show_in_browser": false,
+                  "children": [
+                    {
+                      "name": "03_postcombat",
+                      "path": "reach/combat/trooper2/stealthy/03_postcombat",
+                      "file_count": 12,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "07_respond",
+                      "path": "reach/combat/trooper2/stealthy/07_respond",
+                      "file_count": 25,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "10_exclaim",
+                      "path": "reach/combat/trooper2/stealthy/10_exclaim",
+                      "file_count": 29,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "11_involuntary",
+                      "path": "reach/combat/trooper2/stealthy/11_involuntary",
+                      "file_count": 20,
+                      "show_in_browser": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "trooper3",
+              "path": "reach/combat/trooper3",
+              "file_count": 0,
+              "show_in_browser": true,
+              "children": [
+                {
+                  "name": "default",
+                  "path": "reach/combat/trooper3/default",
+                  "file_count": 0,
+                  "show_in_browser": false,
+                  "children": [
+                    {
+                      "name": "01_contact",
+                      "path": "reach/combat/trooper3/default/01_contact",
+                      "file_count": 28,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "02_combat",
+                      "path": "reach/combat/trooper3/default/02_combat",
+                      "file_count": 239,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "03_postcombat",
+                      "path": "reach/combat/trooper3/default/03_postcombat",
+                      "file_count": 33,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "04_vehicle",
+                      "path": "reach/combat/trooper3/default/04_vehicle",
+                      "file_count": 34,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "05_search",
+                      "path": "reach/combat/trooper3/default/05_search",
+                      "file_count": 33,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "06_fireteam",
+                      "path": "reach/combat/trooper3/default/06_fireteam",
+                      "file_count": 18,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "07_respond",
+                      "path": "reach/combat/trooper3/default/07_respond",
+                      "file_count": 43,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "08_idle",
+                      "path": "reach/combat/trooper3/default/08_idle",
+                      "file_count": 13,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "09_order",
+                      "path": "reach/combat/trooper3/default/09_order",
+                      "file_count": 95,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "10_exclaim",
+                      "path": "reach/combat/trooper3/default/10_exclaim",
+                      "file_count": 97,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "11_involuntary",
+                      "path": "reach/combat/trooper3/default/11_involuntary",
+                      "file_count": 216,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "12_space",
+                      "path": "reach/combat/trooper3/default/12_space",
+                      "file_count": 78,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "13_script",
+                      "path": "reach/combat/trooper3/default/13_script",
+                      "file_count": 12,
+                      "show_in_browser": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "stealthy",
+                  "path": "reach/combat/trooper3/stealthy",
+                  "file_count": 0,
+                  "show_in_browser": false,
+                  "children": [
+                    {
+                      "name": "03_postcombat",
+                      "path": "reach/combat/trooper3/stealthy/03_postcombat",
+                      "file_count": 18,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "07_respond",
+                      "path": "reach/combat/trooper3/stealthy/07_respond",
+                      "file_count": 30,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "10_exclaim",
+                      "path": "reach/combat/trooper3/stealthy/10_exclaim",
+                      "file_count": 36,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "11_involuntary",
+                      "path": "reach/combat/trooper3/stealthy/11_involuntary",
+                      "file_count": 22,
+                      "show_in_browser": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "trooper4",
+              "path": "reach/combat/trooper4",
+              "file_count": 0,
+              "show_in_browser": true,
+              "children": [
+                {
+                  "name": "default",
+                  "path": "reach/combat/trooper4/default",
+                  "file_count": 0,
+                  "show_in_browser": false,
+                  "children": [
+                    {
+                      "name": "01_contact",
+                      "path": "reach/combat/trooper4/default/01_contact",
+                      "file_count": 28,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "02_combat",
+                      "path": "reach/combat/trooper4/default/02_combat",
+                      "file_count": 205,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "03_postcombat",
+                      "path": "reach/combat/trooper4/default/03_postcombat",
+                      "file_count": 40,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "04_vehicle",
+                      "path": "reach/combat/trooper4/default/04_vehicle",
+                      "file_count": 36,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "05_search",
+                      "path": "reach/combat/trooper4/default/05_search",
+                      "file_count": 33,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "06_fireteam",
+                      "path": "reach/combat/trooper4/default/06_fireteam",
+                      "file_count": 18,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "07_respond",
+                      "path": "reach/combat/trooper4/default/07_respond",
+                      "file_count": 45,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "08_idle",
+                      "path": "reach/combat/trooper4/default/08_idle",
+                      "file_count": 14,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "09_order",
+                      "path": "reach/combat/trooper4/default/09_order",
+                      "file_count": 67,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "10_exclaim",
+                      "path": "reach/combat/trooper4/default/10_exclaim",
+                      "file_count": 79,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "11_involuntary",
+                      "path": "reach/combat/trooper4/default/11_involuntary",
+                      "file_count": 143,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "12_space",
+                      "path": "reach/combat/trooper4/default/12_space",
+                      "file_count": 67,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "13_script",
+                      "path": "reach/combat/trooper4/default/13_script",
+                      "file_count": 10,
+                      "show_in_browser": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "stealthy",
+                  "path": "reach/combat/trooper4/stealthy",
+                  "file_count": 0,
+                  "show_in_browser": false,
+                  "children": [
+                    {
+                      "name": "03_postcombat",
+                      "path": "reach/combat/trooper4/stealthy/03_postcombat",
+                      "file_count": 20,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "07_respond",
+                      "path": "reach/combat/trooper4/stealthy/07_respond",
+                      "file_count": 23,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "10_exclaim",
+                      "path": "reach/combat/trooper4/stealthy/10_exclaim",
+                      "file_count": 28,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "11_involuntary",
+                      "path": "reach/combat/trooper4/stealthy/11_involuntary",
+                      "file_count": 11,
+                      "show_in_browser": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "trooper5",
+              "path": "reach/combat/trooper5",
+              "file_count": 0,
+              "show_in_browser": true,
+              "children": [
+                {
+                  "name": "default",
+                  "path": "reach/combat/trooper5/default",
+                  "file_count": 0,
+                  "show_in_browser": false,
+                  "children": [
+                    {
+                      "name": "01_contact",
+                      "path": "reach/combat/trooper5/default/01_contact",
+                      "file_count": 39,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "02_combat",
+                      "path": "reach/combat/trooper5/default/02_combat",
+                      "file_count": 269,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "03_postcombat",
+                      "path": "reach/combat/trooper5/default/03_postcombat",
+                      "file_count": 56,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "04_vehicle",
+                      "path": "reach/combat/trooper5/default/04_vehicle",
+                      "file_count": 39,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "05_search",
+                      "path": "reach/combat/trooper5/default/05_search",
+                      "file_count": 52,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "06_fireteam",
+                      "path": "reach/combat/trooper5/default/06_fireteam",
+                      "file_count": 20,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "07_respond",
+                      "path": "reach/combat/trooper5/default/07_respond",
+                      "file_count": 60,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "08_idle",
+                      "path": "reach/combat/trooper5/default/08_idle",
+                      "file_count": 29,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "09_order",
+                      "path": "reach/combat/trooper5/default/09_order",
+                      "file_count": 89,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "10_exclaim",
+                      "path": "reach/combat/trooper5/default/10_exclaim",
+                      "file_count": 115,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "11_involuntary",
+                      "path": "reach/combat/trooper5/default/11_involuntary",
+                      "file_count": 127,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "12_space",
+                      "path": "reach/combat/trooper5/default/12_space",
+                      "file_count": 88,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "13_script",
+                      "path": "reach/combat/trooper5/default/13_script",
+                      "file_count": 18,
+                      "show_in_browser": false,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "stealthy",
+                  "path": "reach/combat/trooper5/stealthy",
+                  "file_count": 0,
+                  "show_in_browser": false,
+                  "children": [
+                    {
+                      "name": "03_postcombat",
+                      "path": "reach/combat/trooper5/stealthy/03_postcombat",
+                      "file_count": 20,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "07_respond",
+                      "path": "reach/combat/trooper5/stealthy/07_respond",
+                      "file_count": 32,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "10_exclaim",
+                      "path": "reach/combat/trooper5/stealthy/10_exclaim",
+                      "file_count": 52,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "11_involuntary",
+                      "path": "reach/combat/trooper5/stealthy/11_involuntary",
+                      "file_count": 13,
+                      "show_in_browser": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "trooper_fem1",
+              "path": "reach/combat/trooper_fem1",
+              "file_count": 0,
+              "show_in_browser": true,
+              "children": [
+                {
+                  "name": "default",
+                  "path": "reach/combat/trooper_fem1/default",
+                  "file_count": 0,
+                  "show_in_browser": false,
+                  "children": [
+                    {
+                      "name": "01_contact",
+                      "path": "reach/combat/trooper_fem1/default/01_contact",
+                      "file_count": 24,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "02_combat",
+                      "path": "reach/combat/trooper_fem1/default/02_combat",
+                      "file_count": 216,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "03_postcombat",
+                      "path": "reach/combat/trooper_fem1/default/03_postcombat",
+                      "file_count": 31,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "04_vehicle",
+                      "path": "reach/combat/trooper_fem1/default/04_vehicle",
+                      "file_count": 26,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "05_search",
+                      "path": "reach/combat/trooper_fem1/default/05_search",
+                      "file_count": 33,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "06_fireteam",
+                      "path": "reach/combat/trooper_fem1/default/06_fireteam",
+                      "file_count": 18,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "07_respond",
+                      "path": "reach/combat/trooper_fem1/default/07_respond",
+                      "file_count": 42,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "08_idle",
+                      "path": "reach/combat/trooper_fem1/default/08_idle",
+                      "file_count": 10,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "09_order",
+                      "path": "reach/combat/trooper_fem1/default/09_order",
+                      "file_count": 71,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "10_exclaim",
+                      "path": "reach/combat/trooper_fem1/default/10_exclaim",
+                      "file_count": 72,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "11_involuntary",
+                      "path": "reach/combat/trooper_fem1/default/11_involuntary",
+                      "file_count": 180,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "12_space",
+                      "path": "reach/combat/trooper_fem1/default/12_space",
+                      "file_count": 74,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "13_script",
+                      "path": "reach/combat/trooper_fem1/default/13_script",
+                      "file_count": 13,
+                      "show_in_browser": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "trooper_fem2",
+              "path": "reach/combat/trooper_fem2",
+              "file_count": 0,
+              "show_in_browser": true,
+              "children": [
+                {
+                  "name": "default",
+                  "path": "reach/combat/trooper_fem2/default",
+                  "file_count": 0,
+                  "show_in_browser": false,
+                  "children": [
+                    {
+                      "name": "01_contact",
+                      "path": "reach/combat/trooper_fem2/default/01_contact",
+                      "file_count": 25,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "02_combat",
+                      "path": "reach/combat/trooper_fem2/default/02_combat",
+                      "file_count": 241,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "03_postcombat",
+                      "path": "reach/combat/trooper_fem2/default/03_postcombat",
+                      "file_count": 48,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "04_vehicle",
+                      "path": "reach/combat/trooper_fem2/default/04_vehicle",
+                      "file_count": 30,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "05_search",
+                      "path": "reach/combat/trooper_fem2/default/05_search",
+                      "file_count": 37,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "06_fireteam",
+                      "path": "reach/combat/trooper_fem2/default/06_fireteam",
+                      "file_count": 19,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "07_respond",
+                      "path": "reach/combat/trooper_fem2/default/07_respond",
+                      "file_count": 70,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "08_idle",
+                      "path": "reach/combat/trooper_fem2/default/08_idle",
+                      "file_count": 22,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "09_order",
+                      "path": "reach/combat/trooper_fem2/default/09_order",
+                      "file_count": 76,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "10_exclaim",
+                      "path": "reach/combat/trooper_fem2/default/10_exclaim",
+                      "file_count": 100,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "11_involuntary",
+                      "path": "reach/combat/trooper_fem2/default/11_involuntary",
+                      "file_count": 165,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "12_space",
+                      "path": "reach/combat/trooper_fem2/default/12_space",
+                      "file_count": 71,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "13_script",
+                      "path": "reach/combat/trooper_fem2/default/13_script",
+                      "file_count": 17,
+                      "show_in_browser": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "trooper_sgt1",
+              "path": "reach/combat/trooper_sgt1",
+              "file_count": 0,
+              "show_in_browser": true,
+              "children": [
+                {
+                  "name": "default",
+                  "path": "reach/combat/trooper_sgt1/default",
+                  "file_count": 0,
+                  "show_in_browser": false,
+                  "children": [
+                    {
+                      "name": "01_contact",
+                      "path": "reach/combat/trooper_sgt1/default/01_contact",
+                      "file_count": 35,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "02_combat",
+                      "path": "reach/combat/trooper_sgt1/default/02_combat",
+                      "file_count": 275,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "03_postcombat",
+                      "path": "reach/combat/trooper_sgt1/default/03_postcombat",
+                      "file_count": 48,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "04_vehicle",
+                      "path": "reach/combat/trooper_sgt1/default/04_vehicle",
+                      "file_count": 28,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "05_search",
+                      "path": "reach/combat/trooper_sgt1/default/05_search",
+                      "file_count": 37,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "06_fireteam",
+                      "path": "reach/combat/trooper_sgt1/default/06_fireteam",
+                      "file_count": 24,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "07_respond",
+                      "path": "reach/combat/trooper_sgt1/default/07_respond",
+                      "file_count": 51,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "08_idle",
+                      "path": "reach/combat/trooper_sgt1/default/08_idle",
+                      "file_count": 17,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "09_order",
+                      "path": "reach/combat/trooper_sgt1/default/09_order",
+                      "file_count": 91,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "10_exclaim",
+                      "path": "reach/combat/trooper_sgt1/default/10_exclaim",
+                      "file_count": 86,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "11_involuntary",
+                      "path": "reach/combat/trooper_sgt1/default/11_involuntary",
+                      "file_count": 100,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "12_space",
+                      "path": "reach/combat/trooper_sgt1/default/12_space",
+                      "file_count": 72,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "13_script",
+                      "path": "reach/combat/trooper_sgt1/default/13_script",
+                      "file_count": 15,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "14_1st_person",
+                      "path": "reach/combat/trooper_sgt1/default/14_1st_person",
+                      "file_count": 78,
+                      "show_in_browser": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "trooper_sgt2",
+              "path": "reach/combat/trooper_sgt2",
+              "file_count": 0,
+              "show_in_browser": true,
+              "children": [
+                {
+                  "name": "default",
+                  "path": "reach/combat/trooper_sgt2/default",
+                  "file_count": 0,
+                  "show_in_browser": false,
+                  "children": [
+                    {
+                      "name": "01_contact",
+                      "path": "reach/combat/trooper_sgt2/default/01_contact",
+                      "file_count": 34,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "02_combat",
+                      "path": "reach/combat/trooper_sgt2/default/02_combat",
+                      "file_count": 254,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "03_postcombat",
+                      "path": "reach/combat/trooper_sgt2/default/03_postcombat",
+                      "file_count": 31,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "04_vehicle",
+                      "path": "reach/combat/trooper_sgt2/default/04_vehicle",
+                      "file_count": 32,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "05_search",
+                      "path": "reach/combat/trooper_sgt2/default/05_search",
+                      "file_count": 38,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "06_fireteam",
+                      "path": "reach/combat/trooper_sgt2/default/06_fireteam",
+                      "file_count": 18,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "07_respond",
+                      "path": "reach/combat/trooper_sgt2/default/07_respond",
+                      "file_count": 40,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "08_idle",
+                      "path": "reach/combat/trooper_sgt2/default/08_idle",
+                      "file_count": 16,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "09_order",
+                      "path": "reach/combat/trooper_sgt2/default/09_order",
+                      "file_count": 82,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "10_exclaim",
+                      "path": "reach/combat/trooper_sgt2/default/10_exclaim",
+                      "file_count": 90,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "11_involuntary",
+                      "path": "reach/combat/trooper_sgt2/default/11_involuntary",
+                      "file_count": 136,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "12_space",
+                      "path": "reach/combat/trooper_sgt2/default/12_space",
+                      "file_count": 79,
+                      "show_in_browser": false,
+                      "children": []
+                    },
+                    {
+                      "name": "13_script",
+                      "path": "reach/combat/trooper_sgt2/default/13_script",
+                      "file_count": 15,
+                      "show_in_browser": false,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "firefight",
+          "path": "reach/firefight",
+          "file_count": 85,
+          "show_in_browser": true,
+          "children": []
+        },
+        {
+          "name": "invasion",
+          "path": "reach/invasion",
+          "file_count": 99,
+          "show_in_browser": true,
+          "children": []
+        },
+        {
+          "name": "levels",
+          "path": "reach/levels",
+          "file_count": 0,
+          "show_in_browser": true,
+          "children": [
+            {
+              "name": "m10",
+              "path": "reach/levels/m10",
+              "file_count": 0,
+              "show_in_browser": true,
+              "children": [
+                {
+                  "name": "cinematic",
+                  "path": "reach/levels/m10/cinematic",
+                  "file_count": 109,
+                  "show_in_browser": false,
+                  "children": []
+                },
+                {
+                  "name": "mission",
+                  "path": "reach/levels/m10/mission",
+                  "file_count": 300,
+                  "show_in_browser": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "m20",
+              "path": "reach/levels/m20",
+              "file_count": 0,
+              "show_in_browser": true,
+              "children": [
+                {
+                  "name": "cinematic",
+                  "path": "reach/levels/m20/cinematic",
+                  "file_count": 56,
+                  "show_in_browser": false,
+                  "children": []
+                },
+                {
+                  "name": "mission",
+                  "path": "reach/levels/m20/mission",
+                  "file_count": 212,
+                  "show_in_browser": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "m30",
+              "path": "reach/levels/m30",
+              "file_count": 0,
+              "show_in_browser": true,
+              "children": [
+                {
+                  "name": "cinematic",
+                  "path": "reach/levels/m30/cinematic",
+                  "file_count": 24,
+                  "show_in_browser": false,
+                  "children": []
+                },
+                {
+                  "name": "mission",
+                  "path": "reach/levels/m30/mission",
+                  "file_count": 138,
+                  "show_in_browser": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "m35",
+              "path": "reach/levels/m35",
+              "file_count": 0,
+              "show_in_browser": true,
+              "children": [
+                {
+                  "name": "cinematic",
+                  "path": "reach/levels/m35/cinematic",
+                  "file_count": 44,
+                  "show_in_browser": false,
+                  "children": []
+                },
+                {
+                  "name": "mission",
+                  "path": "reach/levels/m35/mission",
+                  "file_count": 146,
+                  "show_in_browser": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "m45",
+              "path": "reach/levels/m45",
+              "file_count": 0,
+              "show_in_browser": true,
+              "children": [
+                {
+                  "name": "cinematic",
+                  "path": "reach/levels/m45/cinematic",
+                  "file_count": 112,
+                  "show_in_browser": false,
+                  "children": []
+                },
+                {
+                  "name": "mission",
+                  "path": "reach/levels/m45/mission",
+                  "file_count": 245,
+                  "show_in_browser": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "m45_e3",
+              "path": "reach/levels/m45_e3",
+              "file_count": 0,
+              "show_in_browser": true,
+              "children": [
+                {
+                  "name": "mission",
+                  "path": "reach/levels/m45_e3/mission",
+                  "file_count": 3,
+                  "show_in_browser": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "m50",
+              "path": "reach/levels/m50",
+              "file_count": 0,
+              "show_in_browser": true,
+              "children": [
+                {
+                  "name": "cinematic",
+                  "path": "reach/levels/m50/cinematic",
+                  "file_count": 13,
+                  "show_in_browser": false,
+                  "children": []
+                },
+                {
+                  "name": "mission",
+                  "path": "reach/levels/m50/mission",
+                  "file_count": 156,
+                  "show_in_browser": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "m52",
+              "path": "reach/levels/m52",
+              "file_count": 0,
+              "show_in_browser": true,
+              "children": [
+                {
+                  "name": "cinematic",
+                  "path": "reach/levels/m52/cinematic",
+                  "file_count": 63,
+                  "show_in_browser": false,
+                  "children": []
+                },
+                {
+                  "name": "mission",
+                  "path": "reach/levels/m52/mission",
+                  "file_count": 204,
+                  "show_in_browser": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "m60",
+              "path": "reach/levels/m60",
+              "file_count": 0,
+              "show_in_browser": true,
+              "children": [
+                {
+                  "name": "cinematic",
+                  "path": "reach/levels/m60/cinematic",
+                  "file_count": 77,
+                  "show_in_browser": false,
+                  "children": []
+                },
+                {
+                  "name": "mission",
+                  "path": "reach/levels/m60/mission",
+                  "file_count": 105,
+                  "show_in_browser": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "m70",
+              "path": "reach/levels/m70",
+              "file_count": 0,
+              "show_in_browser": true,
+              "children": [
+                {
+                  "name": "cinematic",
+                  "path": "reach/levels/m70/cinematic",
+                  "file_count": 46,
+                  "show_in_browser": false,
+                  "children": []
+                },
+                {
+                  "name": "mission",
+                  "path": "reach/levels/m70/mission",
+                  "file_count": 133,
+                  "show_in_browser": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "m80",
+              "path": "reach/levels/m80",
+              "file_count": 7,
+              "show_in_browser": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "mp_radios",
+          "path": "reach/mp_radios",
+          "file_count": 0,
+          "show_in_browser": true,
+          "children": [
+            {
+              "name": "mp_radio",
+              "path": "reach/mp_radios/mp_radio",
+              "file_count": 0,
+              "show_in_browser": true,
+              "children": [
+                {
+                  "name": "details",
+                  "path": "reach/mp_radios/mp_radio/details",
+                  "file_count": 12,
+                  "show_in_browser": false,
+                  "children": []
+                },
+                {
+                  "name": "mp_radio",
+                  "path": "reach/mp_radios/mp_radio/mp_radio",
+                  "file_count": 5,
+                  "show_in_browser": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "multiplayer",
+          "path": "reach/multiplayer",
+          "file_count": 0,
+          "show_in_browser": true,
+          "children": [
+            {
+              "name": "assault",
+              "path": "reach/multiplayer/assault",
+              "file_count": 8,
+              "show_in_browser": false,
+              "children": []
+            },
+            {
+              "name": "capture_the_flag",
+              "path": "reach/multiplayer/capture_the_flag",
+              "file_count": 9,
+              "show_in_browser": false,
+              "children": []
+            },
+            {
+              "name": "firefight",
+              "path": "reach/multiplayer/firefight",
+              "file_count": 40,
+              "show_in_browser": false,
+              "children": []
+            },
+            {
+              "name": "flavor",
+              "path": "reach/multiplayer/flavor",
+              "file_count": 31,
+              "show_in_browser": false,
+              "children": []
+            },
+            {
+              "name": "general",
+              "path": "reach/multiplayer/general",
+              "file_count": 19,
+              "show_in_browser": false,
+              "children": []
+            },
+            {
+              "name": "infection",
+              "path": "reach/multiplayer/infection",
+              "file_count": 4,
+              "show_in_browser": false,
+              "children": []
+            },
+            {
+              "name": "juggernaut",
+              "path": "reach/multiplayer/juggernaut",
+              "file_count": 2,
+              "show_in_browser": false,
+              "children": []
+            },
+            {
+              "name": "king_of_the_hill",
+              "path": "reach/multiplayer/king_of_the_hill",
+              "file_count": 4,
+              "show_in_browser": false,
+              "children": []
+            },
+            {
+              "name": "misc",
+              "path": "reach/multiplayer/misc",
+              "file_count": 4,
+              "show_in_browser": false,
+              "children": []
+            },
+            {
+              "name": "oddball",
+              "path": "reach/multiplayer/oddball",
+              "file_count": 5,
+              "show_in_browser": false,
+              "children": []
+            },
+            {
+              "name": "reach",
+              "path": "reach/multiplayer/reach",
+              "file_count": 0,
+              "show_in_browser": true,
+              "children": [
+                {
+                  "name": "firefight",
+                  "path": "reach/multiplayer/reach/firefight",
+                  "file_count": 15,
+                  "show_in_browser": false,
+                  "children": []
+                },
+                {
+                  "name": "invasion",
+                  "path": "reach/multiplayer/reach/invasion",
+                  "file_count": 5,
+                  "show_in_browser": false,
+                  "children": []
+                },
+                {
+                  "name": "miscellaneous",
+                  "path": "reach/multiplayer/reach/miscellaneous",
+                  "file_count": 3,
+                  "show_in_browser": false,
+                  "children": []
+                },
+                {
+                  "name": "multiplayer_game_types",
+                  "path": "reach/multiplayer/reach/multiplayer_game_types",
+                  "file_count": 18,
+                  "show_in_browser": false,
+                  "children": []
+                },
+                {
+                  "name": "new_medals",
+                  "path": "reach/multiplayer/reach/new_medals",
+                  "file_count": 5,
+                  "show_in_browser": false,
+                  "children": []
+                },
+                {
+                  "name": "skull_additions",
+                  "path": "reach/multiplayer/reach/skull_additions",
+                  "file_count": 7,
+                  "show_in_browser": false,
+                  "children": []
+                },
+                {
+                  "name": "sprees_frenzies",
+                  "path": "reach/multiplayer/reach/sprees_frenzies",
+                  "file_count": 21,
+                  "show_in_browser": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "slayer",
+              "path": "reach/multiplayer/slayer",
+              "file_count": 1,
+              "show_in_browser": false,
+              "children": []
+            },
+            {
+              "name": "territories",
+              "path": "reach/multiplayer/territories",
+              "file_count": 3,
+              "show_in_browser": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "target_laser",
+          "path": "reach/target_laser",
+          "file_count": 20,
+          "show_in_browser": true,
+          "children": []
         }
       ]
     }
