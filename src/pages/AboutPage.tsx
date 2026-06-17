@@ -40,6 +40,17 @@ export default function AboutPage() {
                 Each file can be downloaded individually, but I have no intention of adding any way of downloading files in bulk.
                 To do so, you will have to extract the files directly with Reclaimer or the Wwise Unpacker.
             </p>
+
+            <h2>A note about Halo 4</h2>
+            <p>
+                You'll notice that for Halo 4, there is only a combat folder and nothing else (like level specific dialogue). 
+                This is because when extracting Halo 4's audio, all mission dialogue is grouped together and not by specific missions.
+                I have no idea how to sort this, and will not bother trying. 
+            </p>
+            <p>
+                Also, since none of the filenames are descriptive, I have no way of knowing if I had properly grouped the dialogue.
+                I've done my best, but it is possible that some of the dialogue groupings are wrong.
+            </p>
         </div>
     </div>
    ) 

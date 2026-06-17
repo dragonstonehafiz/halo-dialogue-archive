@@ -10001,6 +10001,190 @@
       ]
     },
     {
+      "name": "halo4",
+      "path": "halo4",
+      "file_count": 0,
+      "show_in_browser": true,
+      "children": [
+        {
+          "name": "combat",
+          "path": "halo4/combat",
+          "file_count": 0,
+          "show_in_browser": true,
+          "children": [
+            {
+              "name": "elite1",
+              "path": "halo4/combat/elite1",
+              "file_count": 602,
+              "show_in_browser": true,
+              "children": []
+            },
+            {
+              "name": "elite2",
+              "path": "halo4/combat/elite2",
+              "file_count": 295,
+              "show_in_browser": true,
+              "children": []
+            },
+            {
+              "name": "grunt1",
+              "path": "halo4/combat/grunt1",
+              "file_count": 314,
+              "show_in_browser": true,
+              "children": []
+            },
+            {
+              "name": "grunt2",
+              "path": "halo4/combat/grunt2",
+              "file_count": 317,
+              "show_in_browser": true,
+              "children": []
+            },
+            {
+              "name": "hunter",
+              "path": "halo4/combat/hunter",
+              "file_count": 72,
+              "show_in_browser": true,
+              "children": []
+            },
+            {
+              "name": "jackal",
+              "path": "halo4/combat/jackal",
+              "file_count": 72,
+              "show_in_browser": true,
+              "children": []
+            },
+            {
+              "name": "marine1",
+              "path": "halo4/combat/marine1",
+              "file_count": 553,
+              "show_in_browser": true,
+              "children": []
+            },
+            {
+              "name": "marine2",
+              "path": "halo4/combat/marine2",
+              "file_count": 553,
+              "show_in_browser": true,
+              "children": []
+            },
+            {
+              "name": "marine3",
+              "path": "halo4/combat/marine3",
+              "file_count": 550,
+              "show_in_browser": true,
+              "children": []
+            },
+            {
+              "name": "marine4",
+              "path": "halo4/combat/marine4",
+              "file_count": 551,
+              "show_in_browser": true,
+              "children": []
+            },
+            {
+              "name": "marine5",
+              "path": "halo4/combat/marine5",
+              "file_count": 547,
+              "show_in_browser": true,
+              "children": []
+            },
+            {
+              "name": "marine6",
+              "path": "halo4/combat/marine6",
+              "file_count": 548,
+              "show_in_browser": true,
+              "children": []
+            },
+            {
+              "name": "player_female",
+              "path": "halo4/combat/player_female",
+              "file_count": 89,
+              "show_in_browser": true,
+              "children": []
+            },
+            {
+              "name": "player_male",
+              "path": "halo4/combat/player_male",
+              "file_count": 89,
+              "show_in_browser": true,
+              "children": []
+            },
+            {
+              "name": "promethean1",
+              "path": "halo4/combat/promethean1",
+              "file_count": 53,
+              "show_in_browser": true,
+              "children": []
+            },
+            {
+              "name": "promethean2",
+              "path": "halo4/combat/promethean2",
+              "file_count": 380,
+              "show_in_browser": true,
+              "children": []
+            },
+            {
+              "name": "promethean3",
+              "path": "halo4/combat/promethean3",
+              "file_count": 281,
+              "show_in_browser": true,
+              "children": []
+            },
+            {
+              "name": "scientist1",
+              "path": "halo4/combat/scientist1",
+              "file_count": 344,
+              "show_in_browser": true,
+              "children": []
+            },
+            {
+              "name": "scientist2",
+              "path": "halo4/combat/scientist2",
+              "file_count": 344,
+              "show_in_browser": true,
+              "children": []
+            },
+            {
+              "name": "scientist3",
+              "path": "halo4/combat/scientist3",
+              "file_count": 343,
+              "show_in_browser": true,
+              "children": []
+            },
+            {
+              "name": "scientist4",
+              "path": "halo4/combat/scientist4",
+              "file_count": 344,
+              "show_in_browser": true,
+              "children": []
+            },
+            {
+              "name": "spartan1",
+              "path": "halo4/combat/spartan1",
+              "file_count": 434,
+              "show_in_browser": true,
+              "children": []
+            },
+            {
+              "name": "spartan2",
+              "path": "halo4/combat/spartan2",
+              "file_count": 433,
+              "show_in_browser": true,
+              "children": []
+            },
+            {
+              "name": "spartan3",
+              "path": "halo4/combat/spartan3",
+              "file_count": 429,
+              "show_in_browser": true,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "reach",
       "path": "reach",
       "file_count": 0,

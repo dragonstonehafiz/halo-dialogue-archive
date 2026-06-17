@@ -9,6 +9,7 @@ import halo2Logo from '../assets/games/halo2.png'
 import halo3Logo from '../assets/games/halo3.png'
 import halo3odstLogo from '../assets/games/halo3odst.png'
 import reachLogo from '../assets/games/reach.png'
+import halo4Logo from '../assets/games/halo4.png'
 
 import type { FolderNode } from "../types/FolderNode.ts"; 
 import type { AudioFile } from "../types/AudioFile.ts";
@@ -79,6 +80,7 @@ export default function BrowsePage() {
                 <GameCard name="Halo 3" image={halo3Logo} path="/browse/halo3" />
                 <GameCard name="Halo 3 ODST" image={halo3odstLogo} path="/browse/halo3odst" />
                 <GameCard name="Halo Reach" image={reachLogo} path="/browse/reach" />
+                <GameCard name="Halo 4" image={halo4Logo} path="/browse/halo4" />
             </div>
 
             <div className="browse-page-div">
