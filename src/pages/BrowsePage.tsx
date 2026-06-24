@@ -1,20 +1,12 @@
 import { useParams } from "react-router-dom"
-import Navbar from "../components/Navbar"
-import "./BrowsePage.css";
 import { useEffect, useState } from "react";
+import "./BrowsePage.css";
+
+import Navbar from "../components/Navbar"
 import { supabase } from "../components/Supabase";
-import GameCard from "../components/GameCard";
-
-import halo2Logo from '../assets/games/halo2.png'
-import halo3Logo from '../assets/games/halo3.png'
-import halo3odstLogo from '../assets/games/halo3odst.png'
-import reachLogo from '../assets/games/reach.png'
-import halo4Logo from '../assets/games/halo4.png'
-
+import BrowsePageGameSelector from "../components/BrowsePageGameSelector.tsx";
 import type { FolderNode } from "../types/FolderNode.ts"; 
 import type { AudioFile } from "../types/AudioFile.ts";
-
-import { FolderTree } from "../components/FolderTree.tsx";
 import { FolderContents } from "../components/FolderContents.tsx";
 import { Breadcrumb } from "../components/Breadcrumb.tsx";
 
@@ -76,18 +68,10 @@ export default function BrowsePage() {
             <Navbar />
 
             <div className="browse-page-game-selector">
-                <GameCard name="Halo 2" image={halo2Logo} path="/browse/halo2" />
-                <GameCard name="Halo 3" image={halo3Logo} path="/browse/halo3" />
-                <GameCard name="Halo 3 ODST" image={halo3odstLogo} path="/browse/halo3odst" />
-                <GameCard name="Halo Reach" image={reachLogo} path="/browse/reach" />
-                <GameCard name="Halo 4" image={halo4Logo} path="/browse/halo4" />
+                <BrowsePageGameSelector/>
             </div>
 
             <div className="browse-page-div">
-                <div className="browse-page-directory">
-                    <h2>Browser</h2>
-                    {tree && <FolderTree node={tree} depth={1} onFolderClick={onFolderClick}/>}
-                </div>
 
                 <div className="browse-page-contents">
                     <h2>Contents</h2>

@@ -10185,6 +10185,107 @@
       ]
     },
     {
+      "name": "halo5",
+      "path": "halo5",
+      "file_count": 0,
+      "show_in_browser": true,
+      "children": [
+        {
+          "name": "multiplayer",
+          "path": "halo5/multiplayer",
+          "file_count": 0,
+          "show_in_browser": true,
+          "children": [
+            {
+              "name": "announcersustain",
+              "path": "halo5/multiplayer/announcersustain",
+              "file_count": 131,
+              "show_in_browser": false,
+              "children": []
+            },
+            {
+              "name": "vp_announcer_buck",
+              "path": "halo5/multiplayer/vp_announcer_buck",
+              "file_count": 349,
+              "show_in_browser": false,
+              "children": []
+            },
+            {
+              "name": "vp_announcer_exuberant",
+              "path": "halo5/multiplayer/vp_announcer_exuberant",
+              "file_count": 349,
+              "show_in_browser": false,
+              "children": []
+            },
+            {
+              "name": "vp_announcer_grunt",
+              "path": "halo5/multiplayer/vp_announcer_grunt",
+              "file_count": 349,
+              "show_in_browser": false,
+              "children": []
+            },
+            {
+              "name": "vp_announcersus_buck",
+              "path": "halo5/multiplayer/vp_announcersus_buck",
+              "file_count": 38,
+              "show_in_browser": false,
+              "children": []
+            },
+            {
+              "name": "vp_announcersus_exuberant",
+              "path": "halo5/multiplayer/vp_announcersus_exuberant",
+              "file_count": 38,
+              "show_in_browser": false,
+              "children": []
+            },
+            {
+              "name": "vp_announcersus_grunt",
+              "path": "halo5/multiplayer/vp_announcersus_grunt",
+              "file_count": 38,
+              "show_in_browser": false,
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "warzone",
+          "path": "halo5/warzone",
+          "file_count": 0,
+          "show_in_browser": true,
+          "children": [
+            {
+              "name": "vp_warzone_buck",
+              "path": "halo5/warzone/vp_warzone_buck",
+              "file_count": 911,
+              "show_in_browser": false,
+              "children": []
+            },
+            {
+              "name": "vp_warzone_exuberant",
+              "path": "halo5/warzone/vp_warzone_exuberant",
+              "file_count": 911,
+              "show_in_browser": false,
+              "children": []
+            },
+            {
+              "name": "vp_warzone_grunt",
+              "path": "halo5/warzone/vp_warzone_grunt",
+              "file_count": 911,
+              "show_in_browser": false,
+              "children": []
+            },
+            {
+              "name": "wzcmndrsustain",
+              "path": "halo5/warzone/wzcmndrsustain",
+              "file_count": 744,
+              "show_in_browser": false,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "reach",
       "path": "reach",
       "file_count": 0,

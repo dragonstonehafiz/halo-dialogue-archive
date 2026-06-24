@@ -13,21 +13,11 @@
     gap: 24px;
 }
 
-.browse-page-directory {
-    width: 280px;
-    min-width: 280px;
-    background-color: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    overflow-y: auto;
-    padding: 16px;
-}
-
 .browse-page-contents {
     flex: 1;
     background-color: var(--surface);
     border: 1px solid var(--border);
     border-radius: 8px;
     overflow-y: auto;
-    padding: 16px;
+    padding: 24px;
 }

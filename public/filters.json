@@ -4,6 +4,7 @@
     "halo3",
     "halo3odst",
     "halo4",
+    "halo5",
     "reach"
   ],
   "tags": [
@@ -27,6 +28,7 @@
     "spartan"
   ],
   "characters": [
+    "031 Exuberant Witness",
     "2401 Penitent Tangent",
     "343 Guilty Spark",
     "Announcer",
@@ -55,12 +57,14 @@
     "Prophet of Regret",
     "Prophet of Truth",
     "Rtas 'Vadum",
+    "Sarah Palmer",
     "Sesa 'Refumee",
     "Superintendent",
     "Tartarus",
     "Taylor Henry \"Dutch\" Miles",
     "The Rookie",
     "Urban Holland",
-    "Veronica Dare"
+    "Veronica Dare",
+    "Yabda, the Merciless"
   ]
 }

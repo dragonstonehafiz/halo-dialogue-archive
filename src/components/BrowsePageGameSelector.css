@@ -1,0 +1,6 @@
+.game-selector-scroll {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    padding: 8px;
+}
