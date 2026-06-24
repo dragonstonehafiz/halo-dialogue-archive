@@ -5,4 +5,5 @@ export type AudioFile = {
     tags: string[] | null;
     path: string;
     transcript: string | null;
+    filename: string;
 }

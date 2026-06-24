@@ -40,8 +40,14 @@ export default function BrowsePage() {
                 .select('*')
                 .like('path', `${currentPath}/%`)
                 .not('path', 'like', `${currentPath}/%/%`)
-            
-            if (data) setFiles(data);
+
+                
+            if (data) {
+                const sortedFiles = data.sort((a, b) => 
+                    a.filename.localeCompare(b.filename, undefined, { numeric: true })
+                )
+                setFiles(sortedFiles);   
+            }
             if (error) console.error(error);
         }
 
