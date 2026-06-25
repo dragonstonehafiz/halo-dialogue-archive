@@ -8839,7 +8839,7 @@
     {
       "name": "infinite",
       "path": "infinite",
-      "file_count": 4,
+      "file_count": 6,
       "children": [
         {
           "name": "boss",
@@ -9250,6 +9250,249 @@
           ]
         },
         {
+          "name": "multiplayer",
+          "path": "infinite/multiplayer",
+          "file_count": 3,
+          "children": [
+            {
+              "name": "academycommander",
+              "path": "infinite/multiplayer/academycommander",
+              "file_count": 15,
+              "children": [
+                {
+                  "name": "academycommander",
+                  "path": "infinite/multiplayer/academycommander/academycommander",
+                  "file_count": 181,
+                  "children": []
+                },
+                {
+                  "name": "attritioncy21q4",
+                  "path": "infinite/multiplayer/academycommander/attritioncy21q4",
+                  "file_count": 2,
+                  "children": []
+                },
+                {
+                  "name": "drills",
+                  "path": "infinite/multiplayer/academycommander/drills",
+                  "file_count": 40,
+                  "children": []
+                },
+                {
+                  "name": "eliminationcy21q4",
+                  "path": "infinite/multiplayer/academycommander/eliminationcy21q4",
+                  "file_count": 3,
+                  "children": []
+                },
+                {
+                  "name": "escalationcy22q4",
+                  "path": "infinite/multiplayer/academycommander/escalationcy22q4",
+                  "file_count": 5,
+                  "children": []
+                },
+                {
+                  "name": "extractioncy21q4",
+                  "path": "infinite/multiplayer/academycommander/extractioncy21q4",
+                  "file_count": 23,
+                  "children": []
+                },
+                {
+                  "name": "grifballcy22q1",
+                  "path": "infinite/multiplayer/academycommander/grifballcy22q1",
+                  "file_count": 5,
+                  "children": []
+                },
+                {
+                  "name": "infectioncy22q4",
+                  "path": "infinite/multiplayer/academycommander/infectioncy22q4",
+                  "file_count": 11,
+                  "children": []
+                },
+                {
+                  "name": "kothcy21q4",
+                  "path": "infinite/multiplayer/academycommander/kothcy21q4",
+                  "file_count": 20,
+                  "children": []
+                },
+                {
+                  "name": "landgrabcy21q4",
+                  "path": "infinite/multiplayer/academycommander/landgrabcy21q4",
+                  "file_count": 18,
+                  "children": []
+                },
+                {
+                  "name": "lonewolvescy21q4",
+                  "path": "infinite/multiplayer/academycommander/lonewolvescy21q4",
+                  "file_count": 7,
+                  "children": []
+                },
+                {
+                  "name": "scrimmagecy21q4",
+                  "path": "infinite/multiplayer/academycommander/scrimmagecy21q4",
+                  "file_count": 9,
+                  "children": []
+                },
+                {
+                  "name": "sharedcy21q4",
+                  "path": "infinite/multiplayer/academycommander/sharedcy21q4",
+                  "file_count": 30,
+                  "children": []
+                },
+                {
+                  "name": "superescalationcy22q4",
+                  "path": "infinite/multiplayer/academycommander/superescalationcy22q4",
+                  "file_count": 1,
+                  "children": []
+                },
+                {
+                  "name": "trainingcy21q4",
+                  "path": "infinite/multiplayer/academycommander/trainingcy21q4",
+                  "file_count": 2,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "announcer",
+              "path": "infinite/multiplayer/announcer",
+              "file_count": 21,
+              "children": [
+                {
+                  "name": "announcer",
+                  "path": "infinite/multiplayer/announcer/announcer",
+                  "file_count": 1236,
+                  "children": []
+                },
+                {
+                  "name": "attritioncy21q4",
+                  "path": "infinite/multiplayer/announcer/attritioncy21q4",
+                  "file_count": 7,
+                  "children": []
+                },
+                {
+                  "name": "escalationcy22q4",
+                  "path": "infinite/multiplayer/announcer/escalationcy22q4",
+                  "file_count": 1,
+                  "children": []
+                },
+                {
+                  "name": "extractioncy21q4",
+                  "path": "infinite/multiplayer/announcer/extractioncy21q4",
+                  "file_count": 2,
+                  "children": []
+                },
+                {
+                  "name": "forgecy22q4",
+                  "path": "infinite/multiplayer/announcer/forgecy22q4",
+                  "file_count": 18,
+                  "children": []
+                },
+                {
+                  "name": "forgefirefightcy22q4",
+                  "path": "infinite/multiplayer/announcer/forgefirefightcy22q4",
+                  "file_count": 28,
+                  "children": []
+                },
+                {
+                  "name": "forgemedalcy22q4",
+                  "path": "infinite/multiplayer/announcer/forgemedalcy22q4",
+                  "file_count": 54,
+                  "children": []
+                },
+                {
+                  "name": "forgeminicy22q4",
+                  "path": "infinite/multiplayer/announcer/forgeminicy22q4",
+                  "file_count": 4,
+                  "children": []
+                },
+                {
+                  "name": "griffballcy22q4",
+                  "path": "infinite/multiplayer/announcer/griffballcy22q4",
+                  "file_count": 4,
+                  "children": []
+                },
+                {
+                  "name": "infectioncy22q4",
+                  "path": "infinite/multiplayer/announcer/infectioncy22q4",
+                  "file_count": 56,
+                  "children": []
+                },
+                {
+                  "name": "juggernautcy21q4",
+                  "path": "infinite/multiplayer/announcer/juggernautcy21q4",
+                  "file_count": 1,
+                  "children": []
+                },
+                {
+                  "name": "kothcy21q4",
+                  "path": "infinite/multiplayer/announcer/kothcy21q4",
+                  "file_count": 26,
+                  "children": []
+                },
+                {
+                  "name": "landgrabcy21q4",
+                  "path": "infinite/multiplayer/announcer/landgrabcy21q4",
+                  "file_count": 22,
+                  "children": []
+                },
+                {
+                  "name": "lonewolvescy21q4",
+                  "path": "infinite/multiplayer/announcer/lonewolvescy21q4",
+                  "file_count": 1,
+                  "children": []
+                },
+                {
+                  "name": "mptest",
+                  "path": "infinite/multiplayer/announcer/mptest",
+                  "file_count": 6,
+                  "children": []
+                },
+                {
+                  "name": "racecy21q4",
+                  "path": "infinite/multiplayer/announcer/racecy21q4",
+                  "file_count": 13,
+                  "children": []
+                },
+                {
+                  "name": "shared",
+                  "path": "infinite/multiplayer/announcer/shared",
+                  "file_count": 1,
+                  "children": []
+                },
+                {
+                  "name": "sharedcy21q4",
+                  "path": "infinite/multiplayer/announcer/sharedcy21q4",
+                  "file_count": 13,
+                  "children": []
+                },
+                {
+                  "name": "superescalationcy22q4",
+                  "path": "infinite/multiplayer/announcer/superescalationcy22q4",
+                  "file_count": 1,
+                  "children": []
+                },
+                {
+                  "name": "teamescalationcy22q4",
+                  "path": "infinite/multiplayer/announcer/teamescalationcy22q4",
+                  "file_count": 1,
+                  "children": []
+                },
+                {
+                  "name": "vipcy21q4",
+                  "path": "infinite/multiplayer/announcer/vipcy21q4",
+                  "file_count": 15,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "announcerstacker",
+              "path": "infinite/multiplayer/announcerstacker",
+              "file_count": 159,
+              "children": []
+            }
+          ]
+        },
+        {
           "name": "open_world",
           "path": "infinite/open_world",
           "file_count": 7,
@@ -9295,6 +9538,789 @@
               "path": "infinite/open_world/scr_ringartifacts",
               "file_count": 28,
               "children": []
+            }
+          ]
+        },
+        {
+          "name": "suitai",
+          "path": "infinite/suitai",
+          "file_count": 8,
+          "children": [
+            {
+              "name": "butlr",
+              "path": "infinite/suitai/butlr",
+              "file_count": 13,
+              "children": [
+                {
+                  "name": "frontend",
+                  "path": "infinite/suitai/butlr/frontend",
+                  "file_count": 5,
+                  "children": []
+                },
+                {
+                  "name": "grifballcy21q4",
+                  "path": "infinite/suitai/butlr/grifballcy21q4",
+                  "file_count": 1,
+                  "children": []
+                },
+                {
+                  "name": "headhuntercy21q4",
+                  "path": "infinite/suitai/butlr/headhuntercy21q4",
+                  "file_count": 24,
+                  "children": []
+                },
+                {
+                  "name": "juggernautcy21q4",
+                  "path": "infinite/suitai/butlr/juggernautcy21q4",
+                  "file_count": 7,
+                  "children": []
+                },
+                {
+                  "name": "kothcy21q4",
+                  "path": "infinite/suitai/butlr/kothcy21q4",
+                  "file_count": 15,
+                  "children": []
+                },
+                {
+                  "name": "landgrabcy21q4",
+                  "path": "infinite/suitai/butlr/landgrabcy21q4",
+                  "file_count": 39,
+                  "children": []
+                },
+                {
+                  "name": "lonewolvescy21q4",
+                  "path": "infinite/suitai/butlr/lonewolvescy21q4",
+                  "file_count": 3,
+                  "children": []
+                },
+                {
+                  "name": "main",
+                  "path": "infinite/suitai/butlr/main",
+                  "file_count": 577,
+                  "children": []
+                },
+                {
+                  "name": "racecy21q4",
+                  "path": "infinite/suitai/butlr/racecy21q4",
+                  "file_count": 20,
+                  "children": []
+                },
+                {
+                  "name": "ricochetcy21q4",
+                  "path": "infinite/suitai/butlr/ricochetcy21q4",
+                  "file_count": 6,
+                  "children": []
+                },
+                {
+                  "name": "sharedcy21q4",
+                  "path": "infinite/suitai/butlr/sharedcy21q4",
+                  "file_count": 68,
+                  "children": []
+                },
+                {
+                  "name": "translocatorcy21q4",
+                  "path": "infinite/suitai/butlr/translocatorcy21q4",
+                  "file_count": 12,
+                  "children": []
+                },
+                {
+                  "name": "vipcy21q4",
+                  "path": "infinite/suitai/butlr/vipcy21q4",
+                  "file_count": 14,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "circ",
+              "path": "infinite/suitai/circ",
+              "file_count": 13,
+              "children": [
+                {
+                  "name": "frontend",
+                  "path": "infinite/suitai/circ/frontend",
+                  "file_count": 4,
+                  "children": []
+                },
+                {
+                  "name": "grifballcy21q4",
+                  "path": "infinite/suitai/circ/grifballcy21q4",
+                  "file_count": 1,
+                  "children": []
+                },
+                {
+                  "name": "headhuntercy21q4",
+                  "path": "infinite/suitai/circ/headhuntercy21q4",
+                  "file_count": 25,
+                  "children": []
+                },
+                {
+                  "name": "juggernautcy21q4",
+                  "path": "infinite/suitai/circ/juggernautcy21q4",
+                  "file_count": 7,
+                  "children": []
+                },
+                {
+                  "name": "kothcy21q4",
+                  "path": "infinite/suitai/circ/kothcy21q4",
+                  "file_count": 15,
+                  "children": []
+                },
+                {
+                  "name": "landgrabcy21q4",
+                  "path": "infinite/suitai/circ/landgrabcy21q4",
+                  "file_count": 40,
+                  "children": []
+                },
+                {
+                  "name": "lonewolvescy21q4",
+                  "path": "infinite/suitai/circ/lonewolvescy21q4",
+                  "file_count": 3,
+                  "children": []
+                },
+                {
+                  "name": "main",
+                  "path": "infinite/suitai/circ/main",
+                  "file_count": 582,
+                  "children": []
+                },
+                {
+                  "name": "racecy21q4",
+                  "path": "infinite/suitai/circ/racecy21q4",
+                  "file_count": 21,
+                  "children": []
+                },
+                {
+                  "name": "ricochetcy21q4",
+                  "path": "infinite/suitai/circ/ricochetcy21q4",
+                  "file_count": 6,
+                  "children": []
+                },
+                {
+                  "name": "sharedcy21q4",
+                  "path": "infinite/suitai/circ/sharedcy21q4",
+                  "file_count": 68,
+                  "children": []
+                },
+                {
+                  "name": "translocatorcy21q4",
+                  "path": "infinite/suitai/circ/translocatorcy21q4",
+                  "file_count": 12,
+                  "children": []
+                },
+                {
+                  "name": "vipcy21q4",
+                  "path": "infinite/suitai/circ/vipcy21q4",
+                  "file_count": 14,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "fret",
+              "path": "infinite/suitai/fret",
+              "file_count": 13,
+              "children": [
+                {
+                  "name": "frontend",
+                  "path": "infinite/suitai/fret/frontend",
+                  "file_count": 5,
+                  "children": []
+                },
+                {
+                  "name": "grifballcy21q4",
+                  "path": "infinite/suitai/fret/grifballcy21q4",
+                  "file_count": 1,
+                  "children": []
+                },
+                {
+                  "name": "headhuntercy21q4",
+                  "path": "infinite/suitai/fret/headhuntercy21q4",
+                  "file_count": 24,
+                  "children": []
+                },
+                {
+                  "name": "juggernautcy21q4",
+                  "path": "infinite/suitai/fret/juggernautcy21q4",
+                  "file_count": 7,
+                  "children": []
+                },
+                {
+                  "name": "kothcy21q4",
+                  "path": "infinite/suitai/fret/kothcy21q4",
+                  "file_count": 15,
+                  "children": []
+                },
+                {
+                  "name": "landgrabcy21q4",
+                  "path": "infinite/suitai/fret/landgrabcy21q4",
+                  "file_count": 40,
+                  "children": []
+                },
+                {
+                  "name": "lonewolvescy21q4",
+                  "path": "infinite/suitai/fret/lonewolvescy21q4",
+                  "file_count": 3,
+                  "children": []
+                },
+                {
+                  "name": "main",
+                  "path": "infinite/suitai/fret/main",
+                  "file_count": 586,
+                  "children": []
+                },
+                {
+                  "name": "racecy21q4",
+                  "path": "infinite/suitai/fret/racecy21q4",
+                  "file_count": 21,
+                  "children": []
+                },
+                {
+                  "name": "ricochetcy21q4",
+                  "path": "infinite/suitai/fret/ricochetcy21q4",
+                  "file_count": 6,
+                  "children": []
+                },
+                {
+                  "name": "sharedcy21q4",
+                  "path": "infinite/suitai/fret/sharedcy21q4",
+                  "file_count": 68,
+                  "children": []
+                },
+                {
+                  "name": "translocatorcy21q4",
+                  "path": "infinite/suitai/fret/translocatorcy21q4",
+                  "file_count": 12,
+                  "children": []
+                },
+                {
+                  "name": "vipcy21q4",
+                  "path": "infinite/suitai/fret/vipcy21q4",
+                  "file_count": 14,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "iratus",
+              "path": "infinite/suitai/iratus",
+              "file_count": 31,
+              "children": [
+                {
+                  "name": "assaultcy21q4",
+                  "path": "infinite/suitai/iratus/assaultcy21q4",
+                  "file_count": 34,
+                  "children": []
+                },
+                {
+                  "name": "attritioncy21q4",
+                  "path": "infinite/suitai/iratus/attritioncy21q4",
+                  "file_count": 3,
+                  "children": []
+                },
+                {
+                  "name": "bastioncy21q4",
+                  "path": "infinite/suitai/iratus/bastioncy21q4",
+                  "file_count": 3,
+                  "children": []
+                },
+                {
+                  "name": "bombcy21q4",
+                  "path": "infinite/suitai/iratus/bombcy21q4",
+                  "file_count": 10,
+                  "children": []
+                },
+                {
+                  "name": "controlcy21q4",
+                  "path": "infinite/suitai/iratus/controlcy21q4",
+                  "file_count": 3,
+                  "children": []
+                },
+                {
+                  "name": "ctfcy21q4",
+                  "path": "infinite/suitai/iratus/ctfcy21q4",
+                  "file_count": 20,
+                  "children": []
+                },
+                {
+                  "name": "eliminationcy21q4",
+                  "path": "infinite/suitai/iratus/eliminationcy21q4",
+                  "file_count": 9,
+                  "children": []
+                },
+                {
+                  "name": "extractioncy21q4",
+                  "path": "infinite/suitai/iratus/extractioncy21q4",
+                  "file_count": 25,
+                  "children": []
+                },
+                {
+                  "name": "flagcy21q4",
+                  "path": "infinite/suitai/iratus/flagcy21q4",
+                  "file_count": 10,
+                  "children": []
+                },
+                {
+                  "name": "frontend",
+                  "path": "infinite/suitai/iratus/frontend",
+                  "file_count": 5,
+                  "children": []
+                },
+                {
+                  "name": "grifballcy21q4",
+                  "path": "infinite/suitai/iratus/grifballcy21q4",
+                  "file_count": 1,
+                  "children": []
+                },
+                {
+                  "name": "headhuntercy21q4",
+                  "path": "infinite/suitai/iratus/headhuntercy21q4",
+                  "file_count": 24,
+                  "children": []
+                },
+                {
+                  "name": "infectioncy21q4",
+                  "path": "infinite/suitai/iratus/infectioncy21q4",
+                  "file_count": 15,
+                  "children": []
+                },
+                {
+                  "name": "infectioncy22q4",
+                  "path": "infinite/suitai/iratus/infectioncy22q4",
+                  "file_count": 127,
+                  "children": []
+                },
+                {
+                  "name": "juggernautcy21q4",
+                  "path": "infinite/suitai/iratus/juggernautcy21q4",
+                  "file_count": 7,
+                  "children": []
+                },
+                {
+                  "name": "kothcy21q4",
+                  "path": "infinite/suitai/iratus/kothcy21q4",
+                  "file_count": 17,
+                  "children": []
+                },
+                {
+                  "name": "landgrabcy21q4",
+                  "path": "infinite/suitai/iratus/landgrabcy21q4",
+                  "file_count": 40,
+                  "children": []
+                },
+                {
+                  "name": "lonewolvescy21q4",
+                  "path": "infinite/suitai/iratus/lonewolvescy21q4",
+                  "file_count": 3,
+                  "children": []
+                },
+                {
+                  "name": "medalscy22q4",
+                  "path": "infinite/suitai/iratus/medalscy22q4",
+                  "file_count": 28,
+                  "children": []
+                },
+                {
+                  "name": "oddballcy21q4",
+                  "path": "infinite/suitai/iratus/oddballcy21q4",
+                  "file_count": 15,
+                  "children": []
+                },
+                {
+                  "name": "playerstatuscy21q4",
+                  "path": "infinite/suitai/iratus/playerstatuscy21q4",
+                  "file_count": 8,
+                  "children": []
+                },
+                {
+                  "name": "racecy21q4",
+                  "path": "infinite/suitai/iratus/racecy21q4",
+                  "file_count": 21,
+                  "children": []
+                },
+                {
+                  "name": "ricochetcy21q4",
+                  "path": "infinite/suitai/iratus/ricochetcy21q4",
+                  "file_count": 6,
+                  "children": []
+                },
+                {
+                  "name": "sharedcy21q4",
+                  "path": "infinite/suitai/iratus/sharedcy21q4",
+                  "file_count": 375,
+                  "children": []
+                },
+                {
+                  "name": "slayercy21q4",
+                  "path": "infinite/suitai/iratus/slayercy21q4",
+                  "file_count": 21,
+                  "children": []
+                },
+                {
+                  "name": "stockpilecy21q4",
+                  "path": "infinite/suitai/iratus/stockpilecy21q4",
+                  "file_count": 38,
+                  "children": []
+                },
+                {
+                  "name": "strongholdscy21q4",
+                  "path": "infinite/suitai/iratus/strongholdscy21q4",
+                  "file_count": 61,
+                  "children": []
+                },
+                {
+                  "name": "teamslayercy21q4",
+                  "path": "infinite/suitai/iratus/teamslayercy21q4",
+                  "file_count": 3,
+                  "children": []
+                },
+                {
+                  "name": "totalcontrolcy21q4",
+                  "path": "infinite/suitai/iratus/totalcontrolcy21q4",
+                  "file_count": 5,
+                  "children": []
+                },
+                {
+                  "name": "translocatorcy21q4",
+                  "path": "infinite/suitai/iratus/translocatorcy21q4",
+                  "file_count": 12,
+                  "children": []
+                },
+                {
+                  "name": "vipcy21q4",
+                  "path": "infinite/suitai/iratus/vipcy21q4",
+                  "file_count": 14,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "lumu",
+              "path": "infinite/suitai/lumu",
+              "file_count": 13,
+              "children": [
+                {
+                  "name": "frontend",
+                  "path": "infinite/suitai/lumu/frontend",
+                  "file_count": 4,
+                  "children": []
+                },
+                {
+                  "name": "grifballcy21q4",
+                  "path": "infinite/suitai/lumu/grifballcy21q4",
+                  "file_count": 1,
+                  "children": []
+                },
+                {
+                  "name": "headhuntercy21q4",
+                  "path": "infinite/suitai/lumu/headhuntercy21q4",
+                  "file_count": 24,
+                  "children": []
+                },
+                {
+                  "name": "juggernautcy21q4",
+                  "path": "infinite/suitai/lumu/juggernautcy21q4",
+                  "file_count": 7,
+                  "children": []
+                },
+                {
+                  "name": "kothcy21q4",
+                  "path": "infinite/suitai/lumu/kothcy21q4",
+                  "file_count": 15,
+                  "children": []
+                },
+                {
+                  "name": "landgrabcy21q4",
+                  "path": "infinite/suitai/lumu/landgrabcy21q4",
+                  "file_count": 40,
+                  "children": []
+                },
+                {
+                  "name": "lonewolvescy21q4",
+                  "path": "infinite/suitai/lumu/lonewolvescy21q4",
+                  "file_count": 3,
+                  "children": []
+                },
+                {
+                  "name": "main",
+                  "path": "infinite/suitai/lumu/main",
+                  "file_count": 575,
+                  "children": []
+                },
+                {
+                  "name": "racecy21q4",
+                  "path": "infinite/suitai/lumu/racecy21q4",
+                  "file_count": 21,
+                  "children": []
+                },
+                {
+                  "name": "ricochetcy21q4",
+                  "path": "infinite/suitai/lumu/ricochetcy21q4",
+                  "file_count": 6,
+                  "children": []
+                },
+                {
+                  "name": "sharedcy21q4",
+                  "path": "infinite/suitai/lumu/sharedcy21q4",
+                  "file_count": 68,
+                  "children": []
+                },
+                {
+                  "name": "translocatorcy21q4",
+                  "path": "infinite/suitai/lumu/translocatorcy21q4",
+                  "file_count": 12,
+                  "children": []
+                },
+                {
+                  "name": "vipcy21q4",
+                  "path": "infinite/suitai/lumu/vipcy21q4",
+                  "file_count": 14,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "misterchief",
+              "path": "infinite/suitai/misterchief",
+              "file_count": 12,
+              "children": [
+                {
+                  "name": "frontend",
+                  "path": "infinite/suitai/misterchief/frontend",
+                  "file_count": 4,
+                  "children": []
+                },
+                {
+                  "name": "grifballcy21q4",
+                  "path": "infinite/suitai/misterchief/grifballcy21q4",
+                  "file_count": 1,
+                  "children": []
+                },
+                {
+                  "name": "headhuntercy21q4",
+                  "path": "infinite/suitai/misterchief/headhuntercy21q4",
+                  "file_count": 24,
+                  "children": []
+                },
+                {
+                  "name": "juggernautcy21q4",
+                  "path": "infinite/suitai/misterchief/juggernautcy21q4",
+                  "file_count": 7,
+                  "children": []
+                },
+                {
+                  "name": "kothcy21q4",
+                  "path": "infinite/suitai/misterchief/kothcy21q4",
+                  "file_count": 15,
+                  "children": []
+                },
+                {
+                  "name": "landgrabcy21q4",
+                  "path": "infinite/suitai/misterchief/landgrabcy21q4",
+                  "file_count": 43,
+                  "children": []
+                },
+                {
+                  "name": "main",
+                  "path": "infinite/suitai/misterchief/main",
+                  "file_count": 607,
+                  "children": []
+                },
+                {
+                  "name": "racecy21q4",
+                  "path": "infinite/suitai/misterchief/racecy21q4",
+                  "file_count": 21,
+                  "children": []
+                },
+                {
+                  "name": "ricochetcy21q4",
+                  "path": "infinite/suitai/misterchief/ricochetcy21q4",
+                  "file_count": 6,
+                  "children": []
+                },
+                {
+                  "name": "sharedcy21q4",
+                  "path": "infinite/suitai/misterchief/sharedcy21q4",
+                  "file_count": 68,
+                  "children": []
+                },
+                {
+                  "name": "translocatorcy21q4",
+                  "path": "infinite/suitai/misterchief/translocatorcy21q4",
+                  "file_count": 12,
+                  "children": []
+                },
+                {
+                  "name": "vipcy21q4",
+                  "path": "infinite/suitai/misterchief/vipcy21q4",
+                  "file_count": 14,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "prism",
+              "path": "infinite/suitai/prism",
+              "file_count": 12,
+              "children": [
+                {
+                  "name": "frontend",
+                  "path": "infinite/suitai/prism/frontend",
+                  "file_count": 4,
+                  "children": []
+                },
+                {
+                  "name": "grifballcy22q1",
+                  "path": "infinite/suitai/prism/grifballcy22q1",
+                  "file_count": 1,
+                  "children": []
+                },
+                {
+                  "name": "headhuntercy22q1",
+                  "path": "infinite/suitai/prism/headhuntercy22q1",
+                  "file_count": 24,
+                  "children": []
+                },
+                {
+                  "name": "juggernautcy22q1",
+                  "path": "infinite/suitai/prism/juggernautcy22q1",
+                  "file_count": 7,
+                  "children": []
+                },
+                {
+                  "name": "kothcy22q1",
+                  "path": "infinite/suitai/prism/kothcy22q1",
+                  "file_count": 15,
+                  "children": []
+                },
+                {
+                  "name": "landgrabcy22q1",
+                  "path": "infinite/suitai/prism/landgrabcy22q1",
+                  "file_count": 39,
+                  "children": []
+                },
+                {
+                  "name": "lonewolvescy22q1",
+                  "path": "infinite/suitai/prism/lonewolvescy22q1",
+                  "file_count": 3,
+                  "children": []
+                },
+                {
+                  "name": "main",
+                  "path": "infinite/suitai/prism/main",
+                  "file_count": 580,
+                  "children": []
+                },
+                {
+                  "name": "racecy22q1",
+                  "path": "infinite/suitai/prism/racecy22q1",
+                  "file_count": 20,
+                  "children": []
+                },
+                {
+                  "name": "ricochetcy22q1",
+                  "path": "infinite/suitai/prism/ricochetcy22q1",
+                  "file_count": 6,
+                  "children": []
+                },
+                {
+                  "name": "sharedcy22q1",
+                  "path": "infinite/suitai/prism/sharedcy22q1",
+                  "file_count": 80,
+                  "children": []
+                },
+                {
+                  "name": "vipcy22q1",
+                  "path": "infinite/suitai/prism/vipcy22q1",
+                  "file_count": 14,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "superintendent",
+              "path": "infinite/suitai/superintendent",
+              "file_count": 13,
+              "children": [
+                {
+                  "name": "frontend",
+                  "path": "infinite/suitai/superintendent/frontend",
+                  "file_count": 8,
+                  "children": []
+                },
+                {
+                  "name": "grifballcy21q4",
+                  "path": "infinite/suitai/superintendent/grifballcy21q4",
+                  "file_count": 1,
+                  "children": []
+                },
+                {
+                  "name": "headhuntercy21q4",
+                  "path": "infinite/suitai/superintendent/headhuntercy21q4",
+                  "file_count": 24,
+                  "children": []
+                },
+                {
+                  "name": "juggernautcy21q4",
+                  "path": "infinite/suitai/superintendent/juggernautcy21q4",
+                  "file_count": 7,
+                  "children": []
+                },
+                {
+                  "name": "kothcy21q4",
+                  "path": "infinite/suitai/superintendent/kothcy21q4",
+                  "file_count": 15,
+                  "children": []
+                },
+                {
+                  "name": "landgrabcy21q4",
+                  "path": "infinite/suitai/superintendent/landgrabcy21q4",
+                  "file_count": 40,
+                  "children": []
+                },
+                {
+                  "name": "lonewolvescy21q4",
+                  "path": "infinite/suitai/superintendent/lonewolvescy21q4",
+                  "file_count": 3,
+                  "children": []
+                },
+                {
+                  "name": "main",
+                  "path": "infinite/suitai/superintendent/main",
+                  "file_count": 596,
+                  "children": []
+                },
+                {
+                  "name": "racecy21q4",
+                  "path": "infinite/suitai/superintendent/racecy21q4",
+                  "file_count": 21,
+                  "children": []
+                },
+                {
+                  "name": "ricochetcy21q4",
+                  "path": "infinite/suitai/superintendent/ricochetcy21q4",
+                  "file_count": 6,
+                  "children": []
+                },
+                {
+                  "name": "sharedcy21q4",
+                  "path": "infinite/suitai/superintendent/sharedcy21q4",
+                  "file_count": 68,
+                  "children": []
+                },
+                {
+                  "name": "translocatorcy21q4",
+                  "path": "infinite/suitai/superintendent/translocatorcy21q4",
+                  "file_count": 12,
+                  "children": []
+                },
+                {
+                  "name": "vipcy21q4",
+                  "path": "infinite/suitai/superintendent/vipcy21q4",
+                  "file_count": 14,
+                  "children": []
+                }
+              ]
             }
           ]
         }
