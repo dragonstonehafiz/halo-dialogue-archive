@@ -42,7 +42,7 @@ export function FolderContents({ nodePath, files, onFolderClick } : {
                             <td>-</td>
                             <td>-</td>
                             <td>-</td>
-                            <td>-</td>
+                            <td>{child.file_count} files</td>
                         </tr>
                     ))}
                     {files?.map(file => (
