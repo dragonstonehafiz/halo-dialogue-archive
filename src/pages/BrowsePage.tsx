@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom"
+import { useParams, useNavigate } from "react-router-dom"
 import { useEffect, useState } from "react";
 import "./BrowsePage.css";
 
@@ -11,22 +11,38 @@ import { FolderContents } from "../components/FolderContents.tsx";
 import { Breadcrumb } from "../components/Breadcrumb.tsx";
 
 export default function BrowsePage() {
-    const { game } = useParams();
+    const { game, '*': subPath } = useParams()
     const [nodePath, setNodePath] = useState<FolderNode[]>([]);
+    const navigate = useNavigate()
 
     const [tree, setTree] = useState<FolderNode | null>(null);
     useEffect(() => {
-        const loadTree = async() => {
+        const loadTree = async () => {
             const res = await fetch('/structure.json');
             const data = await res.json();
-            const gameNode = data.children.find(
-                (node: FolderNode) => node.name === game
-            );
+            const gameNode = data.children.find((node: FolderNode) => node.name === game);
             setTree(gameNode);
-            setNodePath([gameNode]);
+
+            if (subPath) {
+                const targetPath = `${game}/${subPath}`.replace(/\/$/, '');
+                const found = findPathByString(gameNode, targetPath);
+                setNodePath(found ?? [gameNode]);
+            } else {
+                setNodePath([gameNode]);
+            }
         }
+
         loadTree();
-    }, [game])
+    }, [game, subPath])
+    
+    function findPathByString(root: FolderNode, targetPath: string): FolderNode[] | null {
+    if (root.path === targetPath) return [root]
+    for (const child of root.children) {
+        const path = findPathByString(child, targetPath)
+        if (path) return [root, ...path]
+    }
+    return null
+}
 
     const [files, setFiles] = useState<AudioFile[]>([]);
     useEffect(() => {
@@ -66,6 +82,10 @@ export default function BrowsePage() {
     const onFolderClick = (node: FolderNode) => {
         const path = findPath(tree!, node);
         setNodePath(path ?? []);
+
+        // node.path is like "infinite/multiplayer/announcer" — strip the game prefix for the URL
+        const subPath = node.path.split('/').slice(1).join('/');
+        navigate(`/browse/${game}/${subPath}`);
     }
  
 

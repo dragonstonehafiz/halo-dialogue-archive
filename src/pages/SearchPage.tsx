@@ -1,3 +1,4 @@
+import { useSearchParams } from "react-router-dom"
 import Navbar from "../components/Navbar";
 import './SearchPage.css'
 import type { AudioFile } from "../types/AudioFile";
@@ -41,10 +42,18 @@ const selectStyles = {
 }
 
 export default function SearchPage() {
-    const [gameChoices, setGameChoices] = useState<{ value: string; label: string }[]>([])
-    const [tagChoices, setTagChoices] = useState<{ value: string; label: string }[]>([])
-    const [characterChoices, setCharacterChoices] = useState<{ value: string; label: string }[]>([])
-    
+    const [searchParams, setSearchParams] = useSearchParams()
+
+    const [gameChoices, setGameChoices] = useState<{ value: string; label: string }[]>(() =>
+        (searchParams.get('games')?.split(',').filter(Boolean) ?? []).map(g => ({ value: g, label: g }))
+    )
+    const [tagChoices, setTagChoices] = useState<{ value: string; label: string }[]>(() =>
+        (searchParams.get('tags')?.split(',').filter(Boolean) ?? []).map(t => ({ value: t, label: t }))
+    )
+    const [characterChoices, setCharacterChoices] = useState<{ value: string; label: string }[]>(() =>
+        (searchParams.get('characters')?.split(',').filter(Boolean) ?? []).map(c => ({ value: c, label: c }))
+    )
+
     const [gameOptions, setGameOptions] = useState<{ value: string; label: string }[]>([])
     const [tagOptions, setTagOptions] = useState<{ value: string; label: string }[]>([])
     const [characterOptions, setCharacterOptions] = useState<{ value: string; label: string }[]>([])
@@ -58,7 +67,7 @@ export default function SearchPage() {
             })
     }, [])
 
-    const [search, setSearch] = useState('')
+    const [search, setSearch] = useState(() => searchParams.get('q') ?? '')
 
     const [searchResults, setSearchResults] = useState<AudioFile[]>([])
     async function onSearch() {
@@ -67,6 +76,12 @@ export default function SearchPage() {
             .from('audio_files')
             .select('*')
             .or(`transcript.ilike.%${search}%,filename.ilike.%${search}%`)
+
+        const params: Record<string, string> = { q: search }
+            if (gameChoices.length) params.games = gameChoices.map(g => g.value).join(',')
+            if (tagChoices.length) params.tags = tagChoices.map(t => t.value).join(',')
+            if (characterChoices.length) params.characters = characterChoices.map(c => c.value).join(',')
+            setSearchParams(params)
         
         if (gameChoices.length > 0)
             query = query.in('game', gameChoices.map(g => g.value))
@@ -84,6 +99,8 @@ export default function SearchPage() {
         if (error) 
             console.error(error)
     }
+
+
 
     return (
         <div>
