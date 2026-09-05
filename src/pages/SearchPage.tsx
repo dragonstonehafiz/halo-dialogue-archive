@@ -210,16 +210,13 @@ export default function SearchPage() {
                 <h2>Results</h2>
                 {searchLoading && <LoadingContainer label="Searching dialogue" />}
                 {!searchLoading && searchError && <p className="search-error" role="alert">{searchError}</p>}
-                {!searchLoading && !searchError && !hasSearched && (
-                    <p className="search-hint">Enter a query to search the archive.</p>
-                )}
                 {!searchLoading && !searchError && hasSearched && searchResults.length === 0 && (
                     <p className="search-hint">No dialogue matched your search.</p>
                 )}
                 {!searchLoading && !searchError && hasSearched && searchResults.length === RESULT_CAP && (
                     <p className="search-hint">Showing up to {RESULT_CAP} results.</p>
                 )}
-                {!searchLoading && !searchError && hasSearched && searchResults.length > 0 && (
+                {!searchLoading && !searchError && (!hasSearched || searchResults.length > 0) && (
                     <FolderContents files={searchResults} />
                 )}
             </div>
