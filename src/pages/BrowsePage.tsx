@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import "./BrowsePage.css";
 
 import Navbar from "../components/Navbar"
-import { supabase } from "../components/Supabase";
+import { browse } from "../lib/api";
 import BrowsePageGameSelector from "../components/BrowsePageGameSelector.tsx";
 import type { FolderNode } from "../types/FolderNode.ts"; 
 import type { AudioFile } from "../types/AudioFile.ts";
@@ -45,29 +45,35 @@ export default function BrowsePage() {
 }
 
     const [files, setFiles] = useState<AudioFile[]>([]);
+    const [filesLoading, setFilesLoading] = useState(false);
+    const [filesError, setFilesError] = useState<string | null>(null);
     useEffect(() => {
         if (nodePath.length === 0) return;
 
         const currentPath = nodePath.map(n => n.name).join('/');
+        const controller = new AbortController();
 
         const fetchFiles = async () => {
-            const { data, error } = await supabase
-                .from('audio_files')
-                .select('*')
-                .like('path', `${currentPath}/%`)
-                .not('path', 'like', `${currentPath}/%/%`)
-
-                
-            if (data) {
-                const sortedFiles = data.sort((a, b) => 
+            setFilesLoading(true);
+            setFilesError(null);
+            try {
+                const data = await browse(currentPath, controller.signal);
+                const sortedFiles = data.sort((a, b) =>
                     a.filename.localeCompare(b.filename, undefined, { numeric: true })
                 )
-                setFiles(sortedFiles);   
+                setFiles(sortedFiles);
+            } catch (err) {
+                if (err instanceof DOMException && err.name === "AbortError") return;
+                setFiles([]);
+                setFilesError(err instanceof Error ? err.message : "Failed to load folder contents.");
+            } finally {
+                if (!controller.signal.aborted) setFilesLoading(false);
             }
-            if (error) console.error(error);
         }
 
         fetchFiles();
+
+        return () => controller.abort();
     }, [nodePath])
 
     function findPath(root: FolderNode, target: FolderNode): FolderNode[] | null {
@@ -102,7 +108,11 @@ export default function BrowsePage() {
                 <div className="browse-page-contents">
                     <h2>Contents</h2>
                     <Breadcrumb nodePath={nodePath} onFolderClick={onFolderClick}></Breadcrumb>
-                    <FolderContents nodePath={nodePath} files={files} onFolderClick={onFolderClick}></FolderContents>
+                    {filesLoading && <p>Loading…</p>}
+                    {filesError && <p className="browse-page-error">{filesError}</p>}
+                    {!filesLoading && !filesError && (
+                        <FolderContents nodePath={nodePath} files={files} onFolderClick={onFolderClick}></FolderContents>
+                    )}
                 </div>
             </div>
         </div>

@@ -3,9 +3,12 @@ import Navbar from "../components/Navbar";
 import './SearchPage.css'
 import type { AudioFile } from "../types/AudioFile";
 import Select from "react-select";
-import { useEffect, useState } from "react";
-import { supabase } from "../components/Supabase";
+import { useEffect, useRef, useState } from "react";
+import { search as searchApi } from "../lib/api";
 import { FolderContents } from "../components/FolderContents";
+
+const MIN_QUERY_LENGTH = 3;
+const RESULT_CAP = 200;
 
 const selectStyles = {
     control: (base: object) => ({
@@ -70,35 +73,51 @@ export default function SearchPage() {
     const [search, setSearch] = useState(() => searchParams.get('q') ?? '')
 
     const [searchResults, setSearchResults] = useState<AudioFile[]>([])
+    const [searchLoading, setSearchLoading] = useState(false)
+    const [searchError, setSearchError] = useState<string | null>(null)
+    const [hasSearched, setHasSearched] = useState(false)
+    const abortRef = useRef<AbortController | null>(null)
+
+    const trimmedSearch = search.trim()
+    const isQueryTooShort = trimmedSearch.length > 0 && Array.from(trimmedSearch).length < MIN_QUERY_LENGTH
+
     async function onSearch() {
-        if (!search.trim()) return
-        let query = supabase
-            .from('audio_files')
-            .select('*')
-            .or(`transcript.ilike.%${search}%,filename.ilike.%${search}%`)
+        if (!trimmedSearch || Array.from(trimmedSearch).length < MIN_QUERY_LENGTH) return
 
-        const params: Record<string, string> = { q: search }
-            if (gameChoices.length) params.games = gameChoices.map(g => g.value).join(',')
-            if (tagChoices.length) params.tags = tagChoices.map(t => t.value).join(',')
-            if (characterChoices.length) params.characters = characterChoices.map(c => c.value).join(',')
-            setSearchParams(params)
-        
-        if (gameChoices.length > 0)
-            query = query.in('game', gameChoices.map(g => g.value))
+        const params: Record<string, string> = { q: trimmedSearch }
+        if (gameChoices.length) params.games = gameChoices.map(g => g.value).join(',')
+        if (tagChoices.length) params.tags = tagChoices.map(t => t.value).join(',')
+        if (characterChoices.length) params.characters = characterChoices.map(c => c.value).join(',')
+        setSearchParams(params)
 
-        if (characterChoices.length > 0)
-            query = query.in('character', characterChoices.map(c => c.value))
+        abortRef.current?.abort()
+        const controller = new AbortController()
+        abortRef.current = controller
 
-        if (tagChoices.length > 0)
-            query = query.overlaps('tags', tagChoices.map(t => t.value))
-
-        const { data, error } = await query
-
-        if (data)
+        setSearchLoading(true)
+        setSearchError(null)
+        try {
+            const data = await searchApi({
+                q: trimmedSearch,
+                games: gameChoices.map(g => g.value),
+                characters: characterChoices.map(c => c.value),
+                tags: tagChoices.map(t => t.value),
+            }, controller.signal)
             setSearchResults(data)
-        if (error) 
-            console.error(error)
+            setHasSearched(true)
+        } catch (err) {
+            if (err instanceof DOMException && err.name === "AbortError") return
+            setSearchResults([])
+            setSearchError(err instanceof Error ? err.message : "Search failed. Please try again.")
+            setHasSearched(true)
+        } finally {
+            if (!controller.signal.aborted) setSearchLoading(false)
+        }
     }
+
+    useEffect(() => {
+        return () => abortRef.current?.abort()
+    }, [])
 
 
 
@@ -148,16 +167,24 @@ export default function SearchPage() {
                         />
                     </div>
                 </div>
-                <button 
+                <button
                     className='filter-search-button'
-                    disabled={!search.trim()}
+                    disabled={!trimmedSearch || isQueryTooShort || searchLoading}
                     onClick={onSearch}>Search
                 </button>
+                {isQueryTooShort && (
+                    <p className="search-hint">Enter at least {MIN_QUERY_LENGTH} characters to search.</p>
+                )}
             </div>
 
             <div className="files-available-section">
                 <h2>Results</h2>
-                <FolderContents files={searchResults} />
+                {searchLoading && <p>Loading…</p>}
+                {searchError && <p className="search-error">{searchError}</p>}
+                {!searchLoading && !searchError && hasSearched && searchResults.length === RESULT_CAP && (
+                    <p className="search-hint">Showing up to {RESULT_CAP} results. Refine your search to narrow the list.</p>
+                )}
+                {!searchLoading && !searchError && <FolderContents files={searchResults} />}
             </div>
         </div>
     )
