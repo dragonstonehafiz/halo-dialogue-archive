@@ -6,6 +6,9 @@ import Select from "react-select";
 import { useEffect, useRef, useState } from "react";
 import { search as searchApi } from "../lib/api";
 import { FolderContents } from "../components/FolderContents";
+import { LoadingContainer, LoadingSpinner } from "../components/LoadingSpinner";
+
+const SelectLoadingIndicator = () => <LoadingSpinner label="Loading options" size="small" />;
 
 const MIN_QUERY_LENGTH = 3;
 const RESULT_CAP = 200;
@@ -60,14 +63,30 @@ export default function SearchPage() {
     const [gameOptions, setGameOptions] = useState<{ value: string; label: string }[]>([])
     const [tagOptions, setTagOptions] = useState<{ value: string; label: string }[]>([])
     const [characterOptions, setCharacterOptions] = useState<{ value: string; label: string }[]>([])
+    const [filtersLoading, setFiltersLoading] = useState(true)
+    const [filtersError, setFiltersError] = useState<string | null>(null)
     useEffect(() => {
-        fetch('/filters.json')
-            .then(res => res.json())
-            .then(data => {
-                setGameOptions(data.games.map((g: string) => ({ value: g, label: g })))
-                setTagOptions(data.tags.map((t: string) => ({ value: t, label: t })))
-                setCharacterOptions(data.characters.map((c: string) => ({ value: c, label: c})))
-            })
+        const controller = new AbortController()
+
+        const loadFilters = async () => {
+            try {
+                const res = await fetch('/filters.json', { signal: controller.signal })
+                if (!res.ok) throw new Error("Could not load filters.")
+                const data = await res.json()
+                setGameOptions((data.games ?? []).map((g: string) => ({ value: g, label: g })))
+                setTagOptions((data.tags ?? []).map((t: string) => ({ value: t, label: t })))
+                setCharacterOptions((data.characters ?? []).map((c: string) => ({ value: c, label: c })))
+            } catch (err) {
+                if (err instanceof DOMException && err.name === "AbortError") return
+                setFiltersError("Filters could not be loaded. Transcript search is still available.")
+            } finally {
+                if (!controller.signal.aborted) setFiltersLoading(false)
+            }
+        }
+
+        loadFilters()
+
+        return () => controller.abort()
     }, [])
 
     const [search, setSearch] = useState(() => searchParams.get('q') ?? '')
@@ -138,53 +157,68 @@ export default function SearchPage() {
                     </div>
                     <div className='filter-item'>
                         <label>Tags</label>
-                        <Select 
+                        <Select
                             options={tagOptions}
                             value={tagChoices}
                             styles={selectStyles}
                             onChange={(choices) => setTagChoices([...choices])}
                             isMulti={true}
+                            isLoading={filtersLoading}
+                            isDisabled={filtersLoading}
+                            components={{ LoadingIndicator: SelectLoadingIndicator }}
                         />
                     </div>
                     <div className='filter-item'>
                         <label>Game</label>
-                        <Select 
+                        <Select
                             options={gameOptions}
                             value={gameChoices}
                             styles={selectStyles}
                             onChange={(choices) => setGameChoices([...choices])}
                             isMulti={true}
+                            isLoading={filtersLoading}
+                            isDisabled={filtersLoading}
+                            components={{ LoadingIndicator: SelectLoadingIndicator }}
                         />
                     </div>
                     <div className='filter-item'>
                         <label>Character</label>
-                        <Select 
+                        <Select
                             options={characterOptions}
                             value={characterChoices}
                             styles={selectStyles}
                             onChange={(choices) => setCharacterChoices([...choices])}
                             isMulti={true}
+                            isLoading={filtersLoading}
+                            isDisabled={filtersLoading}
+                            components={{ LoadingIndicator: SelectLoadingIndicator }}
                         />
                     </div>
                 </div>
                 <button
                     className='filter-search-button'
                     disabled={!trimmedSearch || isQueryTooShort || searchLoading}
-                    onClick={onSearch}>Search
+                    onClick={onSearch}>{searchLoading ? "Searching…" : "Search"}
                 </button>
                 {isQueryTooShort && (
                     <p className="search-hint">Enter at least {MIN_QUERY_LENGTH} characters to search.</p>
                 )}
+                {filtersError && <p className="search-error" role="alert">{filtersError}</p>}
             </div>
 
-            <div className="files-available-section">
+            <div className="files-available-section" aria-busy={searchLoading}>
                 <h2>Results</h2>
-                {searchLoading && <p>Loading…</p>}
-                {searchError && <p className="search-error">{searchError}</p>}
-                {!searchLoading && !searchError && hasSearched && searchResults.length === RESULT_CAP && (
-                    <p className="search-hint">Showing up to {RESULT_CAP} results. Refine your search to narrow the list.</p>
+                {searchLoading && <LoadingContainer label="Searching dialogue" />}
+                {!searchLoading && searchError && <p className="search-error" role="alert">{searchError}</p>}
+                {!searchLoading && !searchError && hasSearched && searchResults.length === 0 && (
+                    <p className="search-hint">No dialogue matched your search.</p>
                 )}
-                {!searchLoading && !searchError && <FolderContents files={searchResults} />}
+                {!searchLoading && !searchError && hasSearched && searchResults.length === RESULT_CAP && (
+                    <p className="search-hint">Showing up to {RESULT_CAP} results.</p>
+                )}
+                {!searchLoading && !searchError && (!hasSearched || searchResults.length > 0) && (
+                    <FolderContents files={searchResults} />
+                )}
             </div>
         </div>
     )

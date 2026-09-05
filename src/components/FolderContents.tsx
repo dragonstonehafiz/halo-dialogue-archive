@@ -1,5 +1,6 @@
 import type { FolderNode } from "../types/FolderNode";
 import type { AudioFile } from "../types/AudioFile";
+import { AudioPlayButton } from "./AudioPlayButton";
 import './FolderContents.css'
 
 export function FolderContents({ nodePath, files, onFolderClick } : { 
@@ -53,7 +54,7 @@ export function FolderContents({ nodePath, files, onFolderClick } : {
                             <td>{file.tags?.join(', ') ?? '-'}</td>
                             <td>{file.character ?? '-'}</td>
                             <td>
-                                <button className="btn-icon" onClick={() => new Audio(`${R2_BASE_URL}/${file.path}`).play()}>▶</button>
+                                <AudioPlayButton src={`${R2_BASE_URL}/${file.path}`} label={file.path.split('/').pop() ?? file.path} />
                             </td>
                             <td>
                                 <button className="btn-icon" onClick={() => window.open(`${R2_BASE_URL}/${file.path}`, '_blank')}>⬇</button>
