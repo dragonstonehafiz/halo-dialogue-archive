@@ -69,3 +69,18 @@
     padding: 16px;
     min-height: 200px;
 }
+
+.search-error {
+    color: var(--error);
+    background-color: var(--background);
+    border: 1px solid var(--error);
+    border-radius: 6px;
+    padding: 10px 14px;
+    margin: 12px 0 0 0;
+}
+
+.search-hint {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    margin: 12px 0 0 0;
+}
