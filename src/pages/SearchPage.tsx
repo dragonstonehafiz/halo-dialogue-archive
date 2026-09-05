@@ -217,7 +217,7 @@ export default function SearchPage() {
                     <p className="search-hint">No dialogue matched your search.</p>
                 )}
                 {!searchLoading && !searchError && hasSearched && searchResults.length === RESULT_CAP && (
-                    <p className="search-hint">Showing up to {RESULT_CAP} results. Refine your search to narrow the list.</p>
+                    <p className="search-hint">Showing up to {RESULT_CAP} results.</p>
                 )}
                 {!searchLoading && !searchError && hasSearched && searchResults.length > 0 && (
                     <FolderContents files={searchResults} />
