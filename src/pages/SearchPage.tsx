@@ -99,11 +99,14 @@ export default function SearchPage() {
 
     const trimmedSearch = search.trim()
     const isQueryTooShort = trimmedSearch.length > 0 && Array.from(trimmedSearch).length < MIN_QUERY_LENGTH
+    const hasFilters = gameChoices.length > 0 || tagChoices.length > 0 || characterChoices.length > 0
+    const canSearch = !isQueryTooShort && (trimmedSearch.length > 0 || hasFilters)
 
     async function onSearch() {
-        if (!trimmedSearch || Array.from(trimmedSearch).length < MIN_QUERY_LENGTH) return
+        if (!canSearch) return
 
-        const params: Record<string, string> = { q: trimmedSearch }
+        const params: Record<string, string> = {}
+        if (trimmedSearch) params.q = trimmedSearch
         if (gameChoices.length) params.games = gameChoices.map(g => g.value).join(',')
         if (tagChoices.length) params.tags = tagChoices.map(t => t.value).join(',')
         if (characterChoices.length) params.characters = characterChoices.map(c => c.value).join(',')
@@ -117,7 +120,7 @@ export default function SearchPage() {
         setSearchError(null)
         try {
             const data = await searchApi({
-                q: trimmedSearch,
+                q: trimmedSearch || undefined,
                 games: gameChoices.map(g => g.value),
                 characters: characterChoices.map(c => c.value),
                 tags: tagChoices.map(t => t.value),
@@ -197,11 +200,14 @@ export default function SearchPage() {
                 </div>
                 <button
                     className='filter-search-button'
-                    disabled={!trimmedSearch || isQueryTooShort || searchLoading}
+                    disabled={!canSearch || searchLoading}
                     onClick={onSearch}>{searchLoading ? "Searching…" : "Search"}
                 </button>
                 {isQueryTooShort && (
-                    <p className="search-hint">Enter at least {MIN_QUERY_LENGTH} characters to search.</p>
+                    <p className="search-hint">Enter at least {MIN_QUERY_LENGTH} characters, or clear the text and search by filters alone.</p>
+                )}
+                {!isQueryTooShort && !trimmedSearch && !hasFilters && (
+                    <p className="search-hint">Enter a transcript search, or pick at least one filter.</p>
                 )}
                 {filtersError && <p className="search-error" role="alert">{filtersError}</p>}
             </div>

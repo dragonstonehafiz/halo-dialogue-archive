@@ -39,7 +39,7 @@ export function browse(folder: string, signal?: AbortSignal): Promise<AudioFile[
 
 export function search(
     opts: {
-        q: string;
+        q?: string;
         games?: string[];
         characters?: string[];
         tags?: string[];
@@ -49,7 +49,7 @@ export function search(
     return requestJson(
         "/search",
         {
-            q: opts.q,
+            q: opts.q?.trim() || undefined,
             games: opts.games?.join(","),
             characters: opts.characters?.join(","),
             tags: opts.tags?.join(","),
