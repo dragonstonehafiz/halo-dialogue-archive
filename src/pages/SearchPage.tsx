@@ -3,15 +3,61 @@ import Navbar from "../components/Navbar";
 import './SearchPage.css'
 import type { AudioFile } from "../types/AudioFile";
 import Select from "react-select";
-import { useEffect, useRef, useState } from "react";
-import { search as searchApi } from "../lib/api";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { search as searchApi, SEARCH_MIN_QUERY_LENGTH } from "../lib/api";
 import { FolderContents } from "../components/FolderContents";
+import { Pager } from "../components/Pager";
 import { LoadingContainer, LoadingSpinner } from "../components/LoadingSpinner";
 
 const SelectLoadingIndicator = () => <LoadingSpinner label="Loading options" size="small" />;
 
-const MIN_QUERY_LENGTH = 3;
-const RESULT_CAP = 200;
+const PAGE_SIZE = 50;
+
+type SearchQuery = {
+    q: string;
+    games: string[];
+    characters: string[];
+    tags: string[];
+    page: number;
+}
+
+function parseList(value: string | null): string[] {
+    return value?.split(',').filter(Boolean) ?? []
+}
+
+function parseChoices(value: string | null): { value: string; label: string }[] {
+    return parseList(value).map(v => ({ value: v, label: v }))
+}
+
+function parsePage(value: string | null): number {
+    const page = Number(value)
+    return Number.isInteger(page) && page >= 0 ? page : 0
+}
+
+// A URL only describes a runnable search if it carries facets or a long enough q.
+function queryFromParams(params: URLSearchParams): SearchQuery | null {
+    const query: SearchQuery = {
+        q: (params.get('q') ?? '').trim(),
+        games: parseList(params.get('games')),
+        characters: parseList(params.get('characters')),
+        tags: parseList(params.get('tags')),
+        page: parsePage(params.get('page')),
+    }
+    const hasFilters = query.games.length > 0 || query.characters.length > 0 || query.tags.length > 0
+    if (Array.from(query.q).length >= SEARCH_MIN_QUERY_LENGTH) return query
+    if (!query.q && hasFilters) return query
+    return null
+}
+
+function paramsFromQuery(query: SearchQuery): Record<string, string> {
+    const params: Record<string, string> = {}
+    if (query.q) params.q = query.q
+    if (query.games.length) params.games = query.games.join(',')
+    if (query.tags.length) params.tags = query.tags.join(',')
+    if (query.characters.length) params.characters = query.characters.join(',')
+    if (query.page > 0) params.page = String(query.page)
+    return params
+}
 
 const selectStyles = {
     control: (base: object) => ({
@@ -50,14 +96,20 @@ const selectStyles = {
 export default function SearchPage() {
     const [searchParams, setSearchParams] = useSearchParams()
 
+    // The URL is the source of truth for the search: Back/Forward, a shared link and
+    // a reload all arrive the same way. queryKey is stable while the URL is unchanged,
+    // so it drives both the form sync below and the fetch effect.
+    const queryKey = searchParams.toString()
+    const submittedQuery = useMemo(() => queryFromParams(new URLSearchParams(queryKey)), [queryKey])
+
     const [gameChoices, setGameChoices] = useState<{ value: string; label: string }[]>(() =>
-        (searchParams.get('games')?.split(',').filter(Boolean) ?? []).map(g => ({ value: g, label: g }))
+        parseChoices(searchParams.get('games'))
     )
     const [tagChoices, setTagChoices] = useState<{ value: string; label: string }[]>(() =>
-        (searchParams.get('tags')?.split(',').filter(Boolean) ?? []).map(t => ({ value: t, label: t }))
+        parseChoices(searchParams.get('tags'))
     )
     const [characterChoices, setCharacterChoices] = useState<{ value: string; label: string }[]>(() =>
-        (searchParams.get('characters')?.split(',').filter(Boolean) ?? []).map(c => ({ value: c, label: c }))
+        parseChoices(searchParams.get('characters'))
     )
 
     const [gameOptions, setGameOptions] = useState<{ value: string; label: string }[]>([])
@@ -92,56 +144,117 @@ export default function SearchPage() {
     const [search, setSearch] = useState(() => searchParams.get('q') ?? '')
 
     const [searchResults, setSearchResults] = useState<AudioFile[]>([])
+    const [total, setTotal] = useState(0)
+    const [totalPages, setTotalPages] = useState(0)
     const [searchLoading, setSearchLoading] = useState(false)
     const [searchError, setSearchError] = useState<string | null>(null)
     const [hasSearched, setHasSearched] = useState(false)
     const abortRef = useRef<AbortController | null>(null)
 
+    // Pull the form and the results back in line whenever the URL moves out from under
+    // us — Back/Forward, or the out-of-range clamp below. Adjusting state during render
+    // (rather than in an effect) keeps the form from painting the previous query first.
+    const [syncedKey, setSyncedKey] = useState(queryKey)
+    if (syncedKey !== queryKey) {
+        setSyncedKey(queryKey)
+        setSearch(searchParams.get('q') ?? '')
+        setGameChoices(parseChoices(searchParams.get('games')))
+        setTagChoices(parseChoices(searchParams.get('tags')))
+        setCharacterChoices(parseChoices(searchParams.get('characters')))
+        setSearchResults([])
+        setTotal(0)
+        setTotalPages(0)
+        setSearchError(null)
+        setHasSearched(false)
+    }
+
     const trimmedSearch = search.trim()
-    const isQueryTooShort = trimmedSearch.length > 0 && Array.from(trimmedSearch).length < MIN_QUERY_LENGTH
+    const isQueryTooShort = trimmedSearch.length > 0 && Array.from(trimmedSearch).length < SEARCH_MIN_QUERY_LENGTH
     const hasFilters = gameChoices.length > 0 || tagChoices.length > 0 || characterChoices.length > 0
     const canSearch = !isQueryTooShort && (trimmedSearch.length > 0 || hasFilters)
 
-    async function onSearch() {
-        if (!canSearch) return
+    // Writing the URL is all a submit does; the render-time sync and the fetch effect
+    // both follow from it.
+    const submitQuery = useCallback((query: SearchQuery, replace = false) => {
+        setSearchParams(paramsFromQuery(query), { replace })
+    }, [setSearchParams])
 
-        const params: Record<string, string> = {}
-        if (trimmedSearch) params.q = trimmedSearch
-        if (gameChoices.length) params.games = gameChoices.map(g => g.value).join(',')
-        if (tagChoices.length) params.tags = tagChoices.map(t => t.value).join(',')
-        if (characterChoices.length) params.characters = characterChoices.map(c => c.value).join(',')
-        setSearchParams(params)
+    function onSearch() {
+        if (!canSearch) return
+        // Any change to the text or the facets starts again from the first page.
+        submitQuery({
+            q: trimmedSearch,
+            games: gameChoices.map(g => g.value),
+            characters: characterChoices.map(c => c.value),
+            tags: tagChoices.map(t => t.value),
+            page: 0,
+        })
+    }
+
+    function onPageChange(page: number) {
+        if (!submittedQuery || page === submittedQuery.page) return
+        submitQuery({ ...submittedQuery, page })
+    }
+
+    useEffect(() => {
+        if (!submittedQuery) return
 
         abortRef.current?.abort()
         const controller = new AbortController()
         abortRef.current = controller
 
-        setSearchLoading(true)
-        setSearchError(null)
-        try {
-            const data = await searchApi({
-                q: trimmedSearch || undefined,
-                games: gameChoices.map(g => g.value),
-                characters: characterChoices.map(c => c.value),
-                tags: tagChoices.map(t => t.value),
-            }, controller.signal)
-            setSearchResults(data)
-            setHasSearched(true)
-        } catch (err) {
-            if (err instanceof DOMException && err.name === "AbortError") return
-            setSearchResults([])
-            setSearchError(err instanceof Error ? err.message : "Search failed. Please try again.")
-            setHasSearched(true)
-        } finally {
-            if (!controller.signal.aborted) setSearchLoading(false)
+        const run = async () => {
+            setSearchLoading(true)
+            setSearchError(null)
+            try {
+                const data = await searchApi({
+                    q: submittedQuery.q || undefined,
+                    games: submittedQuery.games,
+                    characters: submittedQuery.characters,
+                    tags: submittedQuery.tags,
+                    page: submittedQuery.page,
+                    pageSize: PAGE_SIZE,
+                }, controller.signal)
+
+                // Asking past the end (a stale link, or facets that narrowed since)
+                // returns no rows but a real total — step back to the last real page.
+                if (data.results.length === 0 && data.total > 0 && submittedQuery.page > data.totalPages - 1) {
+                    // replace: the out-of-range page should not become a Back target.
+                    submitQuery({ ...submittedQuery, page: Math.max(0, data.totalPages - 1) }, true)
+                    return
+                }
+
+                setSearchResults(data.results)
+                setTotal(data.total)
+                setTotalPages(data.totalPages)
+                setHasSearched(true)
+            } catch (err) {
+                if (err instanceof DOMException && err.name === "AbortError") return
+                setSearchResults([])
+                setTotal(0)
+                setTotalPages(0)
+                setSearchError(err instanceof Error ? err.message : "Search failed. Please try again.")
+                setHasSearched(true)
+            } finally {
+                // Clear the spinner unless a newer request has already taken over —
+                // including when this one was aborted because the query went away.
+                if (abortRef.current === controller) setSearchLoading(false)
+            }
         }
-    }
+
+        run()
+
+        return () => controller.abort()
+    }, [submittedQuery, submitQuery])
 
     useEffect(() => {
         return () => abortRef.current?.abort()
     }, [])
 
-
+    const page = submittedQuery?.page ?? 0
+    const firstRow = page * PAGE_SIZE + 1
+    const lastRow = Math.min(total, page * PAGE_SIZE + searchResults.length)
+    const showResults = !searchLoading && !searchError && total > 0
 
     return (
         <div>
@@ -151,11 +264,11 @@ export default function SearchPage() {
                 <div className="filters-row">
                     <div className='filter-item'>
                         <label>Transcript Search</label>
-                        <input 
-                            className='filters-search-transcript' 
+                        <input
+                            className='filters-search-transcript'
                             type='text'
                             value={search}
-                            onChange={(e) => setSearch(e.target.value)} 
+                            onChange={(e) => setSearch(e.target.value)}
                         />
                     </div>
                     <div className='filter-item'>
@@ -204,7 +317,7 @@ export default function SearchPage() {
                     onClick={onSearch}>{searchLoading ? "Searching…" : "Search"}
                 </button>
                 {isQueryTooShort && (
-                    <p className="search-hint">Enter at least {MIN_QUERY_LENGTH} characters, or clear the text and search by filters alone.</p>
+                    <p className="search-hint">Enter at least {SEARCH_MIN_QUERY_LENGTH} characters, or clear the text and search by filters alone.</p>
                 )}
                 {!isQueryTooShort && !trimmedSearch && !hasFilters && (
                     <p className="search-hint">Enter a transcript search, or pick at least one filter.</p>
@@ -216,14 +329,19 @@ export default function SearchPage() {
                 <h2>Results</h2>
                 {searchLoading && <LoadingContainer label="Searching dialogue" />}
                 {!searchLoading && searchError && <p className="search-error" role="alert">{searchError}</p>}
-                {!searchLoading && !searchError && hasSearched && searchResults.length === 0 && (
+                {!searchLoading && !searchError && hasSearched && total === 0 && (
                     <p className="search-hint">No dialogue matched your search.</p>
                 )}
-                {!searchLoading && !searchError && hasSearched && searchResults.length === RESULT_CAP && (
-                    <p className="search-hint">Showing up to {RESULT_CAP} results.</p>
+                {showResults && (
+                    <p className="search-hint">
+                        Showing {firstRow}&ndash;{lastRow} of {total} {total === 1 ? "result" : "results"}
+                    </p>
                 )}
-                {!searchLoading && !searchError && (!hasSearched || searchResults.length > 0) && (
+                {!searchLoading && !searchError && (!hasSearched || total > 0) && (
                     <FolderContents files={searchResults} />
+                )}
+                {showResults && (
+                    <Pager page={page} totalPages={totalPages} onPageChange={onPageChange} />
                 )}
             </div>
         </div>
