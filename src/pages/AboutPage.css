@@ -26,3 +26,25 @@
 .about-section a:hover {
     color: var(--primary-hover);
 }
+.about-section h3 {
+    color: var(--text);
+    margin-top: 20px;
+    margin-bottom: 6px;
+    font-size: 1rem;
+}
+
+.about-section ul {
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-bottom: 16px;
+    padding-left: 20px;
+}
+
+.about-section code {
+    font-size: 0.9em;
+}
+
+.about-callout {
+    border-left: 3px solid var(--primary);
+    padding-left: 12px;
+}
