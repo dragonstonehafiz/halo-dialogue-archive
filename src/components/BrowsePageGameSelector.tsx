@@ -15,7 +15,7 @@ const games = [
     { name: 'Halo 3: ODST', image: halo3odstLogo, path: '/browse/halo3odst' },
     { name: 'Halo Reach', image: reachLogo, path: '/browse/reach' },
     { name: 'Halo 4', image: halo4Logo, path: '/browse/halo4' },
-    { name: 'Halo 5: Guardians', image: halo5Logo, path: '/browse/halo5' },
+    { name: 'Halo 5: Forge', image: halo5Logo, path: '/browse/halo5' },
     { name: 'Halo Infinite', image: infiniteLogo, path: '/browse/infinite' },
     { name: 'Halo Campaign Evolved', image: halocevLogo, path: '/browse/halo-cev' },
 ]
