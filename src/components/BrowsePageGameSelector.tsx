@@ -1,11 +1,12 @@
 import GameCard from './GameCard'
-import halo2Logo from '../assets/games/halo2.png'
-import halo3Logo from '../assets/games/halo3.png'
-import halo3odstLogo from '../assets/games/halo3odst.png'
-import reachLogo from '../assets/games/reach.png'
-import halo4Logo from '../assets/games/halo4.png'
-import halo5Logo from '../assets/games/halo5.png'
-import infiniteLogo from '../assets/games/infinite.png'
+import halo2Logo from '../assets/games/halo2.webp'
+import halo3Logo from '../assets/games/halo3.webp'
+import halo3odstLogo from '../assets/games/halo3odst.webp'
+import reachLogo from '../assets/games/reach.webp'
+import halo4Logo from '../assets/games/halo4.webp'
+import halo5Logo from '../assets/games/halo5.webp'
+import infiniteLogo from '../assets/games/infinite.webp'
+import halocevLogo from '../assets/games/halo-cev.webp'
 import './BrowsePageGameSelector.css'
 
 const games = [
@@ -16,6 +17,7 @@ const games = [
     { name: 'Halo 4', image: halo4Logo, path: '/browse/halo4' },
     { name: 'Halo 5: Guardians', image: halo5Logo, path: '/browse/halo5' },
     { name: 'Halo Infinite', image: infiniteLogo, path: '/browse/infinite' },
+    { name: 'Halo Campaign Evolved', image: halocevLogo, path: '/browse/halo-cev' },
 ]
 
 export default function GameSelector() {
