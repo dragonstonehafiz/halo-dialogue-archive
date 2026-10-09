@@ -15,7 +15,7 @@ export default function HomePage() {
             </div>
 
             <div className="games">
-                <BrowsePageGameSelector />
+                <BrowsePageGameSelector grouped />
             </div>
         </div>
     )
