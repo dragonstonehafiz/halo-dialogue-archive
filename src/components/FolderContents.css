@@ -84,3 +84,11 @@
 .contents-table td button:hover {
     color: var(--primary-hover);
 }
+.contents-table th:last-child,
+.contents-table td:last-child {
+    white-space: nowrap;
+}
+
+.contents-table td .btn-icon {
+    text-align: center;
+}
