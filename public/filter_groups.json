@@ -1,0 +1,54 @@
+{
+  "games": {
+    "Mainline": ["halo-cev", "halo2", "halo3", "halo4", "halo5", "infinite"],
+    "Spin-offs": ["halo3odst", "reach"]
+  },
+  "tags": {
+    "Forerunner": ["forerunner", "monitor"],
+    "UNSC": ["unsc", "marine", "odst", "spartan", "oni"],
+    "Banished": ["brute", "elite", "grunt", "hunter", "jackal", "skimmers"],
+    "Covenant": ["brute", "drone", "elite", "engineer", "grunt", "hunter", "jackal", "prophet"],
+    "AI": ["ai", "monitor"]
+  },
+  "characters": {
+    "Forerunner": [
+      "031 Exuberant Witness", "2401 Penitent Tangent", "343 Guilty Spark", "Adjutant Resolution",
+      "Despondent Pyre", "Didact", "Grand Edict", "Librarian"
+    ],
+    "UNSC": [
+      "1st Lt. Floyd", "Andrew Del Rio", "Avery Johnson", "Bisenti", "Burden",
+      "Carol \"Foe Hammer\" Rawley", "Carter-A259", "Chips Dubbo", "CPO Peters", "Dalton",
+      "Dr. Catherine Halsey", "Edward Buck", "Emile-A239", "Fernando Esparza", "Fitzgerald",
+      "Frederic-104", "Gabriel Thorne", "Holly Tanaka", "Infinity System Voice", "Jacob Keyes",
+      "Jameson Locke", "Jared Miller", "John-117", "Jorge-052", "Jun-A266", "Kat-B320",
+      "Kelly-087", "Kojo \"Romeo\" Agu", "Laurette Agryna", "Linda-058", "Lord Terrence Hood",
+      "Lucas Browning", "Marcus P. Stacker", "Mendoza", "Michael \"Mickey\" Crespo",
+      "Miranda Keyes", "Murphy", "Noble 6", "Olympia Vale", "Paul DeMarco", "Roland",
+      "Sarah Palmer", "Spartan Dimka", "Spartan Griffin", "Spartan Horvath", "Spartan Kovan",
+      "Spartan Makovich", "Spartan Malik", "Spartan Oshiro", "Spartan Sorel", "Spartan Stone",
+      "Spartan Vettel", "Taylor Henry \"Dutch\" Miles", "The Rookie", "Thomas Lasky",
+      "Urban Holland", "Veronica Dare", "Williams"
+    ],
+    "Spartans": [
+      "Carter-A259", "Edward Buck", "Emile-A239", "Frederic-104", "Gabriel Thorne", "Holly Tanaka",
+      "Jameson Locke", "John-117", "Jorge-052", "Jun-A266", "Kat-B320", "Kelly-087",
+      "Laurette Agryna", "Linda-058", "Noble 6", "Olympia Vale", "Paul DeMarco", "Sarah Palmer",
+      "Spartan Dimka", "Spartan Griffin", "Spartan Horvath", "Spartan Kovan", "Spartan Makovich",
+      "Spartan Malik", "Spartan Oshiro", "Spartan Sorel", "Spartan Stone", "Spartan Vettel"
+    ],
+    "Banished": [
+      "Atriox", "Bassus", "Bingflip", "Chak 'Lok", "Escharum", "Glibnub", "Hyperius", "Iratus",
+      "Jega 'Rdomnai", "Tovarus", "Tremonius"
+    ],
+    "Covenant": [
+      "Arbiter", "Prophet of Harmony", "Prophet of Mercy", "Prophet of Regret",
+      "Prophet of Truth", "Rtas 'Vadum", "Sesa 'Refumee", "Tartarus"
+    ],
+    "AI": [
+      "031 Exuberant Witness", "2401 Penitent Tangent", "343 Guilty Spark", "Adjutant Resolution",
+      "Auntie Dot", "BUTLR", "CIRC", "Cortana", "Despondent Pyre", "FRET", "Infinity System Voice",
+      "Iratus", "Leonidas", "LUMU", "MATI", "Mister Chief", "Roland", "Superintendent", "The Weapon"
+    ],
+    "Red vs Blue": ["Caboose", "Church", "Georgia", "Grif", "Sarge", "Simmons", "Vic"]
+  }
+}

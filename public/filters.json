@@ -11,6 +11,7 @@
   ],
   "tags": [
     "ai",
+    "announcer",
     "brute",
     "civilian",
     "drone",
@@ -23,12 +24,13 @@
     "jackal",
     "marine",
     "monitor",
-    "multiplayer",
     "odst",
     "oni",
     "prophet",
+    "rvb",
     "skimmers",
     "spartan",
+    "unsc",
     "xalanyn"
   ],
   "characters": [
@@ -149,5 +151,287 @@
     "Vic",
     "Williams",
     "Yabda, the Merciless"
-  ]
+  ],
+  "groups": {
+    "games": [
+      {
+        "label": "Mainline",
+        "values": [
+          "halo-cev",
+          "halo2",
+          "halo3",
+          "halo4",
+          "halo5",
+          "infinite"
+        ]
+      },
+      {
+        "label": "Spin-offs",
+        "values": [
+          "halo3odst",
+          "reach"
+        ]
+      }
+    ],
+    "tags": [
+      {
+        "label": "Forerunner",
+        "values": [
+          "forerunner",
+          "monitor"
+        ]
+      },
+      {
+        "label": "UNSC",
+        "values": [
+          "unsc",
+          "marine",
+          "odst",
+          "spartan",
+          "oni"
+        ]
+      },
+      {
+        "label": "Banished",
+        "values": [
+          "brute",
+          "elite",
+          "grunt",
+          "hunter",
+          "jackal",
+          "skimmers"
+        ]
+      },
+      {
+        "label": "Covenant",
+        "values": [
+          "brute",
+          "drone",
+          "elite",
+          "engineer",
+          "grunt",
+          "hunter",
+          "jackal",
+          "prophet"
+        ]
+      },
+      {
+        "label": "AI",
+        "values": [
+          "ai",
+          "monitor"
+        ]
+      },
+      {
+        "label": "Red vs Blue",
+        "values": [
+          "rvb"
+        ]
+      },
+      {
+        "label": "Other",
+        "values": [
+          "announcer",
+          "civilian",
+          "flood",
+          "xalanyn"
+        ]
+      }
+    ],
+    "characters": [
+      {
+        "label": "Forerunner",
+        "values": [
+          "031 Exuberant Witness",
+          "2401 Penitent Tangent",
+          "343 Guilty Spark",
+          "Adjutant Resolution",
+          "Despondent Pyre",
+          "Didact",
+          "Grand Edict",
+          "Librarian"
+        ]
+      },
+      {
+        "label": "UNSC",
+        "values": [
+          "1st Lt. Floyd",
+          "Andrew Del Rio",
+          "Avery Johnson",
+          "Bisenti",
+          "Burden",
+          "Carol \"Foe Hammer\" Rawley",
+          "Carter-A259",
+          "Chips Dubbo",
+          "CPO Peters",
+          "Dalton",
+          "Dr. Catherine Halsey",
+          "Edward Buck",
+          "Emile-A239",
+          "Fernando Esparza",
+          "Fitzgerald",
+          "Frederic-104",
+          "Gabriel Thorne",
+          "Holly Tanaka",
+          "Infinity System Voice",
+          "Jacob Keyes",
+          "Jameson Locke",
+          "Jared Miller",
+          "John-117",
+          "Jorge-052",
+          "Jun-A266",
+          "Kat-B320",
+          "Kelly-087",
+          "Kojo \"Romeo\" Agu",
+          "Laurette Agryna",
+          "Linda-058",
+          "Lord Terrence Hood",
+          "Lucas Browning",
+          "Marcus P. Stacker",
+          "Mendoza",
+          "Michael \"Mickey\" Crespo",
+          "Miranda Keyes",
+          "Murphy",
+          "Noble 6",
+          "Olympia Vale",
+          "Paul DeMarco",
+          "Roland",
+          "Sarah Palmer",
+          "Spartan Dimka",
+          "Spartan Griffin",
+          "Spartan Horvath",
+          "Spartan Kovan",
+          "Spartan Makovich",
+          "Spartan Malik",
+          "Spartan Oshiro",
+          "Spartan Sorel",
+          "Spartan Stone",
+          "Spartan Vettel",
+          "Taylor Henry \"Dutch\" Miles",
+          "The Rookie",
+          "Thomas Lasky",
+          "Urban Holland",
+          "Veronica Dare",
+          "Williams"
+        ]
+      },
+      {
+        "label": "Spartans",
+        "values": [
+          "Carter-A259",
+          "Edward Buck",
+          "Emile-A239",
+          "Frederic-104",
+          "Gabriel Thorne",
+          "Holly Tanaka",
+          "Jameson Locke",
+          "John-117",
+          "Jorge-052",
+          "Jun-A266",
+          "Kat-B320",
+          "Kelly-087",
+          "Laurette Agryna",
+          "Linda-058",
+          "Noble 6",
+          "Olympia Vale",
+          "Paul DeMarco",
+          "Sarah Palmer",
+          "Spartan Dimka",
+          "Spartan Griffin",
+          "Spartan Horvath",
+          "Spartan Kovan",
+          "Spartan Makovich",
+          "Spartan Malik",
+          "Spartan Oshiro",
+          "Spartan Sorel",
+          "Spartan Stone",
+          "Spartan Vettel"
+        ]
+      },
+      {
+        "label": "Banished",
+        "values": [
+          "Atriox",
+          "Bassus",
+          "Bingflip",
+          "Chak 'Lok",
+          "Escharum",
+          "Glibnub",
+          "Hyperius",
+          "Iratus",
+          "Jega 'Rdomnai",
+          "Tovarus",
+          "Tremonius"
+        ]
+      },
+      {
+        "label": "Covenant",
+        "values": [
+          "Arbiter",
+          "Prophet of Harmony",
+          "Prophet of Mercy",
+          "Prophet of Regret",
+          "Prophet of Truth",
+          "Rtas 'Vadum",
+          "Sesa 'Refumee",
+          "Tartarus"
+        ]
+      },
+      {
+        "label": "AI",
+        "values": [
+          "031 Exuberant Witness",
+          "2401 Penitent Tangent",
+          "343 Guilty Spark",
+          "Adjutant Resolution",
+          "Auntie Dot",
+          "BUTLR",
+          "CIRC",
+          "Cortana",
+          "Despondent Pyre",
+          "FRET",
+          "Infinity System Voice",
+          "Iratus",
+          "Leonidas",
+          "LUMU",
+          "MATI",
+          "Mister Chief",
+          "Roland",
+          "Superintendent",
+          "The Weapon"
+        ]
+      },
+      {
+        "label": "Red vs Blue",
+        "values": [
+          "Caboose",
+          "Church",
+          "Georgia",
+          "Grif",
+          "Sarge",
+          "Simmons",
+          "Vic"
+        ]
+      },
+      {
+        "label": "Other",
+        "values": [
+          "Announcer",
+          "Dr. Alexander",
+          "Dr. Boyd",
+          "Dr. Henry Glassman",
+          "Dr. Owen",
+          "Dr. Sandra Tillson",
+          "Dr. Truman",
+          "Grant",
+          "Gravemind",
+          "Harbinger",
+          "Rivera",
+          "Terry Hedge",
+          "Tim",
+          "Yabda, the Merciless"
+        ]
+      }
+    ]
+  }
 }
