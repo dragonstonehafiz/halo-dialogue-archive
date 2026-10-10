@@ -5,8 +5,33 @@ import './AboutPage.css'
 const GAME_TABS = ['Bungie Games', 'Halo 4', 'Halo 5: Forge', 'Halo Infinite'] as const;
 type GameTab = typeof GAME_TABS[number];
 
+const CREDIT_TABS = ['Tools', 'References'] as const;
+type CreditTab = typeof CREDIT_TABS[number];
+
+function TabBar<T extends string>({ tabs, active, onSelect } : {
+    tabs: readonly T[],
+    active: T,
+    onSelect: (tab: T) => void }) {
+    return (
+        <div className="about-tabs" role="tablist">
+            {tabs.map(tab => (
+                <button
+                    key={tab}
+                    role="tab"
+                    aria-selected={active === tab}
+                    className={active === tab ? 'about-tab active' : 'about-tab'}
+                    onClick={() => onSelect(tab)}
+                >
+                    {tab}
+                </button>
+            ))}
+        </div>
+    )
+}
+
 export default function AboutPage() {
    const [activeTab, setActiveTab] = useState<GameTab>('Bungie Games');
+   const [creditTab, setCreditTab] = useState<CreditTab>('Tools');
 
    return (
     <div>
@@ -27,19 +52,7 @@ export default function AboutPage() {
                 under numeric IDs, so their names had to be recovered from the games' data.
             </p>
 
-            <div className="about-tabs" role="tablist">
-                {GAME_TABS.map(tab => (
-                    <button
-                        key={tab}
-                        role="tab"
-                        aria-selected={activeTab === tab}
-                        className={activeTab === tab ? 'about-tab active' : 'about-tab'}
-                        onClick={() => setActiveTab(tab)}
-                    >
-                        {tab}
-                    </button>
-                ))}
-            </div>
+            <TabBar tabs={GAME_TABS} active={activeTab} onSelect={setActiveTab} />
 
             {activeTab === 'Bungie Games' && (
                 <div role="tabpanel">
@@ -130,30 +143,39 @@ export default function AboutPage() {
                 unnamed, numbered files rather than the names used on this site.
             </p>
 
-            <h2>Tools</h2>
-            <ul>
-                <li><a href="https://github.com/Gravemind2401/Reclaimer">Reclaimer</a>: map reading, Bungie-era extraction, and Halo 4, Halo 5, and Halo Infinite tag reading</li>
-                <li>Halo 4 Editing Kit: original voice paths, event names, and string tables</li>
-                <li><a href="https://github.com/XboxChaos/composer">Composer</a>: Halo 4 audio reading and event names</li>
-                <li><a href="https://github.com/Zoephie/Baboon">Baboon</a>: Halo 4 sound tag inspection</li>
-                <li><a href="https://github.com/powzix/ooz">ooz</a>: Halo Infinite module decompression</li>
-                <li><a href="https://github.com/bnnm/wwiser">wwiser</a>: Wwise soundbank parsing</li>
-                <li><a href="https://github.com/vgmstream/vgmstream">vgmstream</a>: WEM audio decoding</li>
-                <li><a href="https://github.com/openai/whisper">OpenAI Whisper</a>: transcripts for lines without subtitles</li>
-            </ul>
+            <h2>Tools and References</h2>
+            <TabBar tabs={CREDIT_TABS} active={creditTab} onSelect={setCreditTab} />
 
-            <h2>References</h2>
-            <ul>
-                <li><a href="https://github.com/Surasia/ReclaimerFiles">ReclaimerFiles</a>: Halo Infinite tag definitions and name list</li>
-                <li><a href="https://github.com/dortkoldantaciz/Halo-Infinite-Translation-Toolkit">Halo Infinite Translation Toolkit</a>: tag list checked against unnamed dialogue</li>
-                <li><a href="https://www.halopedia.org">Halopedia</a>: weapon, item, and medal names used as naming vocabulary</li>
-                <li><a href="https://github.com/XboxChaos/Assembly">Assembly</a>: tag layouts</li>
-                <li><a href="https://github.com/Lord-Zedd/MCCLocalizationEditor">MCC Localization Editor</a>: documented subtitle file format</li>
-                <li><a href="https://github.com/Nibre/HaloWwise">HaloWwise</a>: Halo Wwise package extraction and event tracing</li>
-                <li><a href="https://github.com/bnnm/wwiser-utils">wwiser-utils</a>: Wwise package extraction and naming</li>
-                <li><a href="https://www.audiokinetic.com">Audiokinetic Wwise documentation</a>: file packages and external sources</li>
-                <li><a href="https://github.com/Gamergotten/murmur3Hash_dumper">murmur3Hash_dumper</a>: the game's string hashing</li>
-            </ul>
+            {creditTab === 'Tools' && (
+                <div role="tabpanel">
+                    <ul>
+                        <li><a href="https://github.com/Gravemind2401/Reclaimer">Reclaimer</a>: map reading, Bungie-era extraction, and Halo 4, Halo 5, and Halo Infinite tag reading</li>
+                        <li>Halo 4 Editing Kit: original voice paths, event names, and string tables</li>
+                        <li><a href="https://github.com/XboxChaos/composer">Composer</a>: Halo 4 audio reading and event names</li>
+                        <li><a href="https://github.com/Zoephie/Baboon">Baboon</a>: Halo 4 sound tag inspection</li>
+                        <li><a href="https://github.com/powzix/ooz">ooz</a>: Halo Infinite module decompression</li>
+                        <li><a href="https://github.com/bnnm/wwiser">wwiser</a>: Wwise soundbank parsing</li>
+                        <li><a href="https://github.com/vgmstream/vgmstream">vgmstream</a>: WEM audio decoding</li>
+                        <li><a href="https://github.com/openai/whisper">OpenAI Whisper</a>: transcripts for lines without subtitles</li>
+                    </ul>
+                </div>
+            )}
+
+            {creditTab === 'References' && (
+                <div role="tabpanel">
+                    <ul>
+                        <li><a href="https://github.com/Surasia/ReclaimerFiles">ReclaimerFiles</a>: Halo Infinite tag definitions and name list</li>
+                        <li><a href="https://github.com/dortkoldantaciz/Halo-Infinite-Translation-Toolkit">Halo Infinite Translation Toolkit</a>: tag list checked against unnamed dialogue</li>
+                        <li><a href="https://www.halopedia.org">Halopedia</a>: weapon, item, and medal names used as naming vocabulary</li>
+                        <li><a href="https://github.com/XboxChaos/Assembly">Assembly</a>: tag layouts</li>
+                        <li><a href="https://github.com/Lord-Zedd/MCCLocalizationEditor">MCC Localization Editor</a>: documented subtitle file format</li>
+                        <li><a href="https://github.com/Nibre/HaloWwise">HaloWwise</a>: Halo Wwise package extraction and event tracing</li>
+                        <li><a href="https://github.com/bnnm/wwiser-utils">wwiser-utils</a>: Wwise package extraction and naming</li>
+                        <li><a href="https://www.audiokinetic.com">Audiokinetic Wwise documentation</a>: file packages and external sources</li>
+                        <li><a href="https://github.com/Gamergotten/murmur3Hash_dumper">murmur3Hash_dumper</a>: the game's string hashing</li>
+                    </ul>
+                </div>
+            )}
         </div>
     </div>
    )
