@@ -48,3 +48,31 @@
     border-left: 3px solid var(--primary);
     padding-left: 12px;
 }
+
+.about-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin: 16px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.about-tab {
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -1px;
+    padding: 8px 14px;
+    color: var(--text-muted);
+    font: inherit;
+    cursor: pointer;
+}
+
+.about-tab:hover {
+    color: var(--text);
+}
+
+.about-tab.active {
+    color: var(--text-selected);
+    border-bottom-color: var(--primary);
+}
