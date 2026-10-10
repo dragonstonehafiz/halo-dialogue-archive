@@ -2,7 +2,7 @@ import { useState } from "react";
 import Navbar from "../components/Navbar";
 import './AboutPage.css'
 
-const GAME_TABS = ['Bungie Games', 'Halo 4', 'Halo 5: Forge', 'Halo Infinite'] as const;
+const GAME_TABS = ['Bungie Games', 'Halo 4', 'Halo 5: Forge', 'Halo Infinite', 'Halo: Campaign Evolved'] as const;
 type GameTab = typeof GAME_TABS[number];
 
 const CREDIT_TABS = ['Tools', 'References'] as const;
@@ -123,6 +123,24 @@ export default function AboutPage() {
                 </div>
             )}
 
+            {activeTab === 'Halo: Campaign Evolved' && (
+                <div role="tabpanel">
+                    <p>
+                        Halo: Campaign Evolved is built on Unreal Engine 5 and stores its audio as Wwise assets inside the game's archives.
+                        The archives were opened with <a href="https://github.com/4sval/FModel">FModel</a> using a UE 5.5 mapping file,
+                        and both the game's Wwise event assets and its numbered media files were exported as the original WEM audio.
+                    </p>
+                    <p>
+                        The event assets keep descriptive names, e.g. <code>VO_SYS_default_11involuntary_pain_00040_Williams</code>.
+                        Each event file was paired with its numbered media file by matching language, file size, and a hash of the full file contents.
+                    </p>
+                    <p>
+                        English subtitles for cinematic and scripted lines come from the game's StringTable assets, where each subtitle is keyed by the
+                        voice line's name, e.g. <code>VO_CIN_M01_cin02_bridge_01060_MasterChief</code> maps to "Captain Keyes?".
+                    </p>
+                </div>
+            )}
+
             <h2>Transcripts</h2>
             <p>
                 Where a game has its own subtitles for a line, that subtitle text is used directly. It is the game's stored caption, not a transcription,
@@ -156,6 +174,7 @@ export default function AboutPage() {
                         <li><a href="https://github.com/powzix/ooz">ooz</a>: Halo Infinite module decompression</li>
                         <li><a href="https://github.com/bnnm/wwiser">wwiser</a>: Wwise soundbank parsing</li>
                         <li><a href="https://github.com/vgmstream/vgmstream">vgmstream</a>: WEM audio decoding</li>
+                        <li><a href="https://github.com/4sval/FModel">FModel</a>: Halo: Campaign Evolved archive browsing and audio and subtitle export</li>
                         <li><a href="https://github.com/openai/whisper">OpenAI Whisper</a>: transcripts for lines without subtitles</li>
                     </ul>
                 </div>
