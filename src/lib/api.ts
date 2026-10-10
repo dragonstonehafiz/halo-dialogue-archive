@@ -24,11 +24,17 @@ async function readErrorMessage(response: Response): Promise<string | null> {
     return null;
 }
 
-async function requestJson<T>(path: string, params: Record<string, string | undefined>, signal?: AbortSignal): Promise<T> {
+// Array values are sent as repeated params (?characters=A&characters=B) rather than
+// joined, so values containing commas (e.g. "Yabda, The Merciless") stay whole.
+async function requestJson<T>(path: string, params: Record<string, string | string[] | undefined>, signal?: AbortSignal): Promise<T> {
     const url = new URL(path, getBaseUrl());
     const search = new URLSearchParams();
     for (const [key, value] of Object.entries(params)) {
-        if (value) search.set(key, value);
+        if (Array.isArray(value)) {
+            for (const v of value) if (v) search.append(key, v);
+        } else if (value) {
+            search.set(key, value);
+        }
     }
     url.search = search.toString();
 
@@ -67,9 +73,9 @@ export function search(
         "/search",
         {
             q: opts.q?.trim() || undefined,
-            games: opts.games?.length ? opts.games.join(",") : undefined,
-            characters: opts.characters?.length ? opts.characters.join(",") : undefined,
-            tags: opts.tags?.length ? opts.tags.join(",") : undefined,
+            games: opts.games,
+            characters: opts.characters,
+            tags: opts.tags,
             page: opts.page !== undefined ? String(opts.page) : undefined,
             pageSize: opts.pageSize !== undefined ? String(opts.pageSize) : undefined,
         },
