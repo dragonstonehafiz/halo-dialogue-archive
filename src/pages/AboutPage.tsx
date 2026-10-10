@@ -37,12 +37,17 @@ export default function AboutPage() {
                 gives the ID of its audio file. That is how each file got its original name and folder,
                 e.g. <code>combat/masterchief/.../dodge/</code>.
             </p>
-
-            <h3>Halo 5</h3>
             <p>
-                Halo 5 audio comes from Halo 5: Forge on PC. Each sound in the game's data lists the Wwise events it plays,
-                and each event was traced through the game's soundbanks (using <a href="https://github.com/bnnm/wwiser">wwiser</a>) to the
-                recordings it plays. The recordings were then named after the event.
+                The retail .map files were read with <a href="https://github.com/Gravemind2401/Reclaimer">Reclaimer</a> to find each sound's hashed path,
+                and the Wwise soundbanks were parsed with <a href="https://github.com/bnnm/wwiser">wwiser</a>. Dialogue played through ordinary events
+                was labeled using the event-name list from <a href="https://github.com/XboxChaos/composer">Composer</a>, an original Halo 4 audio tool.
+            </p>
+
+            <h3>Halo 5: Forge</h3>
+            <p>
+                Halo 5 audio comes from Halo 5: Forge on PC. The game's .module files were read with <a href="https://github.com/Gravemind2401/Reclaimer">Reclaimer</a>,
+                and each sound in them lists the Wwise events it plays. Each event was traced through the game's soundbanks
+                (using <a href="https://github.com/bnnm/wwiser">wwiser</a>) to the recordings it plays, and the recordings were then named after the event.
             </p>
             <p>
                 Where only an event's numeric ID was available, the name was recovered by guessing likely event names,
@@ -87,18 +92,29 @@ export default function AboutPage() {
                 unnamed, numbered files rather than the names used on this site.
             </p>
 
-            <h2>Tools and References</h2>
+            <h2>Tools</h2>
             <ul>
-                <li><a href="https://github.com/Gravemind2401/Reclaimer">Reclaimer</a>: map reading, Bungie-era extraction, and Halo Infinite tag reading</li>
-                <li><a href="https://github.com/Surasia/ReclaimerFiles">ReclaimerFiles</a>: Halo Infinite tag definitions and name list</li>
+                <li><a href="https://github.com/Gravemind2401/Reclaimer">Reclaimer</a>: map reading, Bungie-era extraction, and Halo 4, Halo 5, and Halo Infinite tag reading</li>
+                <li>Halo 4 Editing Kit: original voice paths, event names, and string tables</li>
+                <li><a href="https://github.com/XboxChaos/composer">Composer</a>: Halo 4 audio reading and event names</li>
+                <li><a href="https://github.com/Zoephie/Baboon">Baboon</a>: Halo 4 sound tag inspection</li>
                 <li><a href="https://github.com/powzix/ooz">ooz</a>: Halo Infinite module decompression</li>
-                <li><a href="https://github.com/XboxChaos/Assembly">Assembly</a>: tag layouts</li>
                 <li><a href="https://github.com/bnnm/wwiser">wwiser</a>: Wwise soundbank parsing</li>
-                <li><a href="https://github.com/dortkoldantaciz/Halo-Infinite-Translation-Toolkit">Halo Infinite Translation Toolkit</a>: tag list checked against unnamed dialogue</li>
-                <li><a href="https://github.com/Gamergotten/murmur3Hash_dumper">murmur3Hash_dumper</a>: reference for the game's string hashing</li>
-                <li><a href="https://www.halopedia.org">Halopedia</a>: weapon, item, and medal names used as naming vocabulary</li>
-                <li>MCC Localization Editor: documented subtitle file format</li>
+                <li><a href="https://github.com/vgmstream/vgmstream">vgmstream</a>: WEM audio decoding</li>
                 <li><a href="https://github.com/openai/whisper">OpenAI Whisper</a>: transcripts for lines without subtitles</li>
+            </ul>
+
+            <h2>References</h2>
+            <ul>
+                <li><a href="https://github.com/Surasia/ReclaimerFiles">ReclaimerFiles</a>: Halo Infinite tag definitions and name list</li>
+                <li><a href="https://github.com/dortkoldantaciz/Halo-Infinite-Translation-Toolkit">Halo Infinite Translation Toolkit</a>: tag list checked against unnamed dialogue</li>
+                <li><a href="https://www.halopedia.org">Halopedia</a>: weapon, item, and medal names used as naming vocabulary</li>
+                <li><a href="https://github.com/XboxChaos/Assembly">Assembly</a>: tag layouts</li>
+                <li><a href="https://github.com/Lord-Zedd/MCCLocalizationEditor">MCC Localization Editor</a>: documented subtitle file format</li>
+                <li><a href="https://github.com/Nibre/HaloWwise">HaloWwise</a>: Halo Wwise package extraction and event tracing</li>
+                <li><a href="https://github.com/bnnm/wwiser-utils">wwiser-utils</a>: Wwise package extraction and naming</li>
+                <li><a href="https://www.audiokinetic.com">Audiokinetic Wwise documentation</a>: file packages and external sources</li>
+                <li><a href="https://github.com/Gamergotten/murmur3Hash_dumper">murmur3Hash_dumper</a>: the game's string hashing</li>
             </ul>
         </div>
     </div>
