@@ -92,3 +92,21 @@
 .contents-table td .btn-icon {
     text-align: center;
 }
+
+.contents-table tr.contents-group td {
+    background-color: var(--surface);
+}
+
+.contents-group .breadcrumb {
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.contents-table td .breadcrumb-segment {
+    color: var(--text-muted);
+}
+
+.contents-table td .breadcrumb-segment:hover {
+    color: var(--primary);
+}

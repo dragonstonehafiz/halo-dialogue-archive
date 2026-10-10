@@ -343,7 +343,7 @@ export default function SearchPage() {
                     </p>
                 )}
                 {!searchLoading && !searchError && (!hasSearched || total > 0) && (
-                    <FolderContents files={searchResults} />
+                    <FolderContents files={searchResults} groupByFolder />
                 )}
                 {showResults && (
                     <Pager page={page} totalPages={totalPages} onPageChange={onPageChange} />
