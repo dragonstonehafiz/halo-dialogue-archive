@@ -123,7 +123,7 @@ export default function SearchPage() {
 
         const loadFilters = async () => {
             try {
-                const res = await fetch('/filters.json', { signal: controller.signal })
+                const res = await fetch(`${import.meta.env.VITE_DATA_BASE_URL ?? ''}/filters.json`, { signal: controller.signal })
                 if (!res.ok) throw new Error("Could not load filters.")
                 const data = await res.json()
                 setGameOptions((data.games ?? []).map((g: string) => ({ value: g, label: g })))
