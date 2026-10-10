@@ -1,6 +1,7 @@
 import type { FolderNode } from "../types/FolderNode";
 import type { AudioFile } from "../types/AudioFile";
 import { AudioPlayButton } from "./AudioPlayButton";
+import { TranscriptCell } from "./TranscriptCell";
 import './FolderContents.css'
 
 export function FolderContents({ nodePath, files, onFolderClick } : { 
@@ -50,7 +51,7 @@ export function FolderContents({ nodePath, files, onFolderClick } : {
                         <tr key={file.path}>
                             <td>🔊</td>
                             <td>{file.path.split('/').pop()}</td>
-                            <td>{file.transcript ?? '-'}</td>
+                            <td><TranscriptCell text={file.transcript} title={file.path.split('/').pop()} /></td>
                             <td>{file.tags?.join(', ') ?? '-'}</td>
                             <td>{file.character ?? '-'}</td>
                             <td>

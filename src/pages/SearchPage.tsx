@@ -21,12 +21,13 @@ type SearchQuery = {
     page: number;
 }
 
-function parseList(value: string | null): string[] {
-    return value?.split(',').filter(Boolean) ?? []
+// Each value is its own repeated param (?characters=A&characters=B), so names containing commas stay whole.
+function parseList(values: string[]): string[] {
+    return values.filter(Boolean)
 }
 
-function parseChoices(value: string | null): { value: string; label: string }[] {
-    return parseList(value).map(v => ({ value: v, label: v }))
+function parseChoices(values: string[]): { value: string; label: string }[] {
+    return parseList(values).map(v => ({ value: v, label: v }))
 }
 
 function parsePage(value: string | null): number {
@@ -38,9 +39,9 @@ function parsePage(value: string | null): number {
 function queryFromParams(params: URLSearchParams): SearchQuery | null {
     const query: SearchQuery = {
         q: (params.get('q') ?? '').trim(),
-        games: parseList(params.get('games')),
-        characters: parseList(params.get('characters')),
-        tags: parseList(params.get('tags')),
+        games: parseList(params.getAll('games')),
+        characters: parseList(params.getAll('characters')),
+        tags: parseList(params.getAll('tags')),
         page: parsePage(params.get('page')),
     }
     const hasFilters = query.games.length > 0 || query.characters.length > 0 || query.tags.length > 0
@@ -49,12 +50,12 @@ function queryFromParams(params: URLSearchParams): SearchQuery | null {
     return null
 }
 
-function paramsFromQuery(query: SearchQuery): Record<string, string> {
-    const params: Record<string, string> = {}
+function paramsFromQuery(query: SearchQuery): Record<string, string | string[]> {
+    const params: Record<string, string | string[]> = {}
     if (query.q) params.q = query.q
-    if (query.games.length) params.games = query.games.join(',')
-    if (query.tags.length) params.tags = query.tags.join(',')
-    if (query.characters.length) params.characters = query.characters.join(',')
+    if (query.games.length) params.games = query.games
+    if (query.tags.length) params.tags = query.tags
+    if (query.characters.length) params.characters = query.characters
     if (query.page > 0) params.page = String(query.page)
     return params
 }
@@ -103,13 +104,13 @@ export default function SearchPage() {
     const submittedQuery = useMemo(() => queryFromParams(new URLSearchParams(queryKey)), [queryKey])
 
     const [gameChoices, setGameChoices] = useState<{ value: string; label: string }[]>(() =>
-        parseChoices(searchParams.get('games'))
+        parseChoices(searchParams.getAll('games'))
     )
     const [tagChoices, setTagChoices] = useState<{ value: string; label: string }[]>(() =>
-        parseChoices(searchParams.get('tags'))
+        parseChoices(searchParams.getAll('tags'))
     )
     const [characterChoices, setCharacterChoices] = useState<{ value: string; label: string }[]>(() =>
-        parseChoices(searchParams.get('characters'))
+        parseChoices(searchParams.getAll('characters'))
     )
 
     const [gameOptions, setGameOptions] = useState<{ value: string; label: string }[]>([])
@@ -158,9 +159,9 @@ export default function SearchPage() {
     if (syncedKey !== queryKey) {
         setSyncedKey(queryKey)
         setSearch(searchParams.get('q') ?? '')
-        setGameChoices(parseChoices(searchParams.get('games')))
-        setTagChoices(parseChoices(searchParams.get('tags')))
-        setCharacterChoices(parseChoices(searchParams.get('characters')))
+        setGameChoices(parseChoices(searchParams.getAll('games')))
+        setTagChoices(parseChoices(searchParams.getAll('tags')))
+        setCharacterChoices(parseChoices(searchParams.getAll('characters')))
         setSearchResults([])
         setTotal(0)
         setTotalPages(0)
@@ -259,6 +260,10 @@ export default function SearchPage() {
     return (
         <div>
             <Navbar/>
+
+            <p className="search-notice" role="note">
+                Search is a work in progress, and I plan on improving it.
+            </p>
 
             <div className="filters-section">
                 <div className="filters-row">

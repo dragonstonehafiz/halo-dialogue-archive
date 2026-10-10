@@ -1,7 +1,38 @@
+import { useState } from "react";
 import Navbar from "../components/Navbar";
 import './AboutPage.css'
 
+const GAME_TABS = ['Bungie Games', 'Halo 4', 'Halo 5: Forge', 'Halo Infinite', 'Halo: Campaign Evolved'] as const;
+type GameTab = typeof GAME_TABS[number];
+
+const CREDIT_TABS = ['Tools', 'References'] as const;
+type CreditTab = typeof CREDIT_TABS[number];
+
+function TabBar<T extends string>({ tabs, active, onSelect } : {
+    tabs: readonly T[],
+    active: T,
+    onSelect: (tab: T) => void }) {
+    return (
+        <div className="about-tabs" role="tablist">
+            {tabs.map(tab => (
+                <button
+                    key={tab}
+                    role="tab"
+                    aria-selected={active === tab}
+                    className={active === tab ? 'about-tab active' : 'about-tab'}
+                    onClick={() => onSelect(tab)}
+                >
+                    {tab}
+                </button>
+            ))}
+        </div>
+    )
+}
+
 export default function AboutPage() {
+   const [activeTab, setActiveTab] = useState<GameTab>('Bungie Games');
+   const [creditTab, setCreditTab] = useState<CreditTab>('Tools');
+
    return (
     <div>
         <Navbar/>
@@ -14,51 +45,108 @@ export default function AboutPage() {
                 The source code is available on <a href="https://github.com/dragonstonehafiz/halo-dialogue-archive">GitHub</a>.
             </p>
 
-            <h2>Voice Line Extraction: Bungie-era</h2>
+            <h2>Voice Line Extraction</h2>
             <p>
-                For Bungie-era titles (Halo 2, 3, ODST, and Reach), I used the <a href="https://github.com/Gravemind2401/Reclaimer">Reclaimer</a> tool to
-                extract audio from the game's .map files. These games use proper identifiers in their file names so finding specific lines is easy.
+                Every voice line on this site was extracted from the games' own files, and each game needed a different approach.
+                The Bungie-era games keep readable file names, while the 343-era games store their audio in Audiokinetic Wwise packages
+                under numeric IDs, so their names had to be recovered from the games' data.
             </p>
 
-            <h2>Voice Line Extraction: 343-era</h2>
-            <p className="about-callout">
-                I used generative AI (Claude and ChatGPT) to extract audio from Halo 4, Halo 5, and Halo Infinite.
-            </p>
-            <p>
-                The 343-era games use Audiokinetic Wwise, which stores audio in .pck packages as numbered files with no readable names.
-                Unpacking them directly gives you thousands of files with no indication of who is speaking or when.
-                The names on this site were recovered from the games' own data.
-            </p>
+            <TabBar tabs={GAME_TABS} active={activeTab} onSelect={setActiveTab} />
 
-            <h3>Halo 4</h3>
-            <p>
-                The Halo 4 Editing Kit lists the original file path of every recording, but the packaged audio only uses numeric IDs.
-                The game generates each ID by hashing the recording's path, so hashing every path from the Editing Kit
-                gives the ID of its audio file. That is how each file got its original name and folder,
-                e.g. <code>combat/masterchief/.../dodge/</code>.
-            </p>
+            {activeTab === 'Bungie Games' && (
+                <div role="tabpanel">
+                    <p>
+                        For Bungie-era titles (Halo 2, 3, ODST, and Reach), I used the <a href="https://github.com/Gravemind2401/Reclaimer">Reclaimer</a> tool to
+                        extract audio from the game's .map files. These games use proper identifiers in their file names so finding specific lines is easy.
+                    </p>
+                </div>
+            )}
 
-            <h3>Halo 5</h3>
-            <p>
-                Halo 5 audio comes from Halo 5: Forge on PC. Each sound in the game's data lists the Wwise events it plays,
-                and each event was traced through the game's soundbanks (using <a href="https://github.com/bnnm/wwiser">wwiser</a>) to the
-                recordings it plays. The recordings were then named after the event.
-            </p>
-            <p>
-                Where only an event's numeric ID was available, the name was recovered by guessing likely event names,
-                hashing them, and keeping the ones that matched the ID.
-            </p>
+            {activeTab === 'Halo 4' && (
+                <div role="tabpanel">
+                    <p className="about-callout">
+                        Generative AI (Claude and ChatGPT) was used to extract audio from Halo 4.
+                    </p>
+                    <p>
+                        The Halo 4 Editing Kit lists the original file path of every recording, but the packaged audio only uses numeric IDs.
+                        The game generates each ID by hashing the recording's path, so hashing every path from the Editing Kit
+                        gives the ID of its audio file. That is how each file got its original name and folder,
+                        e.g. <code>combat/masterchief/.../dodge/</code>.
+                    </p>
+                    <p>
+                        The retail .map files were read with <a href="https://github.com/Gravemind2401/Reclaimer">Reclaimer</a> to find each sound's hashed path,
+                        and the Wwise soundbanks were parsed with <a href="https://github.com/bnnm/wwiser">wwiser</a>. Dialogue played through ordinary events
+                        was labeled using the event-name list from <a href="https://github.com/XboxChaos/composer">Composer</a>, an original Halo 4 audio tool.
+                    </p>
+                </div>
+            )}
 
-            <h3>Halo Infinite</h3>
-            <p>
-                A write-up of how Halo Infinite was extracted is coming soon.
-            </p>
+            {activeTab === 'Halo 5: Forge' && (
+                <div role="tabpanel">
+                    <p className="about-callout">
+                        Generative AI (Claude and ChatGPT) was used to extract audio from Halo 5: Forge.
+                    </p>
+                    <p>
+                        Halo 5 audio comes from Halo 5: Forge on PC. The game's .module files were read with <a href="https://github.com/Gravemind2401/Reclaimer">Reclaimer</a>,
+                        and each sound in them lists the Wwise events it plays. Each event was traced through the game's soundbanks
+                        (using <a href="https://github.com/bnnm/wwiser">wwiser</a>) to the recordings it plays, and the recordings were then named after the event.
+                    </p>
+                    <p>
+                        Where only an event's numeric ID was available, the name was recovered by guessing likely event names,
+                        hashing them, and keeping the ones that matched the ID.
+                    </p>
+                </div>
+            )}
+
+            {activeTab === 'Halo Infinite' && (
+                <div role="tabpanel">
+                    <p className="about-callout">
+                        Generative AI (Claude and ChatGPT) was used to extract audio from Halo Infinite.
+                    </p>
+                    <p>
+                        Halo Infinite audio comes from the installed game's Wwise packages and module files, covering both multiplayer and the campaign.
+                        The module data was decompressed with <a href="https://github.com/powzix/ooz">ooz</a> and read with <a href="https://github.com/Gravemind2401/Reclaimer">Reclaimer</a>,
+                        and each soundbank was parsed with <a href="https://github.com/bnnm/wwiser">wwiser</a> to follow every event to the recordings it plays.
+                    </p>
+                    <p>
+                        The game stores hashes of its sound names rather than the names themselves. About 38,400 recordings take their names directly from
+                        the public <a href="https://github.com/Surasia/ReclaimerFiles/blob/master/strings.txt">ReclaimerFiles</a> name list. Each name was hashed
+                        and matched against the event ID stored in the game, e.g. <code>001_vo_ai_brute01_02combat_abandonturret_00100</code>.
+                    </p>
+                    <p>
+                        Most of the remaining ~3,300 names were recovered by recombining those known names: the same line tried for other speakers or seasons,
+                        or one part of a name swapped, such as the speaker, season, or take. A smaller number used weapon, item, and medal names
+                        from <a href="https://www.halopedia.org">Halopedia</a> and words from subtitle text.
+                        Every name, however it was found, was kept only when its hash matched the ID stored in the game.
+                    </p>
+                </div>
+            )}
+
+            {activeTab === 'Halo: Campaign Evolved' && (
+                <div role="tabpanel">
+                    <p>
+                        Halo: Campaign Evolved is built on Unreal Engine 5 and stores its audio as Wwise assets inside the game's archives.
+                        The archives were opened with <a href="https://github.com/4sval/FModel">FModel</a> using a UE 5.5 mapping file,
+                        and both the game's Wwise event assets and its numbered media files were exported as the original WEM audio.
+                    </p>
+                    <p>
+                        The event assets keep descriptive names, e.g. <code>VO_SYS_default_11involuntary_pain_00040_Williams</code>.
+                        Each event file was paired with its numbered media file by matching language, file size, and a hash of the full file contents.
+                    </p>
+                    <p>
+                        English subtitles for cinematic and scripted lines come from the game's StringTable assets, where each subtitle is keyed by the
+                        voice line's name, e.g. <code>VO_CIN_M01_cin02_bridge_01060_MasterChief</code> maps to "Captain Keyes?".
+                    </p>
+                </div>
+            )}
 
             <h2>Transcripts</h2>
             <p>
                 Where a game has its own subtitles for a line, that subtitle text is used directly. It is the game's stored caption, not a transcription,
                 and it is only linked to a file when the subtitle's identifier exactly matches the sound's name.
-                This currently covers Halo 2, Halo 3, Reach, and Halo 4. Captions that are empty or damaged in the game files are kept as stored.
+                This currently covers Halo 2, Halo 3, Reach, Halo 4, and Halo Infinite.
+                In Halo Infinite, each line's data references its subtitle directly, and that reference is used to link the two. Captions that are empty or damaged in the game files are kept as stored.
             </p>
             <p>
                 Everything without an associated subtitle was transcribed using <a href="https://github.com/openai/whisper">OpenAI Whisper</a> ("Turbo" model).
@@ -74,13 +162,39 @@ export default function AboutPage() {
             </p>
 
             <h2>Tools and References</h2>
-            <ul>
-                <li><a href="https://github.com/Gravemind2401/Reclaimer">Reclaimer</a>: map reading and Bungie-era extraction</li>
-                <li>Assembly: tag layouts</li>
-                <li><a href="https://github.com/bnnm/wwiser">wwiser</a>: Wwise soundbank parsing</li>
-                <li>MCC Localization Editor: documented subtitle file format</li>
-                <li><a href="https://github.com/openai/whisper">OpenAI Whisper</a>: transcripts for lines without subtitles</li>
-            </ul>
+            <TabBar tabs={CREDIT_TABS} active={creditTab} onSelect={setCreditTab} />
+
+            {creditTab === 'Tools' && (
+                <div role="tabpanel">
+                    <ul>
+                        <li><a href="https://github.com/Gravemind2401/Reclaimer">Reclaimer</a>: map reading, Bungie-era extraction, and Halo 4, Halo 5, and Halo Infinite tag reading</li>
+                        <li>Halo 4 Editing Kit: original voice paths, event names, and string tables</li>
+                        <li><a href="https://github.com/XboxChaos/composer">Composer</a>: Halo 4 audio reading and event names</li>
+                        <li><a href="https://github.com/Zoephie/Baboon">Baboon</a>: Halo 4 sound tag inspection</li>
+                        <li><a href="https://github.com/powzix/ooz">ooz</a>: Halo Infinite module decompression</li>
+                        <li><a href="https://github.com/bnnm/wwiser">wwiser</a>: Wwise soundbank parsing</li>
+                        <li><a href="https://github.com/vgmstream/vgmstream">vgmstream</a>: WEM audio decoding</li>
+                        <li><a href="https://github.com/4sval/FModel">FModel</a>: Halo: Campaign Evolved archive browsing and audio and subtitle export</li>
+                        <li><a href="https://github.com/openai/whisper">OpenAI Whisper</a>: transcripts for lines without subtitles</li>
+                    </ul>
+                </div>
+            )}
+
+            {creditTab === 'References' && (
+                <div role="tabpanel">
+                    <ul>
+                        <li><a href="https://github.com/Surasia/ReclaimerFiles">ReclaimerFiles</a>: Halo Infinite tag definitions and name list</li>
+                        <li><a href="https://github.com/dortkoldantaciz/Halo-Infinite-Translation-Toolkit">Halo Infinite Translation Toolkit</a>: tag list checked against unnamed dialogue</li>
+                        <li><a href="https://www.halopedia.org">Halopedia</a>: weapon, item, and medal names used as naming vocabulary</li>
+                        <li><a href="https://github.com/XboxChaos/Assembly">Assembly</a>: tag layouts</li>
+                        <li><a href="https://github.com/Lord-Zedd/MCCLocalizationEditor">MCC Localization Editor</a>: documented subtitle file format</li>
+                        <li><a href="https://github.com/Nibre/HaloWwise">HaloWwise</a>: Halo Wwise package extraction and event tracing</li>
+                        <li><a href="https://github.com/bnnm/wwiser-utils">wwiser-utils</a>: Wwise package extraction and naming</li>
+                        <li><a href="https://www.audiokinetic.com">Audiokinetic Wwise documentation</a>: file packages and external sources</li>
+                        <li><a href="https://github.com/Gamergotten/murmur3Hash_dumper">murmur3Hash_dumper</a>: the game's string hashing</li>
+                    </ul>
+                </div>
+            )}
         </div>
     </div>
    )
