@@ -1,6 +1,18 @@
 import { useEffect, useState } from "react";
 import { LoadingSpinner } from "./LoadingSpinner";
 
+const PlayIcon = () => (
+    <svg className="btn-icon-svg" viewBox="0 0 12 12" aria-hidden="true">
+        <polygon points="2,1 11,6 2,11" fill="currentColor" />
+    </svg>
+);
+
+const StopIcon = () => (
+    <svg className="btn-icon-svg" viewBox="0 0 12 12" aria-hidden="true">
+        <rect x="2" y="2" width="8" height="8" fill="currentColor" />
+    </svg>
+);
+
 type PlaybackState = "idle" | "loading" | "playing" | "error";
 
 export function AudioPlayButton({ src, label }: { src: string, label: string }) {
@@ -36,12 +48,18 @@ export function AudioPlayButton({ src, label }: { src: string, label: string }) 
 
     const handleClick = () => {
         if (state === "loading") return;
+        if (state === "playing") {
+            setAudio(null);
+            setState("idle");
+            return;
+        }
         setState("loading");
         setAudio(new Audio(src));
     };
 
     const isLoading = state === "loading";
     const hasError = state === "error";
+    const isPlaying = state === "playing";
 
     return (
         <button
@@ -49,11 +67,11 @@ export function AudioPlayButton({ src, label }: { src: string, label: string }) 
             onClick={handleClick}
             disabled={isLoading}
             aria-busy={isLoading}
-            aria-label={hasError ? `Playback failed for ${label}` : `Play ${label}`}
+            aria-label={hasError ? `Playback failed for ${label}` : (isPlaying ? `Stop ${label}` : `Play ${label}`)}
         >
             {isLoading
                 ? <LoadingSpinner label={`Loading ${label}`} size="small" />
-                : (hasError ? "⚠" : "▶")}
+                : (hasError ? "⚠" : (isPlaying ? <StopIcon /> : <PlayIcon />))}
         </button>
     )
 }

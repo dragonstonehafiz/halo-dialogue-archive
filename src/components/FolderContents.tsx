@@ -21,7 +21,7 @@ export function FolderContents({ nodePath, files, onFolderClick } : {
                     <col style={{width: '120px'}} />
                     <col style={{width: '180px'}} />
                     <col style={{width: '60px'}} />
-                    <col style={{width: '60px'}} />
+                    <col style={{width: '110px'}} />
                 </colgroup>
                 <thead>
                     <tr>
@@ -43,7 +43,7 @@ export function FolderContents({ nodePath, files, onFolderClick } : {
                             <td>-</td>
                             <td>-</td>
                             <td>-</td>
-                            <td>{child.file_count} files</td>
+                            <td>{child.file_count.toLocaleString("en-US")} files</td>
                         </tr>
                     ))}
                     {files?.map(file => (

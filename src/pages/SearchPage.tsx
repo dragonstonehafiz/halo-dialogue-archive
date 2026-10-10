@@ -334,7 +334,7 @@ export default function SearchPage() {
                 )}
                 {showResults && (
                     <p className="search-hint">
-                        Showing {firstRow}&ndash;{lastRow} of {total} {total === 1 ? "result" : "results"}
+                        Showing {firstRow.toLocaleString("en-US")}&ndash;{lastRow.toLocaleString("en-US")} of {total.toLocaleString("en-US")} {total === 1 ? "result" : "results"}
                     </p>
                 )}
                 {!searchLoading && !searchError && (!hasSearched || total > 0) && (

@@ -4,3 +4,22 @@
     overflow-x: auto;
     padding: 8px;
 }
+.game-selector-groups {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+}
+
+.game-selector-group h3 {
+    text-align: center;
+    color: var(--text);
+    margin: 0 0 12px;
+}
+
+.game-selector-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+}

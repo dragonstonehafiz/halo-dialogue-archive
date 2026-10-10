@@ -9,6 +9,23 @@
     text-align: center;
 }
 
+.btn-icon-svg {
+    display: block;
+    width: 12px;
+    height: 12px;
+    margin: 0 auto;
+}
+
+.btn-icon .loading-spinner {
+    justify-content: center;
+}
+
+.btn-icon .loading-spinner--small .loading-spinner-ring {
+    box-sizing: border-box;
+    width: 12px;
+    height: 12px;
+}
+
 .btn-icon:hover {
     color: var(--primary-hover);
 }
@@ -66,4 +83,12 @@
 
 .contents-table td button:hover {
     color: var(--primary-hover);
+}
+.contents-table th:last-child,
+.contents-table td:last-child {
+    white-space: nowrap;
+}
+
+.contents-table td .btn-icon {
+    text-align: center;
 }
