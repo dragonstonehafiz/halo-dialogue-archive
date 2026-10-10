@@ -51,14 +51,28 @@ export default function AboutPage() {
 
             <h3>Halo Infinite</h3>
             <p>
-                A write-up of how Halo Infinite was extracted is coming soon.
+                Halo Infinite audio comes from the installed game's Wwise packages and module files, covering both multiplayer and the campaign.
+                The module data was decompressed with <a href="https://github.com/powzix/ooz">ooz</a> and read with <a href="https://github.com/Gravemind2401/Reclaimer">Reclaimer</a>,
+                and each soundbank was parsed with <a href="https://github.com/bnnm/wwiser">wwiser</a> to follow every event to the recordings it plays.
+            </p>
+            <p>
+                The game stores hashes of its sound names rather than the names themselves. About 38,400 recordings take their names directly from
+                the public <a href="https://github.com/Surasia/ReclaimerFiles/blob/master/strings.txt">ReclaimerFiles</a> name list. Each name was hashed
+                and matched against the event ID stored in the game, e.g. <code>001_vo_ai_brute01_02combat_abandonturret_00100</code>.
+            </p>
+            <p>
+                Most of the remaining ~3,300 names were recovered by recombining those known names: the same line tried for other speakers or seasons,
+                or one part of a name swapped, such as the speaker, season, or take. A smaller number used weapon, item, and medal names
+                from <a href="https://www.halopedia.org">Halopedia</a> and words from subtitle text.
+                Every name, however it was found, was kept only when its hash matched the ID stored in the game.
             </p>
 
             <h2>Transcripts</h2>
             <p>
                 Where a game has its own subtitles for a line, that subtitle text is used directly. It is the game's stored caption, not a transcription,
                 and it is only linked to a file when the subtitle's identifier exactly matches the sound's name.
-                This currently covers Halo 2, Halo 3, Reach, and Halo 4. Captions that are empty or damaged in the game files are kept as stored.
+                This currently covers Halo 2, Halo 3, Reach, Halo 4, and Halo Infinite.
+                In Halo Infinite, each line's data references its subtitle directly, and that reference is used to link the two. Captions that are empty or damaged in the game files are kept as stored.
             </p>
             <p>
                 Everything without an associated subtitle was transcribed using <a href="https://github.com/openai/whisper">OpenAI Whisper</a> ("Turbo" model).
@@ -75,9 +89,14 @@ export default function AboutPage() {
 
             <h2>Tools and References</h2>
             <ul>
-                <li><a href="https://github.com/Gravemind2401/Reclaimer">Reclaimer</a>: map reading and Bungie-era extraction</li>
-                <li>Assembly: tag layouts</li>
+                <li><a href="https://github.com/Gravemind2401/Reclaimer">Reclaimer</a>: map reading, Bungie-era extraction, and Halo Infinite tag reading</li>
+                <li><a href="https://github.com/Surasia/ReclaimerFiles">ReclaimerFiles</a>: Halo Infinite tag definitions and name list</li>
+                <li><a href="https://github.com/powzix/ooz">ooz</a>: Halo Infinite module decompression</li>
+                <li><a href="https://github.com/XboxChaos/Assembly">Assembly</a>: tag layouts</li>
                 <li><a href="https://github.com/bnnm/wwiser">wwiser</a>: Wwise soundbank parsing</li>
+                <li><a href="https://github.com/dortkoldantaciz/Halo-Infinite-Translation-Toolkit">Halo Infinite Translation Toolkit</a>: tag list checked against unnamed dialogue</li>
+                <li><a href="https://github.com/Gamergotten/murmur3Hash_dumper">murmur3Hash_dumper</a>: reference for the game's string hashing</li>
+                <li><a href="https://www.halopedia.org">Halopedia</a>: weapon, item, and medal names used as naming vocabulary</li>
                 <li>MCC Localization Editor: documented subtitle file format</li>
                 <li><a href="https://github.com/openai/whisper">OpenAI Whisper</a>: transcripts for lines without subtitles</li>
             </ul>
