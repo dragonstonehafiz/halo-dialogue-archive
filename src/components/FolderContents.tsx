@@ -1,15 +1,20 @@
+import { Fragment } from "react";
+import { useNavigate } from "react-router-dom";
 import type { FolderNode } from "../types/FolderNode";
 import type { AudioFile } from "../types/AudioFile";
 import { AudioPlayButton } from "./AudioPlayButton";
 import { TranscriptCell } from "./TranscriptCell";
+import { Breadcrumb } from "./Breadcrumb";
 import './FolderContents.css'
 
-export function FolderContents({ nodePath, files, onFolderClick } : { 
+export function FolderContents({ nodePath, files, onFolderClick, groupByFolder } : { 
     nodePath?: FolderNode[] | null, 
     files: AudioFile[] | null,
-    onFolderClick?: (node: FolderNode) => void }) {
+    onFolderClick?: (node: FolderNode) => void,
+    groupByFolder?: boolean }) {
     
     const currentNode = nodePath ? nodePath[nodePath.length - 1]: null;
+    const navigate = useNavigate()
     const R2_BASE_URL = import.meta.env.VITE_R2_BASE_URL
 
     return (
@@ -47,8 +52,16 @@ export function FolderContents({ nodePath, files, onFolderClick } : {
                             <td>{child.file_count.toLocaleString("en-US")} files</td>
                         </tr>
                     ))}
-                    {files?.map(file => (
-                        <tr key={file.path}>
+                    {files?.map((file, i) => (
+                        <Fragment key={file.path}>
+                        {groupByFolder && file.parent !== files[i - 1]?.parent && (
+                            <tr className="contents-group">
+                                <td colSpan={7}>
+                                    <Breadcrumb nodePath={folderCrumbs(file.parent ?? '')} onFolderClick={node => navigate(`/browse/${node.path}`)} />
+                                </td>
+                            </tr>
+                        )}
+                        <tr>
                             <td>🔊</td>
                             <td>{file.path.split('/').pop()}</td>
                             <td><TranscriptCell text={file.transcript} title={file.path.split('/').pop()} /></td>
@@ -61,9 +74,22 @@ export function FolderContents({ nodePath, files, onFolderClick } : {
                                 <button className="btn-icon" onClick={() => window.open(`${R2_BASE_URL}/${file.path}`, '_blank')}>⬇</button>
                             </td>
                         </tr>
+                        </Fragment>
                     ))}
                 </tbody>
             </table>
         </div>
     )
+}
+
+// Breadcrumb only reads name and path, so a parent path like
+// "halo5/multiplayer/x" is enough to build its nodes without the tree.
+function folderCrumbs(parent: string): FolderNode[] {
+    const segments = parent.split('/')
+    return segments.map((name, i) => ({
+        name,
+        path: segments.slice(0, i + 1).join('/'),
+        file_count: 0,
+        children: [],
+    }))
 }

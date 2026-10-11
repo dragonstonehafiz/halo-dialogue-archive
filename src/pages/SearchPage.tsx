@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import './SearchPage.css'
 import type { AudioFile } from "../types/AudioFile";
 import Select from "react-select";
+import type { GroupBase, OptionsOrGroups } from "react-select";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { search as searchApi, SEARCH_MIN_QUERY_LENGTH } from "../lib/api";
 import { FolderContents } from "../components/FolderContents";
@@ -60,6 +61,20 @@ function paramsFromQuery(query: SearchQuery): Record<string, string | string[]> 
     return params
 }
 
+type Option = { value: string; label: string };
+type FilterOptions = OptionsOrGroups<Option, GroupBase<Option>>;
+type FilterGroup = { label: string; values: string[] };
+
+// filters.json lists every value flat, and may also carry curated groups for a
+// key. A value can sit in several groups; react-select matches selections by
+// value, so picking it in one group marks it selected everywhere.
+function toFilterOptions(values: string[] | undefined, groups: FilterGroup[] | undefined): FilterOptions {
+    if (groups?.length) {
+        return groups.map(g => ({ label: g.label, options: g.values.map(v => ({ value: v, label: v })) }))
+    }
+    return (values ?? []).map(v => ({ value: v, label: v }))
+}
+
 const selectStyles = {
     control: (base: object) => ({
         ...base,
@@ -92,6 +107,10 @@ const selectStyles = {
         ...base,
         color: 'var(--text)',
     }),
+    groupHeading: (base: object) => ({
+        ...base,
+        color: 'var(--text-muted)',
+    }),
 }
 
 export default function SearchPage() {
@@ -113,9 +132,9 @@ export default function SearchPage() {
         parseChoices(searchParams.getAll('characters'))
     )
 
-    const [gameOptions, setGameOptions] = useState<{ value: string; label: string }[]>([])
-    const [tagOptions, setTagOptions] = useState<{ value: string; label: string }[]>([])
-    const [characterOptions, setCharacterOptions] = useState<{ value: string; label: string }[]>([])
+    const [gameOptions, setGameOptions] = useState<FilterOptions>([])
+    const [tagOptions, setTagOptions] = useState<FilterOptions>([])
+    const [characterOptions, setCharacterOptions] = useState<FilterOptions>([])
     const [filtersLoading, setFiltersLoading] = useState(true)
     const [filtersError, setFiltersError] = useState<string | null>(null)
     useEffect(() => {
@@ -123,12 +142,12 @@ export default function SearchPage() {
 
         const loadFilters = async () => {
             try {
-                const res = await fetch('/filters.json', { signal: controller.signal })
+                const res = await fetch(`${import.meta.env.VITE_DATA_BASE_URL ?? ''}/filters.json`, { signal: controller.signal })
                 if (!res.ok) throw new Error("Could not load filters.")
                 const data = await res.json()
-                setGameOptions((data.games ?? []).map((g: string) => ({ value: g, label: g })))
-                setTagOptions((data.tags ?? []).map((t: string) => ({ value: t, label: t })))
-                setCharacterOptions((data.characters ?? []).map((c: string) => ({ value: c, label: c })))
+                setGameOptions(toFilterOptions(data.games, data.groups?.games))
+                setTagOptions(toFilterOptions(data.tags, data.groups?.tags))
+                setCharacterOptions(toFilterOptions(data.characters, data.groups?.characters))
             } catch (err) {
                 if (err instanceof DOMException && err.name === "AbortError") return
                 setFiltersError("Filters could not be loaded. Transcript search is still available.")
@@ -261,10 +280,6 @@ export default function SearchPage() {
         <div>
             <Navbar/>
 
-            <p className="search-notice" role="note">
-                Search is a work in progress, and I plan on improving it.
-            </p>
-
             <div className="filters-section">
                 <div className="filters-row">
                     <div className='filter-item'>
@@ -343,7 +358,7 @@ export default function SearchPage() {
                     </p>
                 )}
                 {!searchLoading && !searchError && (!hasSearched || total > 0) && (
-                    <FolderContents files={searchResults} />
+                    <FolderContents files={searchResults} groupByFolder />
                 )}
                 {showResults && (
                     <Pager page={page} totalPages={totalPages} onPageChange={onPageChange} />

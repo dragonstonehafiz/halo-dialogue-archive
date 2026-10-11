@@ -45,7 +45,7 @@ export default function BrowsePage() {
             setTreeLoading(true);
             setTreeError(null);
             try {
-                const res = await fetch('/structure.json', { signal: controller.signal });
+                const res = await fetch(`${import.meta.env.VITE_DATA_BASE_URL ?? ''}/structure.json`, { signal: controller.signal });
                 if (!res.ok) throw new Error("Could not load the catalog. Please try again.");
                 const data = await res.json();
                 const gameNode: FolderNode | undefined = Array.isArray(data?.children)

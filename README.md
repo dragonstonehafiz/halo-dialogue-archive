@@ -64,6 +64,15 @@ Set these in `.env` (see `.env example`):
 
 Restart the Vite dev server after changing environment variables; Vite embeds these values at build time, so a deployed frontend must also be rebuilt after changing them.
 
+## Running locally
+
+To check catalog changes before they are uploaded, run the site against a local copy of the backend:
+
+1. In `halo-dialogue-archive-uploader`, run `python serve_local.py`. This serves the Worker on a local D1 loaded from the working catalog at `http://localhost:8787`, and `structure.json`, `filters.json` and the audio at `http://localhost:8788`.
+2. Here, run `npm run dev:local`.
+
+`dev:local` runs Vite in `uploader` mode, which reads `.env.uploader`. That file points `VITE_API_BASE_URL` and `VITE_R2_BASE_URL` at the local servers, and sets `VITE_DATA_BASE_URL` so `structure.json` and `filters.json` are read from the uploader instead of `public/`. `VITE_DATA_BASE_URL` is unset everywhere else, so `npm run dev` and production builds still use `public/` and the deployed Worker.
+
 ## Static catalog files
 
 `public/structure.json` (the folder tree used by Browse) and `public/filters.json` (the game/character/tag options used by Search) are static assets, not Worker endpoints. They are generated separately as part of the catalog pipeline; copy the current versions into these `public/` paths whenever the catalog changes, and include them in the frontend release.
