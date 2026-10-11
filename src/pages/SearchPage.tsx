@@ -280,10 +280,6 @@ export default function SearchPage() {
         <div>
             <Navbar/>
 
-            <p className="search-notice" role="note">
-                Search is a work in progress, and I plan on improving it.
-            </p>
-
             <div className="filters-section">
                 <div className="filters-row">
                     <div className='filter-item'>
